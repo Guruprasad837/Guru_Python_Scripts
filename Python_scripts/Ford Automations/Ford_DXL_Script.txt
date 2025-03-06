@@ -1,0 +1,334 @@
+/*************************************************************************/
+// Dr. Stephan Mietens
+// 09.05.2022
+//
+// HOWTO:
+// 1a) Select object representing new docuemnt in CustDocList
+// 1b) Select object representing new module in DoorsModuleList
+// 2) Select object in new module that shall be linked with CustDocList Item
+// 3) Load this script in DXL editor from new module (to ensure that the "current" module is the new module)
+// 4a) modify below the ModulePrefix string - make it empty if a currently set prefix should not be changed
+// 4b) set OnlySingleReqInEmptyModule to create a new object in empty module
+// 4c) set OverrideDoorsModuleListEntry if you want to overwrite an entry in the Doors Module list
+// 5) run the script
+/*************************************************************************/
+
+string ModulePrefix = "" // keep this string empty here - if ModulePrefix is empty, the prefix in Doors module won't be overwritten. If you want to change it, use the next code line
+ModulePrefix = "esow_04_02_06_Process_Radar_Detections_" // set to naming convention: "esow_<pathNrs>_<abbr>_" - use only this code line to activate/deactivate re-setting of prefix, as deactivating is just a matter of comment this line out
+bool OnlySingleReqInEmptyModule = false // only is new module has no object, set this option to true and a default object for document level import will be created and initially configured
+bool OverrideDoorsModuleListEntry = false // set true only to allow overwriting the DoorsModuleList entry - know what you are doing!
+//-----------------------
+
+/****************************************************************************
+The function ReplaceString replaces each occurance of oldStr in origStr with newStr and returns
+the string with the replacements.
+	Parameters:
+		origStr:	The string in which the string shall be replaced
+		oldStr:	The string that shall be replaced
+		newStr:	The string that shall be inserted instead of oldStr
+****************************************************************************/
+string ReplaceString (string origStr, string oldStr, string newStr)
+{
+	// To construct the resultstring
+	string result = ""
+	// Temporary offset of the position in the string
+	int offset = null
+	// The length of the found string
+	int len = null
+	
+	// Find the first occurance of oldStr
+	while (findPlainText (origStr, oldStr, offset, len, false, false))
+	{
+		// Is it the first loop?
+		if (result == "")
+		{
+			// Reulst is the first part of the string
+			result = origStr[0:offset-1]
+		}
+		else
+		{
+			// the already calculated result plus the new string and the start of the remaining string
+			result = result newStr origStr[0:offset-1]
+		}
+		// Cut the replaced part of the string
+		origStr = origStr[offset+1:]
+	}
+
+	// If the result wasn't found in the string, then copy the part that has no strin g to replace.
+	if (result == "")
+	{
+		result = origStr
+	}
+	else
+	{
+		result = result newStr origStr
+	}
+
+	return result
+}
+
+string ModuleName = null 
+string ModuleDesc = null
+string ModuleLeadAnalyzeResp = null
+//int custDocListItemID = 0
+//int ModuleListItemID = 0
+bool writeDoorsModuleList = true
+
+Module m = current
+ModuleName = name(m)
+if (ModuleName == "FordDAT3_CustomerDocumentList")
+{
+	print "ERROR: you need to run this script from new module, not from CustDocList!\n"
+	halt
+}
+print "processing " fullName(m) "\n"
+//print path(m) "\n"
+//print name(m) "\n"
+
+if (!(canModify(m)))
+{
+	print "ERROR: cannot write to module\n"
+	halt
+}
+
+Object o = current
+if (OnlySingleReqInEmptyModule)
+{
+	if (null o)
+	{
+		o = create(m)
+	}
+	else
+	{
+		print "Error: flag OnlySingleReqInEmptyModule set, but object already exists. Maybe the previous run failed, to be sure, please reset the flag\n"
+		halt
+	}
+}
+
+if (null o)
+{
+	print "ERROR: no object to process in module " ModuleName "\n"
+	halt
+}
+print "will link with object ID " o."Absolute Number""" "\n"
+
+if (OnlySingleReqInEmptyModule)
+{
+	o."Object Text" = ModuleName
+	o."DA_Object_Type" = "Requirement"
+}
+
+// get reference of DocList ---------------------------------------
+Module mCustDocList = read("/Ford_DAT3/10 - Stakeholder Specs/FordDAT3_CustomerDocumentList")
+if (null mCustDocList)
+{
+	print "ERROR: cannot open CustDocList\n"
+	halt
+}
+
+Object oCustDocListItem = current
+//Object oCustDocListItem = object(custDocListItemID, mCustDocList)
+if (null oCustDocListItem)
+{
+	print "ERROR: cannot find current item in custDocList\n"
+	//close mCustDocList
+	halt
+}
+
+print "Info: ID in CustDocList is " oCustDocListItem."Absolute Number""" "\n"
+
+// CustDocListItem should state the same name as given modul. Verify to check correct intention of processing this module
+string cleanedDocListItem = oCustDocListItem."Object Text"""
+cleanedDocListItem = ReplaceString(cleanedDocListItem, "(", "")
+cleanedDocListItem = ReplaceString(cleanedDocListItem, ")", "")
+
+//if (!(ModuleName == oCustDocListItem."Object Text"""))
+if (!(ModuleName == cleanedDocListItem))
+{
+	print "ERROR: file names do not match: >" ModuleName "< vs. >" cleanedDocListItem "< as cleaned version of >" oCustDocListItem."Object Text""" "<\n"
+	//close mCustDocList
+	halt
+}
+
+// get reference of ModuleList ----------------------------
+bool bModuleListShared = false
+Module mModuleList = edit("/Ford_DAT3/Ford_DAT3 DoorsModules List")
+if (null mModuleList)
+{
+	mModuleList = share("/Ford_DAT3/Ford_DAT3 DoorsModules List")
+	if (null mModuleList)
+	{
+		print "Warning: cannot open DoorsModuleList\n"
+		//halt
+		writeDoorsModuleList = false
+	}
+	else
+	{
+		bModuleListShared = true
+	}
+}
+
+// else
+// {
+	// if (!(canModify(mModuleList)))
+	// {
+		// print "Warning: cannot write to DoorsListModule\n"
+		// //halt
+		// writeDoorsModuleList = false
+	// }
+// }
+
+Object oModuleListItem = current
+if (null oModuleListItem)
+{
+	print "Warning: cannot find current item in DoorsModuleList\n"
+	//close mModuleList
+	//halt
+	writeDoorsModuleList = false	
+}
+
+// check if we're in an empty item
+if (writeDoorsModuleList)
+{
+	if (!(oModuleListItem."Object Text""" == ""))
+	{
+		writeDoorsModuleList = OverrideDoorsModuleListEntry
+	}
+	
+	if (!(oModuleListItem."Object Heading""" == ""))
+	{
+		writeDoorsModuleList = OverrideDoorsModuleListEntry
+	}
+}
+
+if (writeDoorsModuleList)
+{
+	if (bModuleListShared)
+	{
+		string msg = lock(oModuleListItem)
+		if (!(null msg))
+		{
+			print "Warning: DoorsModuleList object cannot be locked: " msg "\n"
+			writeDoorsModuleList = false
+		}
+	}
+}
+
+if (!(canModify(oModuleListItem)))
+{
+	print "Warning: cannot modify DoorsListModule object\n"
+	// halt
+	writeDoorsModuleList = false
+}
+
+if (writeDoorsModuleList)
+{
+	print "Info: ID in DoorsModuleList is " oModuleListItem."Absolute Number""" "\n"
+}
+else
+{
+	print "Warning: DoorsModuleList cannot be processed - maybe you tried to overwrite an entry without setting permission to let this script do so\n"
+}
+
+// all pre-checks done, now go into processing ---------------------------
+
+if (oCustDocListItem."DA_Short_Description""" == "")
+{
+	print "Warning: no description\n"
+}
+else
+{
+	m."Description" = oCustDocListItem."DA_Short_Description"""
+}
+
+if (!(ModulePrefix == ""))
+{
+	m."Prefix" = ModulePrefix
+}
+
+ModuleLeadAnalyzeResp = oCustDocListItem."DA_Analyzing_Responsible"
+if (ModuleLeadAnalyzeResp == "")
+{
+	print "Warning: no lead analyzing responsible given, taking org Responsible\n"
+	ModuleLeadAnalyzeResp = oCustDocListItem."DA_Organizing_Responsible"
+}
+
+if (ModuleLeadAnalyzeResp == "")
+{
+	print "Warning: no organizing responsible given\n"
+}
+
+if (OnlySingleReqInEmptyModule)
+{
+	o."DA_ID_Ford" = oCustDocListItem."DA_ID_Ford"""
+}
+
+Object currObj = null
+for currObj in entire(m) do
+{
+	if (!(isDeleted(currObj)))
+	{
+		// setting both responsible roles initially to the lead analyzing resp of document. Empty check done not to disturb to attribute inherit functionality
+		if (currObj."DA_Organizing_Responsible""" == "")
+		{
+			currObj."DA_Organizing_Responsible" = ModuleLeadAnalyzeResp
+		}
+		if (currObj."DA_Analyzing_Responsible""" == "")
+		{
+			currObj."DA_Analyzing_Responsible" = ModuleLeadAnalyzeResp
+		}
+	}
+}
+
+if (writeDoorsModuleList)
+{
+	// DoorsModuleListItem may not be empty for updates. Notify to check correct intention of processing this module if its not a new entry
+	if (!(oModuleListItem."Object Text""" == ""))
+	{
+		print "Check: overwrite DoorsModule Reference : old: >" oModuleListItem."Object Text""" "<; new: >" ModuleName "<\n"
+	}
+	oModuleListItem."Object Text" = ModuleName
+	oModuleListItem."DA_ModulePath" = path(m)
+	print "DoorsModulePath: " path(m) "\n"
+	oModuleListItem."DA_Key_Traces" = "Stakeholder"
+	oModuleListItem."DA_Object_Type" = "Requirement"
+	if (bModuleListShared)
+	{
+		unlockSaveAll(oModuleListItem)
+	}
+	save(mModuleList)
+}
+// add linksets
+
+string source = fullName(m)
+string target = "/Ford_DAT3/Ford_DAT3 DoorsModules List"
+
+//Folder f = folder "/Ford_DAT3/10 - Stakeholder Specs/esow/DAT3_ESOW_Attachments"
+Folder f = folder(path(m))
+bool overrideable = false
+bool mandatory = true
+string linkmod_PrjDoorsModuleList = "/Ford_DAT3/80 - Linksets/all_to_PrjDoorsModulesList"
+string desc = "all_to_PrjDoorsModulesList"
+
+addLinkModuleDescriptor(f, source, target, overrideable, mandatory, linkmod_PrjDoorsModuleList, desc)
+
+target = "/Ford_DAT3/10 - Stakeholder Specs/FordDAT3_CustomerDocumentList"
+string linkmod_CustDocList = "/Ford_DAT3/80 - Linksets/StRS_Ford_to_CustomerDocList"
+desc = "StRS_Ford_to_CustomerDocList"
+
+addLinkModuleDescriptor(f, source, target, overrideable, mandatory, linkmod_CustDocList, desc)
+
+ModName_ modname = module(source)
+setLinkModuleDescriptorsExclusive(f, modname, true)
+
+save(m)
+
+// try to make links
+o -> linkmod_CustDocList -> oCustDocListItem
+print "link to docList done\n"
+o -> linkmod_PrjDoorsModuleList -> oModuleListItem
+print "link to DoorsModuleList done\n"
+print "all done: please check and baseline\n"
+
+save(m)
+//close(mCustDocList)
