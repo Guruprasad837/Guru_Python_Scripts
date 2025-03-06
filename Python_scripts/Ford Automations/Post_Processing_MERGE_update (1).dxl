@@ -1,0 +1,198 @@
+// This script shall be replace {baselineToCompare}
+/**************************************************
+ * Author: Dr. Stephan Mietens (XC-DX/EPS3-NA), adapted from script by Björn Karpenstein
+ * Date:   01.10.2018
+ * Last modified: 08.12.2022
+ *
+ * This is a layout DXL to show the differences from 
+ * the current module version to another baseline. 
+ **************************************************/
+ 
+// Config
+// BLname must be in the format: <BL ID>(<BL Prefix>)
+
+string BLname = "16.1(Before_Import)" // if empty, the value of a module attribute FD3_LastImportBLname will be taken
+
+// At the end of the script you have to update the attribute to be compared, e.g. with 
+// compareColumn("Object Heading")
+// in order to compare the Object Heading
+
+
+ // extract baseline information
+ 
+Module currModule = current
+
+//int BLmajor = currModule."FD3_LastImportBLmajor"
+//int BLminor = currModule."FD3_LastImportBLminor"
+//string BLsuffix = currModule."FD3_LastImportBLsuffix"
+
+Regexp re_BL = regexp2 "^(.*)\\.(.*)\\((.*)\\)$"
+
+if (null BLname and exists(attribute(string "FD3_LastImportBLname"))) 
+{
+	BLname = currModule."FD3_LastImportBLname"
+}
+int BLmajor = 0
+int BLminor = 0
+string BLsuffix = ""
+
+if(re_BL BLname)
+{
+ BLmajor = intOf(BLname[match 1])
+ BLminor = intOf(BLname[match 2]) 
+ BLsuffix = BLname[match 3]
+	
+//  print BLmajor "x\n"
+//  print BLminor "x\n"
+//  print BLsuffix "x\n"
+ }
+delete (re_BL)
+
+// ---
+
+Baseline oldBaseline = baseline(BLmajor, BLminor, BLsuffix);
+
+if (null oldBaseline)
+{
+	display("no such baseline")
+	halt
+}
+else
+{
+	string BLcmp = "compare with BL " BLmajor "." BLminor "(" BLsuffix ")\n"
+	display(BLcmp)
+}
+
+Module oldModule = load(module(obj), oldBaseline, false)
+if (null oldModule)
+{
+	display("no such baseline")
+	halt
+}
+
+Buffer bBefore = create;
+Buffer bAfter = create;
+Buffer result = create;
+AttrDef ad;
+ 
+showDeletedObjects(true)
+int i = obj."Absolute Number"
+Object oldObject = object(i, oldModule)
+ 
+bool LastAttribChanged = false
+ 
+void compareColumn(string columnName)
+{
+	if (exists(attribute(columnName))) 
+	{
+		bBefore = ""
+		bAfter = ""
+		as = null
+		ad = find(oldModule, columnName);
+         
+		if(!null(ad) && !null(oldObject))
+		{
+			bBefore = oldObject.columnName;
+		}
+		else bBefore = "";
+         
+		ad = find(currModule, columnName)
+ 
+		if(!null(ad))
+		{
+			bAfter = obj.columnName;
+		}
+		else bAfter = "";
+			
+		bAfter = obj.columnName;
+ 
+		if( bBefore != bAfter )
+		{
+			diff(result, bBefore, bAfter);
+			display("__________")
+			displayRichWithColor("{\\i " columnName ": {\\b CHANGED}}");
+//    displayRichWithColor("{\\i " columnName ": CHANGED}");
+			displayRichWithColor(stringOf(result));
+			LastAttribChanged = true
+		}
+		else
+		{
+			if (LastAttribChanged)
+			{
+				display("__________")
+			}
+
+			displayRichWithColor("{\\i " columnName ": {\\b no change}}");
+//	displayRichWithColor("{\\i " columnName ": no change}");
+			LastAttribChanged = false
+		}
+	}
+}
+                
+// if oldObject not found, double check if it was not hidden from a filter
+/*
+if(null(oldObject))
+{
+	oldObject = null
+	Object oBase = null
+	int  AbsNoBase
+	for oBase in entire oldModule do
+	{  AbsNoBase = oBase."Absolute Number"
+	if (AbsNoBase == i)
+		{  oldObject = oBase
+			break
+		}
+	}
+}
+*/
+
+// now do the checks				
+if(null(oldObject))
+{
+  displayRichWithColor("{\\b NEW}");
+  if(isDeleted(obj)) displayRichWithColor("{\\b DELETED}");
+}
+else
+{           
+  if(isDeleted(obj) && !isDeleted(oldObject))
+  {
+    displayRichWithColor("{\\b DELETED}");
+  }
+  else
+  {
+    if(!isDeleted(obj) && isDeleted(oldObject))
+    {
+      displayRichWithColor("{\\b UNDELETED}");
+    }
+   
+    // Here you can add the 
+    // module attributes to compare 
+         
+    /*** Object Heading ***/
+    compareColumn("Object Heading");
+ 
+    /*** Object Text ***/
+    compareColumn("Object Text");
+
+    compareColumn("ASIL");
+
+    compareColumn("rationale");
+    compareColumn("verification_criteria");
+    compareColumn("globalId");
+    compareColumn("documentKey");
+	compareColumn("status_1");
+    compareColumn("requirement_category");
+    compareColumn("priority_nonconformance");
+    compareColumn("setKey");
+	
+    // compareColumn("rfi");
+	// compareColumn("fhti");
+	// compareColumn("ftti");
+	// compareColumn("legacy_ig");
+           
+  }
+}
+         
+delete bBefore;
+delete bAfter;
+delete result;

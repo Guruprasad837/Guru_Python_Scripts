@@ -1,0 +1,182 @@
+//<
+/***********************************************************************************************************************************
+|    File Name: layoutDXL_ShowAttrValueViaInLnk_V1.00.02.dxl
+|  Description: This script can be used for Layout DXL Columns: 
+|				Displayes attribute values from linked objects by using inlinks going through a specific link module.
+|				
+|
+|-----------------------------------------------------------------------------------------------------------------------------------
+|
+|   This software has been carefully tested, but is not guaranteed for any particular
+| purpose. The author does not offer any warranties and does not guarantee the accuracy,
+|   adequacy, or completeness of the software and is not responsible for any errors or
+|              omissions or the results obtained from use of the software.
+|
+|-----------------------------------------------------------------------------------------------------------------------------------
+|
+|***************************** !!!DO NOT EDIT, REPLACE, DELETE OR MOVE THIS FILE!!! ************************************************
+|
+|-----------------------------------------------------------------------------------------------------------------------------------
+|                          A U T H O R   I D E N T I T Y
+|-----------------------------------------------------------------------------------------------------------------------------------
+|
+|***********************************************************************************************************************************/
+
+pragma runLim, 0;
+
+const bool BOOL_GETOBJECT_IDENTIFIER = false; // TRUE: Object Identifier will be displayed / FALSE: Other attributes will be displayed depending on the settings of following two constants
+const bool BOOL_GETOBJATTR = true; // If BOOL_GETOBJECT_IDENTIFIER = false: TRUE: Object Attribute "STR_SRC_ATTR_NAME" will be displayed / FALSE: Module Attribute "STR_SRC_ATTR_NAME" will be displayed
+const string STR_SRC_ATTR_NAME = "DA_FD3_Variant_Implemented"; //Enter here: Attribute Definition Name
+
+const string STR_LNKMOD_FULLNAME = "/Ford_DAT3/80 - Linksets/all_to_all_ReferencesForInformationOnly"; //Enter full path & Name of Link module to be used
+
+/*Function: attributeExistsObjectOrModule()*************************************************************************************************************
+- Function Version: 001
+- Description: 		
+*/
+
+bool attributeExistsObjectOrModule(Module modTmpCurrent, string strTmpAttrName, bool boolForObject)
+{
+	bool boolReturnValue = false;
+	AttrDef adTmpAttrDef = find(modTmpCurrent, strTmpAttrName);
+	
+	if(!null adTmpAttrDef)
+	{
+		if((boolForObject && adTmpAttrDef.object) || (!boolForObject && adTmpAttrDef.module))
+			boolReturnValue = true;
+	}
+	return boolReturnValue;
+}
+
+/*Function: showShRDAttribute()*************************************************************************************************************************
+- Function Version: 001
+- Description: 		
+*/
+void showShRDAttribute(Object objCurrTarget) 
+{
+    Link lnkCurrent;
+    ModName_ modnameSource = null;
+    ModuleVersion modversSourceVersion = null;
+    Item itemLinkModule = item(STR_LNKMOD_FULLNAME);
+    Object objSource = null;
+    string strResult = null;
+    bool boolDoneOne = false;
+
+    string resultsArray[1000]; // Fixed-size array for storing results
+    int resultCount = 0; // Number of unique results
+    bool hasNonEmpty = false; // Flag to track if there's at least one non-empty value
+    bool hasEmpty = false; // Flag to track if there's at least one empty value
+
+    if(null itemLinkModule) 
+    {
+        display("<<Link module not found>>");
+    } 
+    else if(type(itemLinkModule) != "Link") 
+    {
+        display("<<The Item is not a link module>>");
+    } 
+    else 
+    {
+        string strLinkModName = fullName(itemLinkModule);
+
+        for modnameSource in each (objCurrTarget<-"*") do
+        {
+            read(fullName(modnameSource), false);
+
+            for lnkCurrent in all(objCurrTarget<-strLinkModName) do 
+            {
+                modversSourceVersion = sourceVersion lnkCurrent;
+                modnameSource = module(modversSourceVersion);
+
+                if(!null modnameSource && !isDeleted(modnameSource))  
+                {
+                    objSource = source(lnkCurrent);
+                    
+                    if(null objSource) 
+                        load(modversSourceVersion, false);
+                    
+                    objSource = source(lnkCurrent);
+                    
+                    if(!null objSource) 
+                    {
+                        if(!isDeleted(objSource)) 
+                        {
+                            if(BOOL_GETOBJECT_IDENTIFIER)
+                            {
+                                strResult = identifier(objSource);
+                            }
+                            else
+                            {
+                                if(!attributeExistsObjectOrModule(module(objSource), STR_SRC_ATTR_NAME, BOOL_GETOBJATTR))
+                                {
+                                    strResult = "N/A";
+                                    hasEmpty = true;
+                                }
+                                else if(BOOL_GETOBJATTR)
+                                {
+                                    strResult = richTextWithOle(objSource.STR_SRC_ATTR_NAME);
+                                    if (strResult != "" && strResult != "N/A") 
+                                    {
+                                        hasNonEmpty = true;
+                                    }
+                                }
+                                else
+                                {
+                                    strResult = (module(objSource)).STR_SRC_ATTR_NAME;
+                                    if (strResult != "" && strResult != "N/A") 
+                                    {
+                                        hasNonEmpty = true;
+                                    }
+                                }
+                            }
+
+                            // Check if result is already in the array
+                            bool isDuplicate = false;
+                            int i = 0;
+                            while (i < resultCount) 
+                            {
+                                if(resultsArray[i] == strResult)
+                                {
+                                    isDuplicate = true;
+                                    break;
+                                }
+                                i = i + 1;
+                            }
+                            
+                            // Add result to array if it's not a duplicate
+                            if(!isDuplicate && resultCount < 1000)
+                            {
+                                resultsArray[resultCount] = strResult;
+                                resultCount = resultCount + 1;
+                                boolDoneOne = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Check the flags and update resultsArray accordingly
+        if (hasNonEmpty && hasEmpty)
+        {
+            resultsArray[0] = "Empty";
+            resultCount = 1; // Only one result in the array
+        }
+        else if (!boolDoneOne)
+        {
+            resultsArray[0] = "Empty";
+            resultCount = 1; // Only one result in the array
+        }
+
+        // Display results from the array
+        int j = 0;
+        while (j < resultCount) 
+        {
+            displayRich resultsArray[j];
+            j = j + 1;
+        }
+    }
+}
+
+showShRDAttribute(obj);
+

@@ -1,0 +1,82 @@
+/***********************************************************************/
+/* Attribute DXL code for customer object type mapping                */
+/*                                                                     */
+/* Author: Dr. Stephan Mietens (XC-DX/EDI2)                           */
+/* Last modified: 19.09.2022 by Triya Chatterjee-Ewen                                      */
+/***********************************************************************/
+
+string CustObjectTypeAttribute = "DeXI_ObjectType" // Name of the customer attribute that defines the object type like heading, requirement, etc.
+
+// -----------------------------
+
+pragma runlim,0
+
+// mappings for customer object type
+// Set, Folder, Component -> Heading
+// Technology, stakeholder requirement -> Requirement
+// Text, Documentation-> Description
+
+if (null obj)
+{
+	halt
+}
+
+if (isDeleted(obj))
+{
+	halt
+}
+
+// run only if customer attribute is existing
+AttrDef ad = null
+Module currMod = current
+if(!null(ad=find(currMod, CustObjectTypeAttribute)))
+{
+	if (obj.CustObjectTypeAttribute"" == "Set")
+	{
+		obj.attrDXLName = "Heading"
+		halt
+	}
+	if (obj.CustObjectTypeAttribute"" == "Folder")
+	{
+		obj.attrDXLName = "Heading"
+		halt
+	}
+	if (obj.CustObjectTypeAttribute"" == "Component")
+	{
+		obj.attrDXLName = "Heading"
+		halt
+	}
+	if (obj.CustObjectTypeAttribute"" == "Text")
+	{
+		obj.attrDXLName = "Description"
+		halt
+	}
+	if (obj.CustObjectTypeAttribute"" == "Documentation")
+	{
+		obj.attrDXLName = "Description"
+		halt
+	}
+
+	if (obj.CustObjectTypeAttribute"" == "Technology Requirement")
+	{
+		obj.attrDXLName = "Requirement"
+		halt
+	}
+	if (obj.CustObjectTypeAttribute"" == "Technology Interface Requirement")
+	{
+		obj.attrDXLName = "Requirement"
+		halt
+	}
+	if (obj.CustObjectTypeAttribute"" == "Stakeholder Requirement")
+	{
+		obj.attrDXLName = "Requirement"
+		halt
+	}
+                if (obj.CustObjectTypeAttribute"" == "Software Requirement")
+	{
+		obj.attrDXLName = "Requirement"
+		halt
+	}
+
+}
+
