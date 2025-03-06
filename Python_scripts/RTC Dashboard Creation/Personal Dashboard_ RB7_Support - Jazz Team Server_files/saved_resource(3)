@@ -1,0 +1,2179 @@
+.jazz-ui-ErrorPage {
+	padding: 14px 14px;
+}
+.jazz-ui-ErrorPage h1 {
+	margin: 0;
+	font-size: 16pt;
+	color: #f09209;
+}
+.jazz-ui-ErrorPage div {
+	font-size: 11pt;
+}
+.jazz-ui-ErrorPage pre {
+	font-size: 12pt;
+}
+.jazz-ui-ErrorPage div.summary {
+	margin: 3px 0 14px 0;
+	font-size: 13pt;
+}
+.jazz-ui-ErrorPage div.details {
+	margin-bottom: 20px;
+}
+.jazz-ui-ErrorPage div.summary > .message-id {
+	color: #888;
+	font-size: 9pt;
+}
+.jazz-ui-ErrorPage .backIcon {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -8px -50px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-errorPage-ActionLink {
+	white-space: nowrap;
+}
+.jazz-ui-errorPage-ActionLink, .jazz-ui-ErrorPage .error-next {
+	font-size: 11pt;
+	margin-bottom: 5px;
+}
+.jazz-ui-errorPage-ActionLink .error-label {
+	font-size: 9pt;
+	white-space: normal;
+	display: inline-block;
+	vertical-align: top;
+	word-wrap: break-word;
+	margin-right: 10px;
+}
+.jazz-ui-errorPage-ActionLink .error-icon {
+	margin-right: 6px;
+	margin-top: 1px;
+	vertical-align: text-top;
+}/* Combo Button */
+.claro .dijitComboButtonRtl .dijitStretch {
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.claro .dijitComboButtonRtl .dijitArrowButton {
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  padding: 3px 0 4px;
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+/* End Combo Button *//* InlineEditBox
+ * 
+ * Styling InlineEditBox mainly includes:
+ * 
+ * 1. Normal state
+ * 		.dijitInlineEditBoxDisplayMode  - for border
+ * 
+ * 2. Hover state
+ * 		.dijitInlineEditBoxDisplayModeHover - for border and background color
+ */
+.claro .dijitInlineEditBoxDisplayMode {
+  border: 1px solid transparent;
+}
+.claro .dijitInlineEditBoxDisplayModeHover {
+  background-color: #e5f2fe;
+  border: solid 1px #759dc0;
+}
+.dj_ie6 .claro .dijitInlineEditBoxDisplayMode {
+  border: none;
+}
+.jazz-app-ua-PageHoverHelp {
+	margin-right: 5px;
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -131px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-app-ua-PageHoverHelp > span {
+	display: none;
+}
+.jazz-app-ua-PageHoverHelp:hover {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -131px -51px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.dijit_a11y .jazz-app-ua-PageHoverHelp > span {
+	display: block;
+}
+.dijit_a11y .jazz-app-ua-PageHoverHelp > img {
+	display: none;
+}.jazz-ui-Breadcrumbs {
+	font-size: 8pt !important;
+	position: relative;
+	margin-bottom: 4px;
+}
+.jazz-ui-Breadcrumbs .plain-text {
+	color: #666666;
+}
+.jazz-ui-Breadcrumbs img {
+	margin-right: 4px;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+}
+.jazz-ui-Breadcrumbs > a,
+.jazz-ui-Breadcrumbs > span {
+	display: inline-block;
+}
+.jazz-ui-Breadcrumbs .breadCrumbsSeparator {
+	color: #171717;
+	padding-right: 4px;
+}.jazz-ui-toolbar-Separator {
+	border-left: 1px solid #999999;
+	width: 0;
+	height: 16px;
+	margin-left: 4px;
+	vertical-align: middle;
+	display: inline-block;
+}.com-ibm-team-dashboard-metanav {
+	position: relative;
+	overflow: hidden;
+	zoom: 1;
+	padding: 8px 14px 0 12px;
+	line-height: 1.2;
+}
+.com-ibm-team-dashboard-metanav .dashboard-hover-help {
+	vertical-align: top;
+	margin-left: 3px;
+}
+.com-ibm-team-dashboard-metanav .dirtyStar {
+	line-height: 16px;
+	vertical-align: top;
+	color: #555555;
+	font-size: 12pt;
+	margin-top: -2px;
+	cursor: default;
+	margin-left: 2px;
+}
+.com-ibm-team-dashboard-metanav .loading-title {
+	color: #bbbbbb;
+}
+.com-ibm-team-dashboard-metanav .left-wrapper {
+	position: relative;
+	float: left;
+	padding-right: 8px;
+	margin-top: 1px;
+}
+.com-ibm-team-dashboard-metanav .dashboard-title {
+	font-size: 16pt !important;
+	min-height: 30px;
+	display: inline-block;
+	line-height: 26px;
+	margin-right: 1px;
+}
+.com-ibm-team-dashboard-metanav .dashboard-title input, .com-ibm-team-dashboard-tabs .tabTitle input {
+	position: relative;
+	top: -1px;
+	left: -1px;
+	margin-bottom: -1px;
+}
+.com-ibm-team-dashboard-metanav .dashboard-title .dijitTextBox {
+	position: relative;
+	left: -2px;
+	top: -2px;
+}
+.com-ibm-team-dashboard-tabs .tabTitle .dijitTextBox {
+	position: relative;
+	left: -2px;
+	top: 0;
+}
+.com-ibm-team-dashboard-metanav .jazz-ui-message-box {
+	min-width: 100px;
+}
+.dj_ie .com-ibm-team-dashboard-metanav .dashboard-title .dijitTextBox,
+.dj_ie .com-ibm-team-dashboard-tabs .tabTitle .dijitTextBox {
+	left: -1px;
+}
+.dj_ie9 .com-ibm-team-dashboard-metanav .dashboard-title .dijitTextBox,
+.dj_ie8 .com-ibm-team-dashboard-tabs .tabTitle .dijitTextBox {
+	top: -1px;
+}
+.com-ibm-team-dashboard-metanav .dashboard-title .dijitTextBoxHover, .com-ibm-team-dashboard-tabs .tabTitle .dijitTextBoxHover {
+	background: none;
+}
+.com-ibm-team-dashboard-metanav .dashboard-title .dijitInputContainer, .com-ibm-team-dashboard-tabs .tabTitle .dijitInputContainer {
+	padding-bottom: 0;
+}
+.com-ibm-team-dashboard-metanav .header-links {
+	position: relative;
+	float: right;
+	margin-left: 6px;
+}
+.com-ibm-team-dashboard-metanav .header-links label {
+	margin-left: 5px;
+	margin-right: 2px;
+	vertical-align: middle;
+}
+.dj_ie7 .com-ibm-team-dashboard-metanav .header-links label {
+	margin-left: 2px;
+}
+.com-ibm-team-dashboard-metanav .header-links .dashboard-toolbar,
+.com-ibm-team-dashboard-metanav .header-links .auto-save-area {
+	display: inline-block;
+}
+.com-ibm-team-dashboard-metanav .header-links .auto-save-area .saveButton {
+	margin-left: 16px;
+}
+.dj_ie7 .com-ibm-team-dashboard-metanav .header-links .dashboard-toolbar {
+	float: left;
+}
+.com-ibm-team-dashboard-metanav .header-links .auto-save {
+	margin-left: 10px;
+	line-height: 1.8em;
+	color: #444444;
+}
+.dj_ie7 .com-ibm-team-dashboard-metanav .header-links .auto-save {
+	margin-left: 1px;
+}
+.dj_ie8 .com-ibm-team-dashboard-metanav .header-links .auto-save,
+.dj_webkit .com-ibm-team-dashboard-metanav .header-links .auto-save {
+	position: relative;
+	top: -1px;
+}
+.com-ibm-team-dashboard-metanav .header-links .auto-save input {
+	vertical-align: middle;
+}
+.com-ibm-team-dashboard-metanav .header-links .refresh-button {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -109px -0px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-metanav .header-links .default-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -75px -34px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-metanav .header-links .shared-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -92px -17px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-metanav .header-links .unshared-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -92px -51px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-metanav .header-links .paste-button {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -34px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.dijit_a11y .com-ibm-team-dashboard-metanav .header-links .button::before {
+	content:attr(title);
+}
+.dijit_a11y .com-ibm-team-dashboard-metanav .header-links .button-img {
+	display: none;
+}
+.com-ibm-team-dashboard-metanav .header-links .delete-button {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -75px -51px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-metanav .header-links .restore-button {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -92px -0px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-metanav .header-links .history-button {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -0px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-settings-SlideoutPanel {
+	background: #f1f1f1;
+	border-bottom: 1px solid #d5d5d5;
+}
+.jazz-ensemble-internal-settings-SlideoutPanel .padding-div {
+	padding: 4px 4px 4px 4px;
+}
+.jazz-ensemble-internal-settings-SlideoutPanel .button-panel {
+	text-align: right;
+	overflow: hidden;
+}
+.jazz-ensemble-internal-settings-SlideoutPanel .button-panel input {
+	padding: 0px 3px 0px 3px;
+	line-height: 1.5em;
+	margin: 0 2px 0 0;
+}
+.jazz-ensemble-internal-settings-SlideoutPanel .button-panel .required-field {
+	position: relative;
+	float: left;
+	color: #a7a7a7;
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 88%;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table {
+	width: 100%;
+	padding:0;
+	margin:0;
+	table-layout:fixed;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.label {
+	width:40%;
+	height: 26px;
+	padding:0;margin:0;
+	padding-right: 0px;
+	overflow: hidden;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.label > .hover-style {
+	border-bottom: 1px dotted #999999;
+	cursor: default;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.label > .hover-style {
+	padding-bottom: 1px;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.label label > span.required-asterisk {
+	color: #444444;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field {
+	width: 60%;
+	height: 26px;
+	padding:0;margin:0;
+	text-align: left;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field div {
+	position: relative;
+	text-align: left;
+	overflow:hidden;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field div input {
+	background-color: white;
+	width: 93%;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field input[disabled],
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field select[disabled],
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field checkbox[disabled] {
+	color: gray;
+    background-color: white;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field input.select[disabled],
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field select[disabled] {
+	border: 1px solid #b5b2b5;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field div .dijitTextBox {
+	padding-left: 2px;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field div input.checkbox {
+	background-color: transparent;
+	width: auto;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field div select {
+	width: 100%;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .custom-container {
+	position: relative;
+	overflow: hidden;
+	zoom: 1;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .custom-container .custom-label{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	/* Overflow in Chrome clips the content by 1px, making input box look odd. A little padding compensates. */
+	padding-bottom: 1px;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .custom-container .custom-label input {
+	width: 92%;
+	padding: 0.2em 0.3em;
+	border: 1px solid #9b9b9b;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .custom-container .custom-edit-button {
+	display: block;
+	float: right;
+}
+
+.jazz-ensemble-internal-settings-SlideoutPanel .jazz-ui-ButtonGroup {
+	float : right;
+}
+
+.jazz-ensemble-internal-settings-SlideoutPanel .flexrow {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.jazz-ensemble-internal-settings-SlideoutPanel .flexrow button {
+	margin-left: 5px;
+	width: 65px;
+}.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker > div {
+	float: left;
+	border: 1px solid black;
+	margin-right: 4px;
+	height: 12px;
+	width: 12px;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker > div.selected > div {
+	height: 10px;
+	width: 10px;
+	border: 1px solid black;	
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker .gray-option {
+	background-color: #cccccc;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker .gold-option {
+	background-color: #cec97e;
+}	
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker .green-option {
+	background-color: #90bb76;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker .teal-option {
+	background-color: #66d4da;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker .blue-option {
+	background-color: #7dbce2;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker .purple-option {
+	background-color: #bcb4ff;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker .orange-option {
+	background-color: #ffaf84;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .color-picker .none-option {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -83px -119px;
+width: 12px;
+height: 12px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .jazz-ui-FilterBox {
+	background-color: white;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .jazz-ui-FilterBox a.clearFilter {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -68px -102px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .jazz-ui-FilterBox a.clearFilter.hidden {
+	display: none;
+}
+.jazz-ensemble-internal-settings-SettingsPanel > table td.field .jazz-ui-FilterBox a.clearFilter:hover {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -51px -102px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}/* RadioButton
+ * 
+ * Styling RadioButton mainly includes:
+ * 
+ * 1. Containers
+ * 		.dijitRadio|.dijitRadioIcon - for border, padding, width|height and background image
+ * 
+ * 2. RadioButton within ToggleButton
+ * 		.dijitToggleButton|.dijitToggleButtonChecked .* - for background image
+ * 
+ * 3. Checked state
+ * 		.dijitRadioChecked - for checked background-color|image
+ * 		.dijitToggleButtonChecked - for border, background-color|image, display and width|height
+ * 
+ * 4. Hover state
+ * 		.dijitRadioHover|.dijitRadioCheckedHover - for background image
+ * 
+ * 5. Disabled state
+ * 		.dijitRadioDisabled|.dijitRadioCheckedDisabled - for background image
+ */
+.claro .dijitToggleButton .dijitRadio,
+.claro .dijitToggleButton .dijitRadioIcon {
+  background-image: url("../dijit/themes/claro/form/images/checkboxRadioButtonStates.png?etag=dImeJji");
+}
+.dj_ie6 .claro .dijitToggleButton .dijitRadio,
+.dj_ie6 .claro .dijitToggleButton .dijitRadioIcon {
+  background-image: url("../dijit/themes/claro/form/images/checkboxAndRadioButtons_IE6.png?etag=dImeJji");
+}
+.claro .dijitRadio,
+.claro .dijitRadioIcon {
+  /* inside a toggle button */
+
+  background-image: url("../dijit/themes/claro/form/images/checkboxRadioButtonStates.png?etag=dImeJji");
+  /* checkbox sprite image */
+
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px 0 0;
+  padding: 0;
+}
+.dj_ie6 .claro .dijitRadio,
+.dj_ie6 .claro .dijitRadioIcon {
+  /* inside a toggle button */
+
+  background-image: url("../dijit/themes/claro/form/images/checkboxAndRadioButtons_IE6.png?etag=dImeJji");
+  /* checkbox sprite image */
+
+}
+.claro .dijitRadio {
+  /* unselected */
+
+  background-position: -105px;
+}
+.claro .dijitToggleButton .dijitRadioIcon {
+  /* unselected */
+
+  background-position: -107px;
+}
+.claro .dijitRadioDisabled {
+  /* unselected and disabled */
+
+  background-position: -165px;
+}
+.claro .dijitRadioHover {
+  /* hovering over an unselected enabled radio button */
+
+  background-position: -135px;
+}
+.claro .dijitRadioChecked {
+  background-position: -90px;
+}
+.claro .dijitToggleButtonChecked .dijitRadioIcon {
+  background-position: -92px;
+}
+.claro .dijitRadioCheckedHover {
+  background-position: -120px;
+}
+.claro .dijitRadioCheckedDisabled {
+  /* selected but disabled */
+
+  background-position: -150px;
+}
+/* CheckBox
+ * 
+ * Styling CheckBox mainly includes:
+ * 
+ * 1. Containers
+ * 		.dijitCheckBox|.dijitCheckBoxIcon - for border, padding, width|height and background image
+ * 
+ * 2. CheckBox within ToggleButton
+ * 		.dijitToggleButton|.dijitToggleButtonChecked .* - for background image
+ * 
+ * 3. Checked state
+ * 		.dijitCheckBoxChecked - for checked background-color|image
+ * 		.dijitToggleButtonChecked - for border, background-color|image, display and width|height
+ * 
+ * 4. Hover state
+ * 		.dijitCheckBoxHover|.dijitCheckBoxCheckedHover - for background image
+ * 
+ * 5. Disabled state
+ * 		.dijitCheckBoxDisabled|.dijitCheckBoxCheckedDisabled - for background image
+ */
+.claro .dijitToggleButton .dijitCheckBoxIcon {
+  background-image: url("../dijit/themes/claro/images/checkmarkNoBorder.png?etag=dImeJji");
+}
+.dj_ie6 .claro .dijitToggleButton .dijitCheckBoxIcon {
+  background-image: url("../dijit/themes/claro/images/checkmarkNoBorder.gif?etag=dImeJji");
+}
+.claro .dijitCheckBox,
+.claro .dijitCheckBoxIcon {
+  background-image: url("../dijit/themes/claro/form/images/checkboxRadioButtonStates.png?etag=dImeJji");
+  /* checkbox sprite image */
+
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 16px;
+  margin: 0 2px 0 0;
+  padding: 0;
+}
+.dj_ie6 .claro .dijitCheckBox,
+.dj_ie6 .claro .dijitCheckBoxIcon {
+  background-image: url("../dijit/themes/claro/form/images/checkboxAndRadioButtons_IE6.png?etag=dImeJji");
+  /* checkbox sprite image */
+
+}
+.claro .dijitCheckBox,
+.claro .dijitToggleButton .dijitCheckBoxIcon {
+  /* unchecked */
+
+  background-position: -15px;
+}
+.claro .dijitCheckBoxChecked,
+.claro .dijitToggleButtonChecked .dijitCheckBoxIcon {
+  /* checked */
+
+  background-position: 0;
+}
+.claro .dijitCheckBoxDisabled {
+  /* disabled */
+
+  background-position: -75px;
+}
+.claro .dijitCheckBoxCheckedDisabled {
+  /* disabled but checked */
+
+  background-position: -60px;
+}
+.claro .dijitCheckBoxHover {
+  /* hovering over an unchecked enabled checkbox */
+
+  background-position: -45px;
+}
+.claro .dijitCheckBoxCheckedHover {
+  /* hovering over an checked enabled checkbox */
+
+  background-position: -30px;
+}
+.jazz-ensemble-internal-adapter-WidgetGadgetUri > .cd-url-box
+{
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #A5ACB2;
+	min-height: 19px;
+	background-color: white;
+	margin: 10px 0 0 0;
+	padding: 3px 0 0 0;
+}
+
+.jazz-ensemble-internal-adapter-WidgetGadgetUri .urlbox
+{
+	font-family: inherit;
+	font-size: 1em;
+	min-height: 15px;
+	width: 100%;
+	border: 0px none;
+	color: #9e9e9e;
+}
+.jazz-ensemble-internal-adapter-WidgetGadgetUriDialog .add-gadget-icon {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -131px -0px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}.jazz-ui-wizard .wizardStepsWrapper {
+	position: relative;
+	margin: 0 30px 0 58px;
+}
+.jazz-ui-wizard .wizardStepsWrapper.dialogOnly {
+	margin: 0px;
+	margin-bottom: 8px;
+}
+.jazz-ui-wizard .wizardStepsWrapper.vertical {
+	margin: 6px 20px;
+	float: left;
+	width: 175px;
+	padding: 0;
+}
+.jazz-ui-wizard .wizardSteps {
+	position: relative;
+	overflow: hidden;
+}
+.jazz-ui-wizard .wizardHighlight {
+	position: absolute;
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	background-color:#FFFFDD;
+	z-index: 1;
+}
+.jazz-ui-wizard .wizardSteps.horizontal a {
+	cursor: pointer;
+}
+.jazz-ui-wizard .wizardSteps.horizontal .inactiveStep .number {
+	background-color: #f6f6f6;
+	border-radius: 50%;
+	color: #A5ACB2;
+}
+.jazz-ui-wizard .wizardSteps.horizontal a , 
+.jazz-ui-wizard .wizardSteps.horizontal .inactiveStep {
+	margin-right: 13px;
+	float: left;
+	min-height: 30px;
+	font-size: 11pt;
+	text-decoration: none;
+}
+.jazz-ui-wizard .wizardSteps.horizontal a .sectionLabel,
+.jazz-ui-wizard .wizardSteps.horizontal .inactiveStep .sectionLabel {
+	display: none;
+}
+.jazz-ui-wizard .wizardSteps.horizontal a.selected .sectionLabel {
+	display: inline-block;
+	padding-top: 6px;
+}
+
+* html .jazz-ui-wizard .wizardSteps.horizontal a , 
+* html .jazz-ui-wizard .wizardSteps.horizontal .inactiveStep {
+	height: 30px;
+}
+.jazz-ui-wizard .wizardSteps.horizontal .number {
+	margin-right: 8px;
+	width: 20px;
+	float: left;
+	padding: 7px 0 4px 11px;
+	min-height: 20px;
+}
+.jazz-ui-wizard .wizardSteps.horizontal a .number {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.jazz-ui-wizard .wizardSteps.horizontal a.selected .number,
+.jazz-ui-wizard .wizardSteps.horizontal .number {
+	color: #FFFFFF;
+	background-color: #0062FF;
+	border-radius: 50%;
+}
+.jazz-ui-wizard .wizardSteps a:hover {
+
+}
+.jazz-ui-wizard .wizardSteps.horizontal a.selected:hover {
+	background: url("../jazz.ui/graphics/Wizard/step-selected.png?etag=dLc73Ly") no-repeat top left;
+}
+.jazz-ui-wizard .wizardSteps a:hover , 
+.jazz-ui-wizard .wizardSteps a.selected:hover .sectionLabel {
+	text-decoration: none;
+}
+.jazz-ui-wizard .wizardSteps .inactiveStep {
+	color: #a5acb2;
+	cursor: default;
+}
+
+
+/* Vertical Wizard Steps */
+.jazz-ui-wizard .wizardSteps.vertical div {
+	padding: 12px 0 10px 25px;
+	border-bottom: 1px #E8EAEC solid;
+	width: 155px;
+}
+.jazz-ui-wizard .wizardSteps.vertical div.lastStep {
+	border-bottom: none;
+}
+.jazz-ui-wizard .wizardSteps.vertical .inactiveStep span {
+	color: #c6c6c6;
+	cursor: default;
+}
+.jazz-ui-wizard .wizardSteps.vertical .activeStep {	
+	background: url("../jazz.ui/graphics/Wizard/completed.gif?etag=dLc73Ly") no-repeat center left;
+	cursor: pointer;
+}
+.jazz-ui-wizard .wizardSteps.vertical .inactiveStep span,
+.jazz-ui-wizard .wizardSteps.vertical .activeStep span {
+	width: 147px;
+	display: block;
+}
+.jazz-ui-wizard .wizardSteps.vertical .activeStep {	
+	color: #0f62fe;
+}
+.jazz-ui-wizard .wizardSteps.vertical .activeStep.selected {
+	background: url("../jazz.ui/graphics/Wizard/current.gif?etag=dLc73Ly") no-repeat center left;
+	cursor: default;
+}
+.jazz-ui-wizard .wizardSteps.vertical .activeStep.selected span {
+	width: 150px;
+	display: block;
+}
+.jazz-ui-wizard .wizardSteps.vertical .activeStep.selected {
+	color: #161616;
+	font-weight: bold;
+}
+
+/* Step Groups */
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup {
+	padding: 8px 0 8px 0;
+	width: 182px;
+	border-top: 2px #E8EAEC solid;
+	border-bottom: none;
+}
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup > div.section  {
+	background: transparent url("../jazz.ui/graphics/Wizard/twisty-open.png?etag=dLc73Ly") no-repeat 0 2px;
+}
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup.first {
+	padding-top: 8px;
+	border-top: none;
+}
+.jazz-ui-wizard .wizardSteps.vertical div.section {
+	padding: 0 0 0 12px;
+	margin: 0;
+	border: none;
+	text-transform: uppercase;
+	font-size: 8pt;
+	color: #b6b6b6;
+	cursor: pointer;
+}
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup.collapsed:hover {
+	background-color: #FFF4E2;
+}
+.jazz-ui-wizard .wizardSteps.vertical div.section:hover,
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup.first > div.section,
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup.inProgress > div.section,
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup.completed > div.section {
+	color: #666666;
+}
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup.collapsed > div.section  {
+	background: transparent url("../jazz.ui/graphics/Wizard/twisty-closed.png?etag=dLc73Ly") no-repeat 0 2px;
+	display: block;
+}
+.jazz-ui-wizard .wizardSteps.vertical div.stepGroup.collapsed > div {
+	display: none;
+}
+.jazz-ui-wizard {
+	padding: 12px 0 10px;
+}
+.jazz-ui-wizard.dialogOnly {
+	padding: 0;
+}
+.jazz-ui-wizard .wizard-wrapper {
+	margin-top: 16px;
+}
+.jazz-ui-wizard .embedPanelArea,
+.jazz-ui-wizard .wizardPanelArea {
+ 	position: relative;
+	zoom: 1;
+	margin-left: auto;
+	margin-right: auto;
+}
+.jazz-ui-wizard .embedPanelArea {
+ 	padding: 0;
+	margin: 0;
+	width: 738px; /* Currently the setup wizard only supports embedded steps in vertical orientation */
+}
+.jazz-ui-wizard .wizardPanelArea {
+	padding: 0 58px 0 60px;
+	margin-top: -5px;
+}
+.jazz-ui-wizard .wizardPanelArea.vertical {
+	padding: 0;
+	margin: 0 20px 0 0;
+	float: right;
+	width: 738px;
+}
+
+.jazz-ui-wizard .wizardPanelArea.dialogOnly {
+	padding: 0;
+}
+
+.jazz-ui-wizard .wizardPanelArea > div.loading {
+	color: #D0D0D0;
+    font-size: 2em;
+    text-align: center;
+	margin-top: 100px;
+}
+.jazz-ui-wizard.dialogOnly .wizardNavigationArea {
+	top: unset;
+	min-height: unset;
+}
+
+.jazz-ui-wizard .wizardNavigationArea {
+	position: relative;
+	clear: both;
+	top: 10px;
+	min-height: 27px;
+}
+
+.jazz-ui-wizard .stepList {
+	padding: 12px 20px 0 20px;
+}
+
+.jazz-ui-wizard .pageTitle {
+	margin: 6px 0 15px 0;
+	font-size: 14pt;
+}
+
+.jazz-ui-wizard h2 {
+	font-size: 16pt;
+	font-weight: normal;
+	color: black;
+	margin-top: 0;
+	margin-bottom: 0.4em;
+}
+.jazz-ui-wizard h3 {
+	font-size: 10pt;
+	color: black;
+	margin-top: 0;
+}
+
+.jazz-ui-wizard ul {
+	list-style-type: none;
+}
+
+.jazz-ui-wizard-dialog .noDisplay {
+	display: none;
+}
+
+.jazz-ui-wizard .stepStatusWrapper {
+	float: right;
+	max-width: 450px;
+	margin:5px 0px;
+}
+.jazz-ui-wizard .stepStatus {
+	padding: 4px 5px 4px 5px;
+}
+
+.jazz-ui-wizard .noPadding {
+	padding: 0 2px 0 3px !important;
+}
+
+.jazz-ui-wizard-nav { 
+	position: relative;
+	overflow: hidden;
+	margin: 0 58px 0 58px;
+	padding-bottom: 32px;
+	padding-top: 10px;
+	border-top: 1px solid #cccccc;
+	zoom: 1;
+}
+.jazz-ui-wizard-nav.vertical { 
+	margin: 0 20px;
+}
+.jazz-ui-wizard-nav.dialogOnly {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.jazz-ui-wizard-nav .buttonArea {
+	float:right;
+}
+.jazz-ensemble-internal-wizards-ExportWidgetWizardStep1 {
+}
+
+.jazz-ensemble-internal-wizards-ExportWidgetWizardStep1 .message-site {
+	margin: 10px 0 5px 0;
+}
+
+.jazz-ensemble-internal-wizards-ExportWidgetWizardStep1 .content-site {
+	margin: 10px 0 5px 0;
+	overflow: hidden;
+}
+
+.jazz-ensemble-internal-wizards-ExportWidgetWizardStep1 .row {
+	overflow: hidden;
+	padding: 4px 0 4px 0;
+}
+
+.jazz-ensemble-internal-wizards-ExportWidgetWizardStep1 .field {
+	font-weight: bold;
+	float: left;
+	min-width: 50px;
+	line-height: 1.7em;
+	color: #666666;
+	padding: 0 10px 0 0;
+}
+.jazz-ensemble-internal-wizards-ExportWidgetWizardStep2 {
+}
+
+.jazz-ensemble-internal-wizards-ExportWidgetWizardStep2 .message-site {
+	margin: 10px 0 5px 0;
+}
+
+.jazz-ensemble-internal-wizards-ExportWidgetWizardStep2 .content-site {
+	margin: 10px 0 5px 0;
+	overflow: hidden;
+	font-family: monospace;
+}
+/*
+ * General
+ */
+.jazz-ensemble-internal-WidgetContainer-content > .loading-text {
+	margin: 5px 5px 5px 5px;
+	color: #bbbbbb;
+}
+
+/*
+ * Menu
+ */
+.jazz-ensemble-internal-WidgetContainer-menu .dijitMenuItemIcon {
+	margin: 1px 2px 2px 2px;
+	width: 16px !important;
+	vertical-align: middle;
+}
+
+/*
+ * Menu items
+ */
+.jazz-ensemble-internal-WidgetContainer-menu-appearance {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -114px -17px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-collapse {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -114px -34px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-copy {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -114px -51px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-duplicate {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -114px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-edit-content {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -114px -85px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-expand {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -0px -102px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-refresh {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -17px -102px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-settings {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -34px -102px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-opensocial {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -131px -0px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer-menu-export {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -85px -102px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+
+/*
+ * Trim
+ */
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-edit-button img {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -44px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-edit-button:hover img,
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-edit-button:focus img {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -33px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+	visibility: visible;
+}
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-maximize-button img {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -66px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-maximize-button:hover img,
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-maximize-button:focus img {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -55px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+	visibility: visible;
+}
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-restore-button img {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -88px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-restore-button:hover img,
+.jazz-ensemble-internal-WidgetContainer .jazz-ui-StyledBox-header  a.trim-restore-button:focus img {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -77px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+	visibility: visible;
+}
+
+/*
+ * Maximized
+ */
+.jazz-ensemble-internal-WidgetContainer.maximized .jazz-ensemble-internal-WidgetContainer-content {
+	border-top: 1px solid #e3e3e3;
+	margin-top: 1px;
+}
+.jazz-ui-dnd-moveCursor {
+	cursor: move !important;
+}
+.jazz-ui-dnd-handle {
+	cursor: move;
+}
+.jazz-ui-dnd-avatar {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+.jazz-ui-dnd-disabled .jazz-ui-dnd-handle {
+	cursor: default;
+}
+#jazz-ui-dnd-placeholder {
+	border: 1px dashed black;
+}.jazz-ensemble-internal-layout-Column {
+	float: left;
+	margin-right: -1px;
+	min-height: 5px;
+}
+.jazz-ensemble-internal-layout-Column .viewletColumnAvatar {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+.jazz-ensemble-internal-layout-Column .viewletColumnAvatar .header-buttons {
+	filter: none;
+	-moz-opacity: 1;
+	opacity: 1;
+}
+.jazz-ensemble-internal-layout-Column > div {
+	position: relative;
+	margin: 0 8px 10px 4px;
+	zoom: 1;
+}
+.jazz-ensemble-internal-layout-Column.column0 > div {
+	margin-left: 12px;
+}
+.jazz-ensemble-layout-column #jazz-ui-dnd-placeholder {
+	position: relative;
+	margin: 0 10px 10px 4px;
+}
+.jazz-ensemble-internal-layout-Column.column0 #jazz-ui-dnd-placeholder {
+	margin-left: 12px;
+}.jazz-ensemble-internal-layout-ResizableColumns {
+	position: relative;
+	zoom: 1;
+}
+.jazz-ensemble-internal-layout-ResizableColumns-Slider {
+	position: absolute;
+	top: 0;
+	width: 11px;
+	height: 200px;
+	cursor: e-resize;
+}
+.jazz-ensemble-internal-layout-ResizableColumns-Slider div {
+	height: 100%;
+	width: 5px;
+	margin: 0 3px;
+	background-color: #FEEED3;
+}.jazz-ensemble-layout-column {
+	margin-top: 8px;
+}
+.jazz-ensemble-layout-column .empty-tab-message {
+	padding-left: 10px;
+	font-size: 10pt;
+}
+.jazz-ensemble-layout-column .one-col {
+	width: 100%;
+}
+.jazz-ensemble-layout-column .two-col {
+	width: 50%;
+}
+.jazz-ensemble-layout-column .three-col {
+	width: 33%;
+}
+.jazz-ensemble-layout-column #column1.three-col {
+	width: 34%;
+}
+.jazz-ensemble-layout-column.column1 {
+	margin-left: 10px;
+}
+.jazz-ensemble-layout-column.maximized .jazz-ensemble-internal-layout-Column.normal {
+	display: none;
+}
+.jazz-ensemble-layout-column.maximized .jazz-ensemble-internal-layout-Column.maximized {
+	width: 100% !important;
+}
+.jazz-ensemble-layout-column.maximized .jazz-ensemble-internal-WidgetContainer.normal {
+	display: none;
+}
+.jazz-ensemble-WidgetPanel > .clear {
+	clear: both;
+}
+.com-ibm-team-dashboard-viewletpage {
+	margin-top: 8px;
+}
+.com-ibm-team-dashboard-viewletpage .empty-tab-message {
+	padding-left: 10px;
+	font-size: 10pt;
+}.com-ibm-team-dashboard-tab-menu .dijitMenuItemIcon {
+	height: 16px;
+	width: 16px;
+}
+.com-ibm-team-dashboard-tab-menu .dijitMenuItemIconCell {
+	text-align: center;	
+}
+.com-ibm-team-dashboard-tab-menu .addIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -51px -85px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tab-menu .refreshIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -109px -0px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tab-menu .renameIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -109px -17px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tab-menu .copyTabIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -68px -85px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tab-menu .duplicateTabIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -85px -85px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tab-menu .deleteIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -75px -51px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tab-menu .oneColumnIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -25px -0px;
+width: 24px;
+height: 24px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tab-menu .twoColumnsIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -0px -43px;
+width: 24px;
+height: 24px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tab-menu .threeColumnsIcon {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -50px -0px;
+width: 24px;
+height: 24px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tabs {
+	zoom: 1;
+	display: none;
+}
+.com-ibm-team-dashboard-tabs .left-curve {
+}
+.com-ibm-team-dashboard-tabs .right-curve {
+}
+.com-ibm-team-dashboard-tabs .tabArea {
+	position: relative;
+	zoom: 1;
+}
+.com-ibm-team-dashboard-tabs .tabArea .tabs {
+	position: relative;
+	zoom: 1;
+	padding: 0 12px 2px 10px;
+	min-height: 27px;
+}
+.dj_ff3 .com-ibm-team-dashboard-tabs .tabArea .tabs {
+	overflow: auto;
+}
+.com-ibm-team-dashboard-tabs .tabArea .options {
+	position: absolute;
+	right: 10px;
+	bottom: 2px;
+}
+.com-ibm-team-dashboard-tabs .tabArea .add-widget-img {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -0px -85px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+	vertical-align: middle;
+	margin: -1px 5px 0 0;
+}
+.com-ibm-team-dashboard-tabs .tabArea .add-widget-span {
+	margin-right: 3px;
+}
+.com-ibm-team-dashboard-tabs .tabArea a.add-new-tab {
+	float: left;
+	margin: 7px 0 0;
+	margin-right: 88px;
+	margin-left:1px;
+	height: 19px;
+	width: 16px;
+	border: 0;
+	font-weight: normal;
+	color: #85852C;
+	white-space: nowrap;
+}
+.com-ibm-team-dashboard-tabs .tabArea a.add-new-tab:hover {
+	color: #676532;
+}
+.com-ibm-team-dashboard-tabs .tabArea a.add-new-tab img {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -34px -85px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-tabs .tabArea a.add-new-tab:hover img {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -17px -85px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.dijit_a11y .com-ibm-team-dashboard-tabs .tabArea a.add-new-tab:hover img {
+	display: inline;
+}
+.com-ibm-team-dashboard-tabs .tabs {
+	overflow: hidden;
+	/*min-width: 64px;*/
+}
+.jazz-ui-moveCursor {
+	cursor: move !important;
+}
+.com-ibm-team-dashboard-tabs .draggableTabs #jazz-ui-dnd-placeholder {
+	float: left;
+	margin-top: 2px;
+	border: 0;
+}
+.com-ibm-team-dashboard-tabs .draggableTabs .tab {
+	margin-left: 1px;
+	border-bottom: 2px solid #e0e0e0;
+}
+.com-ibm-team-dashboard-tabs .draggableTabs .tab + .com-ibm-team-dashboard-tabs .draggableTabs .tab {
+	margin-left: 1px;
+}
+.com-ibm-team-dashboard-tabs .draggableTabs a.tab:focus {
+	outline: 2px solid #0f62fe;
+	outline-offset: -2px;
+}
+.com-ibm-team-dashboard-tabs .draggableTabs a.tab:active,
+.com-ibm-team-dashboard-tabs .draggableTabs a.tab .title:focus {
+	outline: none;
+}
+.com-ibm-team-dashboard-tabs .draggableTabs .tab, .draggableTabsAvatar .tab {
+	padding-left: 16px;
+	height: 26px;
+	float: left;
+	position: relative;
+	padding-right: 48px;
+	margin-top: 2px;
+	color: #393939;
+}
+.draggableTabsAvatar {
+	filter: alpha(opacity=65);
+	-moz-opacity: 0.65;
+	opacity: 0.65;
+}
+.dj_ie8 .draggableTabsAvatar .tab {
+	top: 2px;
+}
+.com-ibm-team-dashboard-tabs .tab {
+	cursor: pointer;	
+}
+.com-ibm-team-dashboard-tabs .tab .title {
+	display: block;
+	zoom: 1;
+}
+.draggableTabsAvatar .dijitInlineEditBoxDisplayModeHover {
+	background-color: transparent !important;
+	cursor: move !important;
+}
+.com-ibm-team-dashboard-tabs .tab .tabInnerDiv, .draggableTabsAvatar .tab .tabInnerDiv {
+	height: 26px;
+	float: left;
+}
+.com-ibm-team-dashboard-tabs .tab .tabTitle, .draggableTabsAvatar .tab .tabTitle  {
+	padding-top: 6px;
+	height: 19px;
+	line-height: 17px;
+	float: left;
+	white-space: nowrap;
+}
+.com-ibm-team-dashboard-tabs .draggableTabs a.tab:hover {
+	border-bottom: 2px solid #8d8d8d;
+}
+.com-ibm-team-dashboard-tabs a.tab:hover .tabInnerDiv, .com-ibm-team-dashboard-tabs a.tab.emphasis .tabInnerDiv, .draggableTabsAvatar .tab .tabInnerDiv {
+}
+.com-ibm-team-dashboard-tabs a.tab:hover .tabInnerDiv .tabTitle, .com-ibm-team-dashboard-tabs a.tab.emphasis .tabInnerDiv .tabTitle, .draggableTabsAvatar .tab .tabInnerDiv .tabTitle {
+}
+.com-ibm-team-dashboard-tabs .tab.dndOver {
+	background: url("../com.ibm.team.dashboard.web/graphics/MetaNav/images/tab-sprites.png?etag=dLdE2Eg") no-repeat 0 -500px;
+}
+.com-ibm-team-dashboard-tabs .tab.dndOver .tabInnerDiv {
+	background: url("../com.ibm.team.dashboard.web/graphics/MetaNav/images/tab-sprites.png?etag=dLdE2Eg") no-repeat right -550px;
+}
+.com-ibm-team-dashboard-tabs .tab.dndOver .tabTitle {
+	background: url("../com.ibm.team.dashboard.web/graphics/MetaNav/images/tab-sprites.png?etag=dLdE2Eg") repeat-x 0 -450px;
+}
+.com-ibm-team-dashboard-tabs .tabArea .draggableTabs .tab.selectedTab, .draggableTabsAvatar .tab.selectedTab {
+	border-bottom: 2px solid #0f62fe;
+	color: #161616;
+}
+.com-ibm-team-dashboard-tabs .tabArea .tab.selectedTab .tabInnerDiv, .draggableTabsAvatar .tab.selectedTab .tabInnerDiv {
+	height: 27px;
+}
+.com-ibm-team-dashboard-tabs .tabArea .tab.selectedTab .tabInnerDiv .tabTitle, .draggableTabsAvatar .tab.selectedTab .tabInnerDiv .tabTitle {
+}
+.com-ibm-team-dashboard-tabs .tabArea .tab .title::after {
+	display: block;
+  	content: attr(data-content);
+  	font-weight: bold;
+  	height: 1px;
+  	color: transparent;
+  	overflow: hidden;
+  	visibility: hidden;
+}
+.com-ibm-team-dashboard-tabs .tabArea .tab.selectedTab .tabTitle, .draggableTabsAvatar .tab.selectedTab .tabTitle, .com-ibm-team-dashboard-tabs .tabs .tab.selectedTab .tabTitle a {
+	font-weight: bold;
+}
+.com-ibm-team-dashboard-tabs .tabArea .tab.selectedTab .tabTitle .editable-tab-title, .com-ibm-team-dashboard-tabs .tabArea .tab.selectedTab .tabTitle .editable-tab-title:hover {
+	border: 0px;
+}
+.com-ibm-team-dashboard-tabs .tabWithMenu .tabInnerDiv .tabTitle, .draggableTabsAvatar .tabWithMenu .tabInnerDiv .tabTitle {
+	display: block;
+}
+.com-ibm-team-dashboard-tabs .tab .menu, .draggableTabsAvatar .tab .menu {
+	display: block;
+	position: absolute;
+	top: 6px;
+	right: 7px;
+	height: 18px;
+	width: 17px;
+}
+.com-ibm-team-dashboard-tabs .tab .menu a.button, 
+.draggableTabsAvatar .tab .menu a.button {
+	line-height: 11px;
+	height: 12px;
+	width: 12px;
+	min-width: 12px;
+}
+.com-ibm-team-dashboard-tabs .tab .menu a.button .caret {
+	margin-left: 2px;
+	margin-top: -1px;
+}
+.dj_ie7 .com-ibm-team-dashboard-tabs .tab .menu {
+	top: 5px;
+}
+.com-ibm-team-dashboard-content-web-catalog-drawer {
+	zoom: 1;
+	position: relative;
+	margin: 8px 10px 0 10px;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer >
+.cbd-top-border
+{
+	border-bottom: 2px solid #D3E4F2;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer >
+.cbd-top-section
+{
+	border-left: 2px solid #D3E4F2;
+	border-right: 3px solid #D3E4F2;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer 
+.cbd-corner 
+{
+	background-image: url("../com.ibm.team.dashboard.web/graphics/CatalogDrawer/images/catalog-drawer-sprites.png?etag=dLdE2Eg");
+	background-repeat: no-repeat;
+	height: 6px;
+	width: 6px;
+	z-index: 400;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer 
+.cbd-top-section
+.cbd-top-left
+{
+	background-position: left top;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer 
+.cbd-top-section
+.cbd-top-right
+{
+	background-position: right top;
+	position: absolute;
+	right: 0;
+	top: 0;	
+}
+.com-ibm-team-dashboard-content-web-catalog-drawer 
+.cbd-bottom-section
+.cbd-bottom-left
+{
+	background-position: left center;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer 
+.cbd-bottom-section
+.cbd-bottom-right
+{
+	background-position: right bottom;
+	position: absolute;
+	bottom: -1px;
+	right: 0;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer >
+.cbd-middle-container
+{
+	overflow: hidden;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer >
+.cbd-middle-container >
+.cbd-left-border
+{
+	position: absolute;
+	border-left: 2px solid #D3E4F2;
+	height: 487px; /* TODO: MP: Find way around this */
+	width: 1px;
+	z-index: 1;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer >
+.cbd-middle-container >
+.cbd-right-border
+{
+	position: absolute;
+	right: 0;
+	border-right: 2px solid #D3E4F2;
+	height: 487px; /* TODO: MP: Find way around this */
+	width: 1px;
+	z-index: 1;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer > 
+.cbd-middle-container >
+.cbd-border-section
+{
+	margin: 0 2px 0 2px;
+	padding: 1px;
+	background-color: #A8C9E5;
+	height: 487px; /* TODO: MP: Find way around this */
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer > 
+.cbd-middle-container >
+.cbd-border-section >
+.cbd-middle-section
+{
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	background-color: #FFFFFF;
+	height: 487px; /* TODO: MP: Find way around this */
+}
+.com-ibm-team-dashboard-content-web-catalog-drawer > 
+.cbd-middle-container >
+.cbd-border-section >
+.cbd-middle-section .filter-box-site {
+	margin-right: 28px;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer 
+.cbd-bottom-section
+{
+	border-left: 2px solid #D3E4F2;
+	border-right: 2px solid #D3E4F2;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer >
+.cbd-bottom-border
+{
+	border-bottom: 2px solid #D3E4F2;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer
+.cbd-clear {
+	clear: both;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer
+.cbd-close-button-site {
+	position: absolute;
+	right: 8px;
+	text-align: right;
+	top: 8px;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer
+.cbd-close-button-site 
+img {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -41px -102px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+	cursor: pointer;
+}
+
+.com-ibm-team-dashboard-content-web-catalog-drawer
+.cbd-close-button-site 
+img.hover {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -30px -102px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-content {
+	zoom: 1;
+}
+.com-ibm-team-dashboard-content .page-loading {
+	margin-top: 8px;
+	margin-left: 10px;
+	color: #bbbbbb;
+	font-size: 11pt;
+}
+.com-ibm-team-dashboard-content .meta-area {
+	position: relative;
+	zoom: 1;
+	min-height: 50px;
+	padding-bottom: 3px;
+}
+* html .com-ibm-team-dashboard-content .meta-area { 
+	height: 50px;
+}
+.com-ibm-team-dashboard-content .add-viewlet-panel {
+	position: relative;
+	clear: both;
+	zoom: 1;
+}
+.com-ibm-team-dashboard-ScopePreferenceProvider-loading {
+	margin: 5px;
+	color: #999999;
+}.com-ibm-team-dashboard-web-ui-internal-util-FilterPanel {
+	position: relative;
+	overflow: hidden;
+	margin: 1px;
+}
+.com-ibm-team-dashboard-web-ui-internal-util-FilterPanel > .close-button-wrapper {
+	float: right;
+}
+.com-ibm-team-dashboard-web-ui-internal-util-FilterPanel > .close-button-wrapper > a {
+	display: block;
+	width: 10px;
+	height: 20px;
+	margin-left: 5px;
+}
+.com-ibm-team-dashboard-web-ui-internal-util-FilterPanel > .close-button-wrapper > a > span{
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -41px -102px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;	
+	margin-top: 5px;
+}
+.com-ibm-team-dashboard-web-ui-internal-util-FilterPanel > .close-button-wrapper > a:hover > span {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -30px -102px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-web-ui-internal-util-IFrameContainer {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-util-IFrameContainer iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-util-IFrameContainer .not-loaded div.loading {
+	margin: 4px 4px 4px 4px;
+	color: #bbbbbb;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-util-IFrameContainer .not-loaded div.iframeDiv {
+	position: absolute;
+	height: 0px;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-util-IFrameContainer .loaded div.loading {
+	display: none;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-util-ViewletLogin 
+{
+	margin: 4px 4px 4px 4px;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-util-ViewletLogin
+.link 
+{
+	padding-top: 2px;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-util-ViewletLogin
+a 
+{
+	padding-left: 16px;
+	background: url("../com.ibm.team.dashboard.web/graphics/ViewletAdapter/icons/circle_arrow.gif?etag=dLdE2Eg") no-repeat left center;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter {
+	overflow: hidden;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .loading-text {
+	margin: 5px 5px 5px 5px;
+	color: #bbbbbb;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .edit-button-area {
+	display: none;
+	position: relative;
+	overflow: hidden;
+	background-color: #e3ecf2;
+	border-top: 1px solid #cbdde7;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .edit-button-area .buttons {
+	position: relative;
+	float: right;
+	margin: 0 0 1px -4px;
+	padding-right: 2px;
+	white-space: nowrap;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .edit-button-area input {
+	font-size: 9pt;
+	margin-left: 0px;
+	padding: 1px 3px 1px 3px;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .actions-area {
+	position: relative;
+	margin: 1px 0 2px 2px;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .actions-area .action {
+	position: relative;
+	float: left;
+	padding: 3px 0px 2px 0px;
+	white-space: nowrap;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .actions-area .action a {
+	height: 16px;
+	padding-left: 21px !important;
+	line-height: 17px;
+	padding-right: 8px;
+	margin-left: 1px;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .actions-area .action a img {
+	position: absolute;
+	vertical-align: middle;
+	left: 2px;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .actions-area .add a {
+	background: url("../com.ibm.team.dashboard.web/graphics/Dashboard/icons/add.gif?etag=dLdE2Eg") no-repeat left center;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .actions-area .delete a {
+	background: url("../com.ibm.team.dashboard.web/graphics/Dashboard/icons/delete.gif?etag=dLdE2Eg") no-repeat left center;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter .msg {
+	margin: 4px 4px 4px 4px;
+	color: #444;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter-remote-icon-connected,
+.com-ibm-team-dashboard-web-ui-ViewletAdapter-remote-icon-disconnected {
+	float: left;
+	height: 16px;
+	width: 16px;
+	margin-right: 2px;
+	cursor: default;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter-remote-icon-connected {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -109px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter-remote-icon-disconnected {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -109px -85px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-header a.com-ibm-team-dashboard-web-ui-ViewletAdapter-filter {
+	padding: 0;
+	height: 16px;
+	width: 16px;
+}
+.jazz-ui-StyledBox-header a.com-ibm-team-dashboard-web-ui-ViewletAdapter-filter > img {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -109px -51px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-header a.com-ibm-team-dashboard-web-ui-ViewletAdapter-filter:hover > img {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -109px -34px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+	visibility: visible;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter.zoomed .bodyContainer {
+	padding-top: 8px;
+}
+.com-ibm-team-dashboard-web-ui-ViewletAdapter.zoomed .edit-button-area {
+	margin-top: 8px;
+	background-color: inherit;
+}.com-ibm-team-dashboard-content {
+	position: relative;
+	-moz-user-select: text;
+}
+.com-ibm-team-dashboard-content td, 
+.com-ibm-team-dashboard-content input, 
+.com-ibm-team-dashboard-content textarea {
+	font-family: Arial, sans-serif;
+}
+.com-ibm-team-dashboard-content select {
+	font-family: inherit;
+}
+.com-ibm-team-dashboard-content .com-ibm-team-dashboard-left-nav {
+	margin-bottom: 8px;
+}
+.com-ibm-team-dashboard-content .no-bottom-margin {
+	margin-bottom: 0px;
+}
+.com-ibm-team-dashboard-content .no-bottom-margin li {
+	padding-bottom: 0px !important;
+}
+.com-ibm-team-dashboard-content-refresh {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -25px -43px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-web-ui-internal-Dashboard .project-icon {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -51px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-web-ui-internal-Dashboard .team-icon {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -92px -34px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-web-ui-internal-Dashboard .default-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -75px -34px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-web-ui-internal-Dashboard > .messageArea {
+	padding: 10px 9px 2px 9px;
+}
+.com-ibm-team-dashboard-web-ui-internal-Dashboard .noIcon .messageIcon {
+	display: none !important;
+}
+@media print {
+	/* hide current tab dropdown */
+	.com-ibm-team-dashboard-metanav .tabs .tab .menu,
+	.draggableTabsAvatar .tab .menu {
+		display: none;
+	}
+	
+	/* hide all tabs except current */
+	.com-ibm-team-dashboard-metanav .tabs .tab .tabTitle,
+	.draggableTabsAvatar .tab .tabTitle {
+		display: none;
+	}
+	
+	/* remove space for current tab dropdown */
+	.com-ibm-team-dashboard-metanav .tabs .tabWithMenu .tabInnerDiv a.tabTitle,
+	.draggableTabsAvatar .tabWithMenu .tabInnerDiv a.tabTitle {
+		padding-right: 0;
+		padding-left: 3px;
+		display: inherit;
+	}
+	
+	/* hide add tab link */
+	.com-ibm-team-dashboard-metanav .tabArea a.add-new-tab {
+		display: none;
+	}
+	
+	/* hide add viewlet link */
+	.com-ibm-team-dashboard-metanav .tabArea .options {
+		display: none;
+	}
+	
+	/* hide meta nav buttons */
+	.com-ibm-team-dashboard-metanav .header-links {
+		display: none;
+	}
+	
+	/* bump tab name up */
+	.com-ibm-team-dashboard-metanav .tab-wrapper {
+		margin-top: -5px !important;
+	}
+	
+	/* hide empty tab help message */
+	.com-ibm-team-dashboard-content .empty-tab-message .empty-tab-help-message {
+		display: none !important;
+	}
+	
+	.com-ibm-team-dashboard-content .one-col,
+	.com-ibm-team-dashboard-content .two-col,
+	.com-ibm-team-dashboard-content .three-col {
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	
+	/* separate tabs from content */
+	.com-ibm-team-dashboard-metanav .tabArea .tabs {
+/*		border-bottom: solid 1px #bbbbbb;  */
+	}
+	
+	/* fix viewlet trim */
+	.com-ibm-team-dashboard-content-viewlet .top-border {
+		margin-left: 0 !important;
+		margin-right: 2px !important;
+	}
+	.com-ibm-team-dashboard-content .blue .top-border {
+		border-top: solid 1px #7dbce2;
+		border-left: solid 1px #7dbce2;
+		border-right: solid 1px #7dbce2;
+	}
+	.com-ibm-team-dashboard-content .gray .top-border {
+		border-top: solid 1px #cccccc;
+		border-left: solid 1px #cccccc;
+		border-right: solid 1px #cccccc;
+	}
+	.com-ibm-team-dashboard-content .green .top-border {
+		border-top: solid 1px #90bb76;
+		border-left: solid 1px #90bb76;
+		border-right: solid 1px #90bb76;
+	}
+	.com-ibm-team-dashboard-content .purple .top-border {
+		border-top: solid 1px #bcb4ff;
+		border-left: solid 1px #bcb4ff;
+		border-right: solid 1px #bcb4ff;
+	}
+	.com-ibm-team-dashboard-content .teal .top-border {
+		border-top: solid 1px #66d4da;
+		border-left: solid 1px #66d4da;
+		border-right: solid 1px #66d4da;
+	}
+	.com-ibm-team-dashboard-content .orange .top-border {
+		border-top: solid 1px #ffaf84;
+		border-left: solid 1px #ffaf84;
+		border-right: solid 1px #ffaf84;
+	}
+	.com-ibm-team-dashboard-content .gold .top-border {
+		border-top: solid 1px #cec97e;
+		border-left: solid 1px #cec97e;
+		border-right: solid 1px #cec97e;
+	}
+	.com-ibm-team-dashboard-content .top-section {
+		margin-right: 2px;
+	}
+	.com-ibm-team-dashboard-content .blue .top-section {
+		border-right: solid 1px #7dbce2 !important;
+	}
+	.com-ibm-team-dashboard-content .gray .top-section {
+		border-right: solid 1px #cccccc !important;
+	}
+	.com-ibm-team-dashboard-content .green .top-section {
+		border-right: solid 1px #90bb76 !important;
+	}
+	.com-ibm-team-dashboard-content .purple .top-section {
+		border-right: solid 1px #bcb4ff !important;
+	}
+	.com-ibm-team-dashboard-content .teal .top-section {
+		border-right: solid 1px #66d4da !important;
+	}
+	.com-ibm-team-dashboard-content .orange .top-section {
+		border-right: solid 1px #ffaf84 !important;
+	}
+	.com-ibm-team-dashboard-content .gold .top-section {
+		border-right: solid 1px #cec97e !important;
+	}
+	.com-ibm-team-dashboard-content .middle-section {
+		border-right: none !important;
+		padding-right: 2px;
+	}
+	.dj_ie .com-ibm-team-dashboard-content .middle-section {
+		overflow: hidden;
+		zoom: 1;
+	}
+	.com-ibm-team-dashboard-content .bottom-section {
+		margin-right: 2px !important;
+		width: auto !important;
+	}
+	.com-ibm-team-dashboard-content .blue .bottom-section {
+		border-bottom: solid 1px #7dbce2 !important;
+		border-right: solid 1px #7dbce2 !important;
+		border-left: solid 1px #7dbce2 !important;
+	}
+	.com-ibm-team-dashboard-content .gray .bottom-section {
+		border-bottom: solid 1px #cccccc !important;
+		border-right: solid 1px #cccccc !important;
+		border-left: solid 1px #cccccc !important;
+	}
+	.com-ibm-team-dashboard-content .green .bottom-section {
+		border-bottom: solid 1px #90bb76 !important;
+		border-right: solid 1px #90bb76 !important;
+		border-left: solid 1px #90bb76 !important;
+	}
+	.com-ibm-team-dashboard-content .purple .bottom-section {
+		border-bottom: solid 1px #bcb4ff !important;
+		border-right: solid 1px #bcb4ff !important;
+		border-left: solid 1px #bcb4ff !important;
+	}
+	.com-ibm-team-dashboard-content .teal .bottom-section {
+		border-bottom: solid 1px #66d4da !important;
+		border-right: solid 1px #66d4da !important;
+		border-left: solid 1px #66d4da !important;
+	}
+	.com-ibm-team-dashboard-content .orange .bottom-section {
+		border-bottom: solid 1px #ffaf84 !important;
+		border-right: solid 1px #ffaf84 !important;
+		border-left: solid 1px #ffaf84 !important;
+	}
+	.com-ibm-team-dashboard-content .gold .bottom-section {
+		border-bottom: solid 1px #cec97e !important;
+		border-right: solid 1px #cec97e !important;
+		border-left: solid 1px #cec97e !important;
+	}
+	.com-ibm-team-dashboard-content .header {
+		margin-right: 0 !important;
+		border-right: none !important;
+		border-left: none !important;
+	}
+	.com-ibm-team-dashboard-content .blue .header {
+		border-bottom: solid 1px #deeef8 !important;
+	}
+	.com-ibm-team-dashboard-content .gray .header {
+		border-bottom: solid 1px #f2f2f2 !important;
+	}
+	.com-ibm-team-dashboard-content .green .header {
+		border-bottom: solid 1px #e3eedd !important;
+	}
+	.com-ibm-team-dashboard-content .purple .header {
+		border-bottom: solid 1px #eeecff !important;
+	}
+	.com-ibm-team-dashboard-content .teal .header {
+		border-bottom: solid 1px #d9f4f6 !important;
+	}
+	.com-ibm-team-dashboard-content .orange .header {
+		border-bottom: solid 1px #ffebe0 !important;
+	}
+	.com-ibm-team-dashboard-content .gold .header {
+		border-bottom: solid 1px #f3f1df !important;
+	}
+	.com-ibm-team-dashboard-content-viewlet .border-bottom {
+		display: none;
+	}
+}

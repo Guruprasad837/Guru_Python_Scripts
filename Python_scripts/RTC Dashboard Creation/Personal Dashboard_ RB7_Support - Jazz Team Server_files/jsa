@@ -1,0 +1,72 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2014, 2015. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+//(function () {
+	var jsaAsRootUrl  = "https://rb-alm-14-p.de.bosch.com/oidc/endpoint/jazzop";
+	var jsaAsCheckSessionUrl = "https://rb-alm-14-p.de.bosch.com/oidc/endpoint/jazzop/check_session_iframe";
+	var jsaSessionChangedUrl = "/ccm/jsa?sessionChanged=true";
+	var jsaClientId = "419f2f5c81f74ed1bd8d55eebbe7fad4";
+	var jsaSessionState = "ercSOYs9X1GN65DUAj5KGuotqD7Mm58hso/zZGM/V/Y=.36c9eee368218";
+	var jsaDebugEnabled = false;
+	var jsaOpIframe;
+	var jsaSessionChangedIframe;
+	var jsaTimerId;
+	
+	function jsaCheckSession() {
+	  if (jsaDebugEnabled) console.debug("RP: checking the session");
+	  var mes = jsaClientId + " " + jsaSessionState;
+	  var win = jsaOpIframe.contentWindow;
+	  if (jsaDebugEnabled) console.debug("RP: posting '" + mes + "' to " + jsaAsRootUrl);
+	  win.postMessage(mes, jsaAsRootUrl);
+	}
+	
+	function jsaRpReceiveMessage(e) {
+	  if (jsaDebugEnabled) console.debug("RP: received message '" + e.data + "' from " + e.origin);
+	  if (!jsaIsUriPrefix(e.origin, jsaAsRootUrl)) return;
+	  var status = e.data;
+	  if (jsaDebugEnabled) console.debug("RP: jsaCheckSession result: " + status);
+	  if (status == "changed") {
+		  jsaNotifyRp();
+		  clearInterval(jsaTimerId);
+	  }
+	}
+	
+	function jsaNotifyRp() {
+		if (jsaDebugEnabled) console.debug("notifying RP of session change at " + jsaSessionChangedUrl);
+		jsaSessionChangedIframe.src = jsaSessionChangedUrl;
+	}
+	
+	function jsaIsUriPrefix(source, target) {
+		if (source === target) {return true;}
+		if (source.length > target.length) {return false;}
+		if (source === target.substr(0, source.length) && target.charAt(source.length) === '/') {return true;}
+		return false;
+	}
+
+	function jsaStartSessionMonitoring(interval, debug) {
+	  // if not logged in, don't do anything
+	  if (jsaSessionState === 'UNKNOWN') {
+		  return;
+	  }
+	  
+	  jsaDebugEnabled = debug;
+	  jsaOpIframe = document.createElement('iframe');
+	  jsaOpIframe.id = 'op_jsaCheckSession_iframe';
+	  jsaOpIframe.hidden = true;
+	  jsaOpIframe.src = jsaAsCheckSessionUrl;
+	  document.body.appendChild(jsaOpIframe);
+
+	  jsaSessionChangedIframe = document.createElement('iframe');
+	  jsaSessionChangedIframe.id = 'rp_jsaSessionChangedIframe';
+	  jsaSessionChangedIframe.hidden = true;
+	  document.body.appendChild(jsaSessionChangedIframe);
+
+	  window.addEventListener("message", jsaRpReceiveMessage, false);
+	  jsaTimerId = setInterval("jsaCheckSession()", interval);
+	}
+//}());

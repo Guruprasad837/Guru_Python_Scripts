@@ -1,0 +1,2738 @@
+.jazz-ui-toolbar-Button {
+	display: inline-block;
+	margin-left: 4px;
+	-moz-user-select: none;
+	line-height: 1.3;
+}
+.dj_ie7 .jazz-ui-toolbar-Button {
+	display: inline;
+	vertical-align: middle;
+}
+.jazz-ui-toolbar-Button:first-child {
+	margin-left: 0;
+}
+.jazz-ui-toolbar-Button a.button {
+	min-width: 16px;
+	margin: 1px 1px;
+	padding: 2px 2px;
+	display: inline-block;
+	zoom: 1;
+}
+.jazz-ui-toolbar-Button-disabled:focus {
+	outline-color: #aaaaaa;
+}
+.jazz-ui-toolbar-Button .button-img {
+	color: #85852C;
+	height: 16px;
+	width: 16px;
+	max-height: 16px;
+	vertical-align: middle;
+	margin-top: -1px;
+}
+.jazz-ui-toolbar-Button-disabled .button-img {
+	filter: alpha(opacity=40);
+	-moz-opacity: 0.4;
+	opacity: 0.4;
+}
+.jazz-ui-toolbar-Button a.button:hover .button-img {
+	color: #676532;
+}
+.jazz-ui-toolbar-Button a.button:hover, .jazz-ui-toolbar-Button-pressed a.button, .jazz-ui-toolbar-Button.jazz-ui-MenuPopup a.button:hover a:not(.jazz-ui-toolbar-Button-disabled) {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #feb354;
+	background-color: #fedda8;
+	margin: 0;
+}
+.jazz-ui-toolbar-Button-pressed a.button:hover {
+	background-color: #fecc7e;
+}
+.jazz-ui-toolbar-Button a.jazz-ui-toolbar-Button-disabled:hover {
+	margin: 1px;
+	border: none;
+	background: none;
+}
+.jazz-ui-toolbar-Button a.button:hover {
+	text-decoration: none;
+}
+.jazz-ui-toolbar-Button .button-label {
+	/*vertical-align: middle;*/
+	margin: 0 2px 0 2px;
+}
+.jazz-ui-toolbar-Button.has-icon .button-label {
+	margin-left: 4px;
+}
+.jazz-ui-toolbar-Button a.button:hover .button-label, .jazz-ui-toolbar-Button-pressed .button-label {
+	color: black;
+}
+.jazz-ui-toolbar-Button-disabled .button-label, .jazz-ui-toolbar-Button a.jazz-ui-toolbar-Button-disabled:hover .button-label {
+	color: #808080;
+}
+a.jazz-ui-toolbar-Button-disabled:hover {
+	background: none;
+	border: 0;
+	margin: 1px 1px;
+}
+a.jazz-ui-toolbar-Button-disabled:hover {
+	cursor: default;
+}
+.jazz-ui-toolbar-Button-caret {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -99px -140px;
+width: 7px;
+height: 4px;
+transform: rotate(0.001deg);;
+}.jazz-ui-PagedTable .invisible {
+	visibility: hidden;
+}
+.jazz-ui-PagedTable .invisible a {
+	outline-style: none;
+}
+
+.jazz-ui-PagedTable .loading {
+	color: #bbbbbb;
+}
+
+.jazz-ui-PagedTable .hidden {
+	display: none;
+}
+
+.jazz-ui-PagedTable .loading-overlay .pageTable {
+	filter: alpha(opacity=50);
+	opacity: 0.50;	
+}
+
+.jazz-ui-PagedTable .loading-overlay .loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	text-align: center;
+	color: black;
+}
+
+.jazz-ui-PagedTable .loading-overlay .loadingInner {
+	background-color: #DBEB8F;
+	padding: 3px 5px;
+	-moz-border-radius: 3px;
+}
+
+.jazz-ui-PagedTable .content-area {
+	position: relative;
+	margin: 0px 0px -2px 0px;
+	zoom: 1;
+}
+
+.jazz-ui-PagedTable table {
+	padding: 0;
+	border-collapse: collapse;
+	border-spacing: 0 0;
+}
+
+.jazz-ui-PagedTable .headerMode {
+	border-spacing: 1px;
+	border-collapse: separate;
+}
+
+.jazz-ui-PagedTable table td {
+	vertical-align: top;
+	padding-bottom: 3px;
+}
+
+.jazz-ui-PagedTable div.footer {
+	margin-bottom: -4px;
+	text-align: center;
+	font-size: 8pt;
+	color: #333333;
+}
+
+.jazz-ui-PagedTable span.separator {
+	color: #999999;
+}
+
+.jazz-ui-PagedTable .errorText {
+	color: #990000;
+}
+
+.jazz-ui-PagedTable span.last {
+	padding-right: 1em; /* account for difference in length between "Next" and "Previous" */
+}
+
+/* Override the Button CSS for the 'First page' and 'Last page' buttons 
+ * so that we can size the button and position the arrow image correctly */
+.jazz-ui-PagedTable .jumpToPageButton a.button {
+	width: 12px;
+	height: 14px;	
+	min-width: 12px;
+	min-height: 14px;
+}
+
+.jazz-ui-PagedTable .jumpToPageButton a.button:hover {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.jazz-ui-PagedTable .jumpToPageButton a.button img {
+	margin-bottom: 12px;
+	margin-left: -2px;
+	height: 16px;
+	width: 16px;
+}
+
+
+.jazz-ui-PagedTable .jumpToPageButton a.jazz-ui-toolbar-Button-disabled:hover {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.jazz-ui-PagedTable .footer .jumpToPageButton {
+	vertical-align: middle;
+}
+
+.jazz-ui-PagedTable .footer .first .jumpToPageButton {
+	margin-right: -4px;
+}
+
+.jazz-ui-PagedTable .footer .last .jumpToPageButton {
+	margin-left: -4px;
+}
+
+.jazz-ui-PagedTable .footer .nextButton {
+	margin-left: 2px;
+	margin-right: 0px;
+}
+
+.jazz-ui-PagedTable .footer .prevButton {
+	margin-right: 3px;
+}
+.jazz-ui-PagedTable .footer .firstButtonImg {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -91px -62px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-PagedTable .footer .lastButtonImg {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -74px -79px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-PagedTable .footer .firstButtonImgDisabled {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -74px -62px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-PagedTable .footer .lastButtonImgDisabled {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -57px -79px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-PagedTableViewlet {
+	padding: 3px 4px 4px 3px;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-PagedTableViewlet .hidden {
+	display: none;
+}.jazz-ui-HoverPopup {
+	position: absolute;
+	z-index: 10000;
+}
+.jazz-ui-HoverPopup .wrapper {
+	position: relative;
+}
+.jazz-ui-HoverPopup .wrapper .corner {
+	position: absolute;
+}
+.jazz-ui-HoverPopup .wrapper .top-right {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -122px -140px;
+width: 4px;
+height: 4px;
+transform: rotate(0.001deg);;
+	top: 0;
+	right: 0;
+}
+.jazz-ui-HoverPopup .wrapper .top-left {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -117px -140px;
+width: 4px;
+height: 4px;
+transform: rotate(0.001deg);;
+	top: 0;
+	left: 0;
+}
+.jazz-ui-HoverPopup .wrapper .bottom-right {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -112px -140px;
+width: 4px;
+height: 4px;
+transform: rotate(0.001deg);;
+	bottom: 0;
+	right: 0;
+}
+.jazz-ui-HoverPopup .wrapper .bottom-left {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -107px -140px;
+width: 4px;
+height: 4px;
+transform: rotate(0.001deg);;
+	bottom: 0;
+	left: 0;
+}
+.jazz-ui-HoverPopup .content-wrapper {
+	margin-right: 1px;
+	margin-left: 1px;
+	padding: 0.2em 0.4em 0.2em 0.4em;
+	background-color: white;
+	overflow: auto;
+	position: relative;
+	zoom: 1;
+}
+.jazz-ui-HoverPopup .content {
+	zoom: 1;
+	overflow: hidden; /* For IE, it is showing scrollbars when it shouldn't cause it thinks the content is too big */
+}
+.jazz-ui-HoverPopup .arrow {
+	position: absolute;
+}
+.jazz-ui-HoverPopup .right .arrow {
+	left: -12px;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -8px -84px;
+width: 15px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-HoverPopup .left .arrow {
+	right: -12px;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -24px -84px;
+width: 15px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-HoverPopup .bottom .arrow {
+	top: -12px;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -40px -84px;
+width: 16px;
+height: 15px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-HoverPopup .top .arrow {
+	bottom: -12px;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -25px -67px;
+width: 16px;
+height: 15px;
+transform: rotate(0.001deg);;
+}
+
+.jazz-ui-HoverPopup .vert-trim1 {
+	margin: 0 4px;
+	padding-top: 2px;
+	background: url("../jazz.ui/graphics/HoverPopup/hp-sides2.png?etag=dLc73Ly") repeat-x left;
+}
+
+.jazz-ui-HoverPopup .vert-trim2 {
+	margin: 0 4px;
+	background-color: #a8c9e5;
+	padding-top: 1px;
+}
+
+.jazz-ui-HoverPopup .vert-trim3 {
+	margin: 0 3px;
+	border-right: 1px solid #a8c9e5;
+	border-left: 1px solid #a8c9e5;
+	background-color: white;
+	padding-top: 1px;
+}
+
+.jazz-ui-HoverPopup .right-outline {
+	padding-right: 2px;
+	background: url("../jazz.ui/graphics/HoverPopup/hp-sides.png?etag=dLc73Ly") repeat-y top right;
+}
+
+.jazz-ui-HoverPopup .left-outline {
+	padding-left: 2px;
+	background: url("../jazz.ui/graphics/HoverPopup/hp-sides.png?etag=dLc73Ly") repeat-y top left;
+}
+	
+.jazz-ui-HoverPopup .side-trim {
+	position: relative;
+	border-left: 1px solid #a8c9e5;
+	border-right: 1px solid #a8c9e5;
+	background-color: white;
+	zoom: 1;
+}
+
+.jazz-ui-PositionDiv {
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+.jazz-ui-ResourceHover .root{
+	position: relative;
+	margin: 3px 2px 2px 1px;
+}
+.jazz-ui-ResourceHover .hidden {
+	display:none;
+}
+.jazz-ui-ResourceHover .titleBar {
+	position: relative;
+	margin: 2px 15px 0 0;
+	overflow: hidden;
+	zoom: 1;
+	line-height: 1.1em;
+	font-size: 13.5pt;
+	color: #0f62fe;
+}
+.jazz-ui-ResourceHover .titleBar .titleIndent {
+	margin-left: 20px;
+}
+.jazz-ui-ResourceHover .titleBar .iconLink {
+	position: absolute;
+	width: 20px;
+	height: 16px;
+	top: 2px;
+	left: 0;
+}
+.jazz-ui-ResourceHover .titleBar .iconNode {
+	width: 16px;
+	height: 16px;
+}
+.jazz-ui-ResourceHover a.closeButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+}
+.jazz-ui-ResourceHover a.closeButton > span {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -129px -119px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+	margin: 3px;
+}
+.jazz-ui-ResourceHover a.closeButton:hover > span {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -118px -119px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-ResourceHover .dividerWrapper {
+	/* wrapper div is required for margins in IE */
+	margin: 7px 2px;
+	overflow: hidden;
+}
+.jazz-ui-ResourceHover .bottomDividerWrapper {
+	/* wrapper div is required for margins in IE */
+	margin: 1px 2px 5px;
+	overflow:hidden;
+}
+.jazz-ui-ResourceHover .divider {
+	padding-bottom: 1px;
+	background: url("../jazz.ui/graphics/ResourceLink/divider.png?etag=dLc73Ly") left repeat-x;
+	overflow: hidden;
+	line-height: 1px;
+	font-size: 1px;
+}
+.jazz-ui-ResourceHover .summarySection .loadingIframe {
+	visibility: hidden;
+}
+.jazz-ui-ResourceHover .summarySection {
+	display:table;
+}
+.jazz-ui-ResourceHover .summarySection .loading-wrapper {
+	position:absolute;
+	z-index:1000;
+}
+.jazz-ui-ResourceHover .summarySection .image-loading {
+	background: url("../jazz.ui/graphics/ResourceLink/spinner.gif?etag=dLc73Ly") center no-repeat;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.dj_ie .jazz-ui-ResourceHover .summarySection .loading-wrapper {
+	position:absolute !important;
+	left:50%;
+	top:50% !important;
+}
+.dj_ie .jazz-ui-ResourceHover .summarySection .image-loading {
+	left:-50%;
+	padding-left:16px;
+	position:relative !important;
+	top:-50% !important;
+}
+.jazz-ui-ResourceHover .bottomSection {
+	margin-left: 3px;
+}
+.jazz-ui-ResourceHover .toggleLink {
+	margin-top: 4px;
+}
+.jazz-ui-ResourceHover .toggleLink .chevron {
+	margin-right: 4px;
+}
+.jazz-ui-ResourceHover .showMore .chevron {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: transparent url("../jazz.ui/graphics/common/blue-chevron-down.svg?etag=dLc73Ly") center center no-repeat;
+}
+.jazz-ui-ResourceHover .showLess .chevron {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: transparent url("../jazz.ui/graphics/common/blue-chevron-up.svg?etag=dLc73Ly") center center no-repeat;
+}
+/*****************************STYLE THE LINK**********************************/
+a.jazz-ui-ResourceLink {
+	position: relative; /* keep position relative all the time to prevent excess reflows in non-IE browsers */
+	zoom: 1;
+	border-bottom: 1px solid transparent;
+}
+
+a.jazz-ui-ResourceLink:hover:after {
+	/* CSS to draw a little down triangle after the link */
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -4px;
+	content: "";
+	border: solid transparent;
+	border-width: 4px 4px 0 4px;
+	border-top-color: #0f62fe;
+}
+
+.dj_ie a.jazz-ui-ResourceLink {
+	position: static; /* no position relative when not hovering to prevent weird scrolling issues in IE (94912) */
+}
+a.jazz-ui-ResourceLink:hover {
+	position: relative !important;
+	border-bottom: 1px dotted #0f62fe;
+}
+.jazz-ui-ResourceHover .hidden {
+	display: none !important;
+}.jazz-ui-message-box {
+	position: relative;
+	overflow: hidden;
+	line-height: 16px;
+	zoom: 1;
+	color: #333333;
+	font-size: 9pt;
+}
+
+.jazz-ui-message-box-noDisplay {
+	display: none;
+}
+
+.jazz-ui-message-box .messageArea {
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 4px 6px;
+	padding: 5px 0 6px;
+	padding-right:6px;
+	padding-left: 24px;
+	zoom: 1;	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.jazz-ui-message-box .messageId {
+	color: #888;
+	padding: 0 8px;
+}
+
+.jazz-ui-message-box .messageDetails {
+	margin-top:5px;
+	padding-top:5px;
+	color: #333333;
+}
+
+.jazz-ui-message-box .messageSummary {
+	display: inline;
+	word-wrap: break-word;
+}
+
+.jazz-ui-message-box .detailsBox {
+	max-height: 300px;
+	display: none;
+	overflow: auto;
+	margin-top: 8px;
+}
+
+.jazz-ui-message-box .messageIcon {
+	position: absolute;
+	top: 5px;
+	left: 6px;
+}
+
+.jazz-ui-message-box .ERROR {
+	background-color: #FFF3F3;
+	border: 1px solid #FFADAD;
+	color: #DD0000;
+}
+.jazz-ui-message-box .ERROR .messageIcon {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -57px -45px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+
+.jazz-ui-message-box .ERROR .detailsBox {
+	border-top: 1px dotted #FFADAD;
+}
+
+.jazz-ui-message-box .INFO {
+	background-color: #F0FAFF;
+	border: 1px solid #95CCE8 ;
+	color: #000000;
+}
+.jazz-ui-message-box .INFO .messageIcon {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -74px -45px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+
+.jazz-ui-message-box .INFO .detailsBox{
+	border-top: 1px dotted #95CCE8;
+}
+
+.jazz-ui-message-box .OK {
+	background-color: #EDF8EB;
+	border: 1px solid #B8D9A3;
+	color: #008000;
+}
+.jazz-ui-message-box .OK .messageIcon {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -91px -45px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+
+.jazz-ui-message-box .OK .detailsBox {
+	border-top: 1px dotted #B8D9A3;
+}
+
+.jazz-ui-message-box .WARNING {
+	background-color: #FFFFEC;
+	border: 1px solid #D9D9B2;
+	color: #665600;
+}
+.jazz-ui-message-box .WARNING .messageIcon {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -57px -62px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+
+.jazz-ui-message-box .WARNING .detailsBox {
+	border-top: 1px dotted #D9D9B2;
+}
+
+.jazz-ui-message-box p {
+	margin: 0.5em 0;
+	clear:both;
+}
+
+.jazz-ui-message-box a.detailsLink {
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.jazz-ui-message-box a.closeLink {
+	display: block;
+	float: right;
+	height: 16px;
+	width: 16px;
+	margin-left: 3px;
+	cursor: pointer;
+}
+.jazz-ui-message-box a.closeLink > span {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -107px -119px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+	margin: 3px 0 0 4px;
+}
+.jazz-ui-message-box a.closeLink:hover > span {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -96px -119px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.notification-message-contentNode {
+	
+    margin: 5px 5px;
+}
+
+.notification-message-contentNode .jazz-ui-message-box .WARNING .messageIcon
+{
+	display: none;
+}
+
+.notification-message-contentNode .jazz-ui-message-box .messageArea {
+	padding: 5px 6px 6px 6px;
+}.jazz-ui-modalunderlay-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid: 1fr / 1fr;
+  place-items: center;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  content: "";
+  background-color: transparent;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+}
+.jazz-ui-modalunderlay-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid: 1fr / 1fr;
+  place-items: center;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  content: "";
+  background-color: initial;
+  opacity: 0;
+  visibility: hidden;
+  transition: background-color 0.72s cubic-bezier(0.4, 0.14, 1, 1), opacity 0.24s cubic-bezier(0.4, 0.14, 1, 1), visibility 0ms linear 0.24s;
+  pointer-events: auto;
+}
+.jazz-ui-modalunderlay-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(22, 22, 22, 0.5);
+  transition: background-color 0.72s cubic-bezier(0, 0, 0.3, 1), opacity 0.24s cubic-bezier(0, 0, 0.3, 1), visibility 0ms linear;
+}
+/* Menu 
+
+There are three areas of styling for the Menu:  
+ 
+ 1. The menu 
+ 	There are three types of menus:
+ 	i) Context Menu
+ 	ii) Drop down Menu
+ 	iii) Navigation Menu
+ 	All three types of menus are affected by the .dijitMenu class in which you can set the background-color, padding and border
+ 	.dijitMenu affects the drop down menu in TimeTextBox, Calendar, ComboBox and FilteringSelect
+  .dijitMenuTable - for padding - also affects Select widget 	
+
+ 2. The menu bar
+ 	.dijitMenuBar - for border, margins, padding, background-color of the menu bar
+ 	.dijitMenuBar .dijitMenuItem - for padding, text color of menu items in the menu bar (overrides .dijitMenuItem) 
+ 	
+ 3. Menu items - items in the menu.  
+ 	.dijitMenuItem - for color
+ 	.dijitMenuItemHover, .dijitMenuItemSelected - for background-color, border, text color, padding of a menu item or menubar item that has been hovered over or selected	
+ 	.dijitMenuItemActive - for background-color of an active (mousedown) menu item
+	td.dijitMenuItemIconCell - for padding around a  menu item's icon
+	td.dijitMenuItemLabel - for padding around a menu item's label	
+	.dijitMenuSeparatorTop - for border, top border, of the separator
+	.dijitMenuSeparatorBottom - for bottom margin of the separator
+	
+	Styles specific to ComboBox and FilteringSelect widgets: 
+	.dijitComboBoxMenu .dijitMenuItem - for padding and border of a menu item in a ComboBox or FilteringSelect widget's menu
+	.dijitComboBoxMenu .dijitMenuItemSelected- for text color, background-color and border of a menu item in a ComboBox or FilteringSelect widget's menu
+
+*/
+.claro .dijitMenuBar {
+  border: 1px solid #b5bcc7;
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  background-image: url("../dijit/themes/claro/images/standardGradient.png?etag=dImeJji");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  _background-image: none;
+}
+.claro .dijitMenu {
+  background-color: #ffffff;
+  border: 1px solid #759dc0;
+}
+.claro .dijitMenuItem {
+  color: #000000;
+}
+.claro .dijitMenuBar .dijitMenuItem {
+  padding: 6px 10px 7px;
+  margin: -1px;
+}
+.claro .dijitMenuBar .dijitMenuItemHover,
+.claro .dijitMenuBar .dijitMenuItemSelected {
+  border: solid 1px #759dc0;
+  padding: 5px 9px 6px;
+}
+/* this prevents jiggling upon hover of a menu item */
+.claro .dijitMenuTable {
+  border-collapse: separate;
+  border-spacing: 0 0;
+  padding: 0;
+}
+.claro .dijitMenu .dijitMenuItem td,
+.claro .dijitComboBoxMenu .dijitMenuItem {
+  padding: 2px;
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #ffffff;
+}
+/* hover over a MenuItem or MenuBarItem */
+.claro .dijitMenu .dijitMenuItemHover td,
+.claro .dijitMenu .dijitMenuItemSelected td,
+.claro .dijitMenuItemHover,
+.claro .dijitComboBoxMenu .dijitMenuItemHover,
+.claro .dijitMenuItemSelected {
+  border-color: #759dc0;
+  background-color: #abd6ff;
+  background-image: url("../dijit/themes/claro/images/standardGradient.png?etag=dImeJji");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  _background-image: none;
+}
+.claro .dijitMenuItemActive {
+  background-image: url("../dijit/themes/claro/images/activeGradient.png?etag=dImeJji");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  _background-image: none;
+}
+.dj_ie .claro .dijitMenuActive .dijitMenuItemHover,
+.dj_ie .claro .dijitMenuActive .dijitMenuItemSelected,
+.dj_ie .claro .dijitMenuPassive .dijitMenuItemHover,
+.dj_ie .claro .dijitMenuPassive .dijitMenuItemSelected {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  margin-top: -3px;
+}
+.claro td.dijitMenuItemIconCell {
+  padding: 2px;
+  margin: 0 0 0 4px;
+}
+.claro td.dijitMenuItemLabel {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.claro .dijitMenuExpand {
+  width: 7px;
+  height: 7px;
+  background-image: url("../dijit/themes/claro/images/spriteArrows.png?etag=dImeJji");
+  background-position: -14px 0;
+  margin-right: 3px;
+  margin-bottom: 4px;
+}
+.claro .dijitMenuSeparatorTop {
+  height: auto;
+  margin-top: 1px;
+  /* prevents spacing above/below separator */
+
+  border-bottom: 1px solid #b5bcc7;
+}
+.claro .dijitMenuSeparatorBottom {
+  height: auto;
+  margin-bottom: 1px;
+}
+/* the checked menu item */
+.claro .dijitCheckedMenuItem .dijitMenuItemIcon,
+.claro .dijitRadioMenuItem .dijitMenuItemIcon {
+  background-image: url("../dijit/themes/claro/form/images/checkboxRadioButtonStates.png?etag=dImeJji");
+  background-repeat: no-repeat;
+  background-position: -15px 50%;
+  /* unchecked checkbox */
+
+  width: 15px;
+  height: 16px;
+}
+.dj_ie6 .claro .dijitCheckedMenuItem .dijitMenuItemIcon,
+.dj_ie6 .claro .dijitRadioMenuItem .dijitMenuItemIcon {
+  background-image: url("../dijit/themes/claro/form/images/checkboxAndRadioButtons_IE6.png?etag=dImeJji");
+}
+.claro .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon {
+  background-position: 0 50%;
+  /* checked checkbox */
+
+}
+.claro .dijitRadioMenuItem .dijitMenuItemIcon {
+  background-position: -105px 50%;
+  /* unfilled circle */
+
+}
+.claro .dijitRadioMenuItemChecked .dijitMenuItemIcon {
+  background-position: -90px 50%;
+  /* filled circle */
+
+}
+/*ComboBox Menu*/
+.claro .dijitComboBoxMenu {
+  margin-left: 0;
+  background-image: none;
+}
+.claro .dijitMenu .dijitMenuItemSelected td,
+.claro .dijitComboBoxMenu .dijitMenuItemSelected {
+  color: #000000;
+  border-color: #759dc0;
+  background-color: #abd6ff;
+}
+.claro .dijitComboBoxMenuActive .dijitMenuItemSelected {
+  background-color: #7dbdfa;
+  /* TODO: why is this a different color than normal .dijitMenuItemSelected? */
+
+}
+.claro .dijitMenuPreviousButton,
+.claro .dijitMenuNextButton {
+  font-style: italic;
+}
+.claro .dijitMenuItemRtl .dijitMenuExpand {
+  background-position: -7px 0;
+  margin-right: 0;
+  margin-left: 3px;
+}
+.claro .dijitMenuItemRtl .dijitMenuItemIcon {
+  margin: 0 4px 0 0;
+}
+.jazz-ui-Menu {
+	border-collapse: collapse;
+}
+.claro .jazz-ui-Menu {
+	border: 0;
+}
+.claro .jazz-ui-MenuPopup.dijitPopup {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.jazz-ui-Menu-border {
+	border: 1px solid #A8C9E5;
+	margin-top: 1px;
+	border-radius: 4px;
+	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+	padding: 2px 1px 8px 1px;
+	position: relative;
+	background: white url("../jazz.ui/graphics/Menu/menu-bottom-gradient.png?etag=dLc73Ly") bottom repeat-x;
+}
+
+.jazz-ui-Menu-border > .wrapper {
+	position: relative;
+}
+.jazz-ui-Menu.dijitMenu {
+	border: 0;
+	background: none;
+	margin: 0;
+}
+.jazz-ui-Menu .dijitMenu {
+	border: 0;
+	background: none;
+	width: 100%;
+	margin: 0;
+}
+.dj_ie7 .jazz-ui-Menu .dijitMenu {
+	border-collapse: collapse;
+}
+.dj_webkit .jazz-ui-Menu .dijitMenu {
+	-webkit-box-shadow: none !important;	
+}
+.jazz-ui-Menu .dijitMenuItem {
+	line-height: 18px;
+	background-image: none;
+}
+.jazz-ui-Menu .dijitMenuItemIcon {
+	vertical-align:middle;
+	margin: -1px 3px 0 5px;
+}
+.dj_ie7 .jazz-ui-Menu .dijitMenuItemIcon {
+	margin-right: 0;
+}
+.claro .jazz-ui-Menu .dijitMenuItemLabel {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.jazz-ui-Menu .dijitMenu .dijitMenuItemSelected td,
+.jazz-ui-Menu .dijitMenu .dijitMenuItemHover td,
+.jazz-ui-Menu .dijitMenu.dijitMenuPassive .dijitMenuItemHover {
+	background-image: none;
+	background-color: #fedda8;
+	color: black;
+}
+.jazz-ui-Menu .dijitMenuSeparatorIconCell .dijitMenuSeparatorTop {
+	margin-left: 5px;
+}
+.jazz-ui-Menu .dijitMenuSeparatorLabelCell .dijitMenuSeparatorTop {
+	margin-right: 5px;
+}
+.jazz-ui-Menu .dijitMenuSeparatorTop {
+	height: 12px;
+	border: 0;
+	background: url("../jazz.ui/graphics/Menu/dots.png?etag=dLc73Ly") center center repeat-x;
+}
+.jazz-ui-Menu .dijitMenuSeparatorBottom {
+	display: none;
+}
+.jazz-ui-Menu .dijitMenuItem:focus {
+	outline: none;
+}
+.jazz-ui-Menu.selectable .dijitMenuItemIcon {
+	margin-left: 20px;
+}
+.jazz-ui-Menu .dijitMenu .dijitMenuItem td,
+.jazz-ui-Menu .dijitComboBoxMenu .dijitMenuItem {
+	border: none;
+}.jazz-ui-menu-MenuItem a.itemHref,
+.jazz-ui-menu-MenuItem a.itemHref:hover {
+	color: black;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+} 
+.jazz-ui-menu-MenuItem .dijitMenuItemIcon.no-icon {
+	width: 1px;
+	margin-right: -1px;
+}
+.jazz-ui-menu-MenuItem .MenuItemContent {
+	display: block;
+	padding-left: 1px;
+}
+.jazz-ui-menu-MenuItem .MenuItemContent > span {
+	display: block;
+	overflow: hidden;
+	padding-top: 2px;
+}
+html.dj_ie9 .jazz-ui-menu-MenuItem .MenuItemContent > span {
+	line-height: 1.5em;
+}
+.dj_gecko .jazz-ui-Menu .jazz-ui-menu-MenuItem .MenuItemContent > span {
+	padding-right: 41px;
+}
+.dj_gecko .jazz-ui-MegaMenu .jazz-ui-menu-MenuItem .MenuItemContent > span {
+	padding-right: 0;
+}
+.jazz-ui-menu-MenuItem .MenuItemContent .dijitMenuItemIcon,
+.jazz-ui-menu-MenuItem .MenuItemContent .menuItemAccessory {
+	margin-right: 6px;
+	margin-top: 1px;
+	float: left;
+}
+.jazz-ui-Menu.selectable .jazz-ui-menu-MenuItem.selected .bullet {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -57px -28px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+	position: absolute;
+	left: 2px;
+	margin-top: 1px;
+}
+
+.jazz-ui-menu-MenuItem.jazz-ui-menu-MenuItem--inline-content .MenuItemContent {
+	padding-top: 2px;
+	padding-bottom: 2px: 
+}
+.jazz-ui-menu-MenuItem.jazz-ui-menu-MenuItem--inline-content .MenuItemContent > * {
+	vertical-align: middle;
+	display: inline;
+}
+
+.jazz-ui-menu-MenuItem-checkedIcon {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -74px -28px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+
+.jazz-ui-menu-MenuItem-uncheckedIcon {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -91px -28px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}.jazz-ui-SimpleToolbar {
+	position: relative;
+}
+.jazz-ui-SimpleToolbar-item {
+	position: relative;
+	float: left;
+	margin-left: 4px;
+}
+.jazz-ui-SimpleToolbar-button {
+	zoom: 1;
+	min-width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin: 1px 1px;
+	display: block;
+}
+.dj_ie6 .jazz-ui-SimpleToolbar-button {
+	width: 20px;
+}
+.jazz-ui-SimpleToolbar-button-disabled:focus {
+	outline-color: #aaaaaa;
+}
+.jazz-ui-SimpleToolbar-button img {
+	color: #85852C;
+	margin-top: 2px;
+	padding: 0 2px 0 2px;
+	line-height: 20px;
+	max-height: 16px;
+	vertical-align: middle;
+}
+.jazz-ui-SimpleToolbar-button-disabled img {
+	filter: alpha(opacity=40);
+	-moz-opacity: 0.4;
+	opacity: 0.4;
+}
+a.jazz-ui-SimpleToolbar-button:hover img {
+	color: #676532;
+}
+a.jazz-ui-SimpleToolbar-button:hover, .jazz-ui-SimpleToolbar-button-pressed {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+.jazz-ui-SimpleToolbar-blue-border a.jazz-ui-SimpleToolbar-button:hover,
+.jazz-ui-SimpleToolbar-blue-border .jazz-ui-SimpleToolbar-button-pressed {
+	border: 1px solid #a5cadb;
+	background-color: #d9f0fb;
+	margin: 0;
+}
+.jazz-ui-SimpleToolbar-blue a.jazz-ui-SimpleToolbar-button:hover,
+.jazz-ui-SimpleToolbar-blue .jazz-ui-SimpleToolbar-button-pressed {
+	background-color: #f5f8fb;
+}
+.jazz-ui-SimpleToolbar-gray a.jazz-ui-SimpleToolbar-button:hover,
+.jazz-ui-SimpleToolbar-gray .jazz-ui-SimpleToolbar-button-pressed {
+	background-color: #d9d9d9;
+}
+.jazz-ui-SimpleToolbar-orange-border a.jazz-ui-SimpleToolbar-button:hover,
+.jazz-ui-SimpleToolbar-orange-border .jazz-ui-SimpleToolbar-button-pressed {
+	border: 1px solid #feb354;
+	background-color: #fedda8;
+	margin: 0;
+}
+.jazz-ui-SimpleToolbar-orange-border a.jazz-ui-SimpleToolbar-button-pressed:hover {
+	background-color: #fecc7e;
+}
+.jazz-ui-SimpleToolbar-orange a.jazz-ui-SimpleToolbar-button:hover,
+.jazz-ui-SimpleToolbar-orange .jazz-ui-SimpleToolbar-button-pressed {
+	background-color: #ffe0ba;
+}
+.jazz-ui-SimpleToolbar a.jazz-ui-SimpleToolbar-button-disabled:hover,
+.jazz-ui-SimpleToolbar-none .jazz-ui-SimpleToolbar-button, 
+.jazz-ui-SimpleToolbar-blue a.jazz-ui-SimpleToolbar-button:hover {
+	background: none;
+	border: 0;
+	margin: 1px 1px;
+}
+.jazz-ui-SimpleToolbar a.jazz-ui-SimpleToolbar-button-disabled:hover {
+	cursor: default;
+}
+.jazz-ui-SimpleToolbar-separator {
+	border-left:1px solid #999999;
+	width: 0;
+	height:16px;
+	margin-top:3px;
+}
+a.jazz-ui-SimpleToolbar-button:hover {
+	text-decoration: none;
+}
+.jazz-ui-SimpleToolbar-label {
+	vertical-align: middle;
+	margin: 0 3px;
+}
+a.jazz-ui-SimpleToolbar-button:hover .jazz-ui-SimpleToolbar-label {
+	color: black;
+}.dijitMenu tr.jazz-ui-menu-NodeMenuItem > td {
+	padding: 0;
+	cursor: default;
+}
+.dijitMenu tr.jazz-ui-menu-NodeMenuItem.dijitMenuItemHover {
+	background-color: transparent;
+}
+
+.dijitMenu tr.jazz-ui-menu-NodeMenuItem .menu-info,
+.dijitMenu tr.jazz-ui-menu-NodeMenuItem .menu-title {
+	color: #999999;
+	line-height: 16px;
+	margin: 6px 6px 2px 6px;
+	position: relative;
+}
+
+.dijitMenu tr.jazz-ui-menu-NodeMenuItem .menu-title {
+	font-size: 11px;
+}
+
+.dijitMenu tr.jazz-ui-menu-NodeMenuItem:first-child .menu-title,
+.dijitMenu .dijitMenuSeparator + tr.jazz-ui-menu-NodeMenuItem .menu-title {
+	margin-top: 3px;
+}.jazz-ui-FilterBox {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #A5ACB2;
+	min-height: 19px;
+	background-color: white;
+}
+.jazz-ui-FilterBox > .input-wrapper {
+	margin: 2px;
+	margin-left: 1px;
+	margin_right: 18px;
+	min-height: 15px;
+}
+.jazz-ui-FilterBox > .input-wrapper > .filterText {
+	font-family: inherit;
+	font-size: 1em;
+	min-height: 15px;
+	border: 0px none;
+	outline: none;
+}
+.jazz-ui-FilterBox > .input-wrapper > .helpMessage {
+	color: #9e9e9e;
+}
+.jazz-ui-FilterBox > a.clearFilter {
+	display: block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -8px -67px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+	position: absolute;
+	right: 2px;	
+	top: 2px;
+}
+.jazz-ui-FilterBox > a.clearFilter:hover {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -25px -50px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-FilterBox > a.hidden {
+	display: none;	
+}
+.jazz-ui-FilterBox[dir="rtl"] > a {left: 2px;right: auto !important;}
+
+.jazz-ui-FilterBox[dir="ltr"] > a {right: 2px;left: auto !important;} 
+
+.jazz-ui-FilterBox > .input-wrapper input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+.jazz-ui-PaginationControl {
+	text-align: center;
+}
+
+.jazz-ui-PaginationControl .number {
+	font-weight: bold;
+	color: black;
+} 
+
+.jazz-ui-PaginationControl .vertical-bar {
+	height: 14px;
+	margin: 0 6px 0 6px;
+	border-right: 1px solid #999999;
+} 
+
+.dj_ie7 .jazz-ui-PaginationControl .vertical-bar {
+	display: inline-block;
+} 
+
+.jazz-ui-PaginationControl .jazz-ui-toolbar-Button {
+	margin-left: 0;
+}
+
+.jazz-ui-PaginationControl .first-button {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -91px -79px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-PaginationControl .last-button {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -114px -0px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+
+/* Override the Button CSS for the 'First page' and 'Last page' buttons 
+ * so that we can size the button and position the arrow image correctly */
+.jazz-ui-PaginationControl .jumpToPageButton a.button {
+	width: 12px;
+	height: 1.25em;
+	min-width: 12px;
+	min-height: 14px;
+}
+
+.jazz-ui-PaginationControl .jumpToPageButton a.button:hover {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.jazz-ui-PaginationControl .jumpToPageButton a.button img.button-img {
+	margin-left: -2px;
+	height: 16px;
+	width: 16px;
+}
+
+.jazz-ui-PaginationControl .jumpToPageButton a.jazz-ui-toolbar-Button-disabled:hover {
+	margin-left: 3px;
+	margin-right: 3px;
+}.jazz-ui-MegaMenu {
+	margin-top: 1px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #a8c9e5;
+	background: white;
+	-moz-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+	zoom: 1;
+}
+.claro .jazz-ui-MegaMenuPopup.dijitPopup,
+.claro .jazz-app-ComponentMenuPopup.dijitPopup {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;	
+}
+.jazz-ui-MegaMenu .menu-wrapper {
+	background: url("../jazz.ui/graphics/Menu/menu-bottom-gradient.png?etag=dLc73Ly") bottom repeat-x;
+	padding-bottom: 12px;
+	margin: 1px 1px;
+	overflow: hidden;
+	position: relative;
+}
+.jazz-ui-MegaMenu table.menus {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 5px 0 3px 0;
+}
+.jazz-ui-MegaMenu table.menus td.column {
+	border-right: 1px solid #e5e5e5;
+	vertical-align: top;
+}
+.jazz-ui-MegaMenu table.menus td.column-last {
+	border-right: 0;
+}
+.jazz-ui-MegaMenu .first-column {
+	width: 265px;
+	padding: 5px 5px 2px 5px;
+}
+
+.jazz-ui-MegaMenu > .filter > .filter-area {
+	background-color: #e2edf5;
+	position: relative;
+	z-index: 2;
+}
+.jazz-ui-MegaMenu > .filter > .filter-border {
+	border-top: 1px solid #ffffff;
+	margin-bottom: -3px;
+	z-index: 2;
+	position: relative;
+	background: white;
+}
+.jazz-ui-MegaMenu > .filter > .filter-border > .inner {
+	margin: 0 1px;
+	border-bottom: 1px solid #f0f0f0;
+	border-top: 1px solid #d8d8d8;
+}
+.jazz-ui-MegaMenu .filter-wrapper {
+	overflow: hidden; 
+	position: relative;
+	padding-right: 5px;
+}
+.jazz-ui-MegaMenu .contribution-area{
+	float: right;
+}
+.jazz-ui-MegaMenu .jazz-ui-FilterBox {
+	width: 100%;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu {
+	width: 274px;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu-border {
+	background: none !important;
+	border: 0 !important;
+	margin: -5px 1px 0 1px;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	padding: 0;
+}
+.jazz-ui-MegaMenu table.menus td.column:first-child .jazz-ui-Menu-border {
+	margin-left: 0;
+}
+.jazz-ui-MegaMenu table.menus td.column-last .jazz-ui-Menu-border {
+	margin-right: 0;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu .dijitMenuItemLabel {
+	height: 18px;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu td {
+	word-wrap: break-word;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu .dijitMenuItemLabel,
+.jazz-ui-MegaMenu .jazz-ui-Menu .menu-title {
+	width: 259px;
+}
+.jazz-ui-MegaMenu .dijitMenuItem {
+	white-space: normal;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu tr.jazz-ui-menu-NodeMenuItem > td {
+	width: 275px;
+}
+.jazz-ui-MegaMenu .jazz-ui-menu-MenuItem a.itemHref {
+	min-width: 217px;
+}
+.jazz-ui-MegaMenu tr.jazz-ui-menu-MenuItem:first-child > td {
+	border-top: 3px solid white;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu .dijitMenuItemIcon {
+	height: 16px;
+	width: 16px;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu .menu-text {
+	color: #999999;
+	line-height: 22px;
+	margin: 0 5px 0 21px;
+}
+.showFilter.jazz-ui-MegaMenu > .filter {
+	display: block !important;
+}
+.showFilter.jazz-ui-MegaMenu .jazz-ui-Menu .menu-text {
+	margin: 0 9px 0 15px;
+}
+.showFilter.jazz-ui-MegaMenu .jazz-ui-Menu .menu-title {
+	margin: 6px 8px 2px 8px; 
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu tr:first-child .menu-text,
+.dijitMenuSeparator + tr .menu-text {
+	margin-top: 5px;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu .menu-text-no-indent {
+	margin-left: 14px;
+}
+.jazz-ui-MegaMenu .jazz-ui-Menu td {
+	font-size: 12px;
+}
+.dj_ie7 .jazz-ui-MegaMenu .jazz-ui-Menu .dijitMenuArrowCell {
+	display: none; /* Temporary hack to fix IE7 layout issues */ 
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible.hover .menu-title,
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible .menu-title:focus {
+	background-color: #fff4e2;
+}
+.jazz-ui-Menu .jazz-ui-MegaMenu-collapsible.dijitMenuItemSelected {
+	background-color: white;
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible-last div {
+	height: 8px;
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible-last:last-child div {
+	height: 8px;
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible .menu-title > div {
+	padding: 2px 4px 3px 2px;
+	border-top: 1px solid #f0f0f0;
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible .twistie {
+	float: left;
+	margin: 4px 0 5px;
+	margin-right: 5px;
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -148px -10px;
+width: 7px;
+height: 7px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible .twistie-title {
+	overflow: hidden;
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible .menu-title {
+	margin: 0 !important;
+	border-top: 1px solid #d8d8d8;
+	width: auto;
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible.collapsed .menu-title {
+	border-bottom: 0;
+}
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible.collapsed:last-child .menu-title {
+	border-bottom: 1px solid #d8d8d8;
+} 
+.jazz-ui-MegaMenu .jazz-ui-MegaMenu-collapsible.collapsed .twistie {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -140px -119px;
+width: 7px;
+height: 7px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-MenuItemGroup-hide {
+	display: none;
+}
+.jazz-ui-MegaMenu .pagination {
+	background: url("../jazz.ui/graphics/Menu/pagination-tray.png?etag=dLc73Ly") repeat-x;
+	margin-bottom: -12px;
+	padding-top: 1px;
+	font-size: 8pt;
+}.jazz-ui-MenuPopup .caret {
+	margin-left: 4px;
+	vertical-align: middle;
+} 
+.jazz-ui-MenuPopup.caret-only .caret {
+	margin-left: 5px;	
+}
+.jazz-ui-MenuPopup.menu-open {
+	color: white;
+}
+
+/* "wrapper" is the box that's shown around the caret when a resource is dirty. */
+.jazz-ui-MenuPopup .caret-wrapper {
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: -2px;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+
+	width: 14px;
+	height: 11px;
+	background-color: #565656;
+	border-radius: 2px;
+	padding: 3px 2px;
+	box-sizing: border-box;
+
+	/* we never want the dirty wrapper to be dimmed, so make sure it's opaque. This uses
+	!important since the rules that make it transparent are very nested and hard to
+	overcome without unreadably long selectors.*/
+	opacity: 1 !important;
+}
+
+/* This just adds an asterisk after the caret, which is also used to mark dirty resources */
+.jazz-ui-MenuPopup .caret-wrapper::after {
+	content: '*';
+	display: block;
+	position: absolute;
+	top: -3px;
+	right: -6px;
+}
+.jazz-ui-MenuPopup.menu-open .caret-wrapper, a.jazz-ui-MenuPopup:hover .caret-wrapper {
+	display: inline-block;
+}
+
+.jazz-ui-MenuPopup .caret-wrapper .caret {
+	margin: 0;
+	position: absolute;
+	top: 3px;
+	left: 2px;
+}
+.dj_ie7 .jazz-ui-MenuPopup .caret {
+	margin-top: 3px;
+}
+.jazz-ui-MenuPopup-caret {
+	display: inline-block;
+background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNSA2TDAgMGgxLjVMNSA0bDMuNS00SDEwTDUgNnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=");
+width: 10px;
+height: 6px;;
+}
+.jazz-ui-MenuPopup-dirtyCaret {
+	display: inline-block;
+background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNSA2TDAgMGgxLjVMNSA0bDMuNS00SDEwTDUgNnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=");
+width: 10px;
+height: 6px;;
+}
+.dijit_a11y .jazz-ui-MenuPopup-caret {
+	background-image: none;
+	vertical-align: baseline;
+}
+.dijit_a11y .jazz-app-BannerButtons .sprite-image {
+	display: none!important;
+}
+
+/*
+ * Originally this target only .jazz-ui-MenuPopup--large specifically. But that is only
+ * applied when buttons are added to the banner via app.config.buttons. Some apps inject
+ * plain links directly in the banner though (like My Stuff from RTC), so we want to
+ * target those too. They aren't menus, but should have the same button style appearance.
+ */
+.jazz-ui-PageTemplate .jazz-app-BannerButtons .jazz-ui-MenuPopup.jazz-ui-MenuPopup--large,
+.jazz-ui-MenuPopup--large,
+.jazz-app-BannerButtons > a {
+	display: inline-flex;
+	height:  32px;
+	padding: 0 12px;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.jazz-app-BannerButtons > a {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+/* IE doesn't render flex-item if they are display:inline, though that shouldn't matter. Just for the items to block to make it happy. */
+html.dj_ie .jazz-ui-MenuPopup--large > *,
+html.dj_ie .jazz-app-BannerButtons > a > * {
+	display: block;
+}
+
+/* html:not(.dj_ie)
+.jazz-ui-MenuPopup--large:focus {
+	outline: 2px solid white;
+	outline-offset: -2px;
+}
+ */
+/* White focus ring is from Carbon but is quite ugly when it flashes in repsonse to a click (momentary focus). Need to play with this still. */
+
+.jazz-ui-MenuPopup--large:hover,
+.jazz-ui-MenuPopup--large.menu-open,
+.jazz-app-BannerButtons > a:hover {
+	background-color: #353535;
+}
+
+.jazz-ui-StyledBox {
+  font-size: 9pt !important;
+  -moz-user-select: text;
+}
+.jazz-ui-StyledBox > .background > .bottom {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  z-index: -1;
+}
+.jazz-ui-StyledBox > .background > .collapsible {
+  position: relative;
+  overflow: hidden;
+}
+.jazz-ui-StyledBox-header {
+  padding: 2px 2px 0 4px;
+  font-weight: bold;
+  overflow: hidden;
+  min-height: 18px;
+}
+.jazz-ui-StyledBox-header > .icon {
+  float: left;
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+}
+.jazz-ui-StyledBox-header > .header-text {
+  margin: 1px 0 1px 1px;
+  overflow: hidden;
+}
+.jazz-ui-StyledBox-header > .header-text.true > div {
+  display: flex;
+  vertical-align: top;
+  max-width: 100%;
+}
+.jazz-ui-StyledBox-header > .header-text.true .header-primary {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jazz-ui-StyledBox-header .header-secondary {
+  color: #606060;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.jazz-ui-StyledBox-buttons {
+  float: right;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.jazz-ui-StyledBox-buttons .jazz-ui-SimpleToolbar-item {
+  margin-left: 0;
+}
+.jazz-ui-StyledBox-buttons a {
+  background-repeat: no-repeat;
+  background-position: center 3px;
+  filter: alpha(opacity=25);
+  opacity: 0.25;
+  height: 10px;
+  min-width: 10px;
+  margin: 0 !important;
+  padding: 3px 3px;
+}
+.dj_a11y .jazz-ui-StyledBox-buttons a::before {
+  content: attr(title);
+}
+.jazz-ui-StyledBox-buttons img {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+.dj_a11y .jazz-ui-StyledBox-buttons img {
+  display: none;
+}
+.dijit_a11y .jazz-ui-StyledBox-buttons a {
+  width: auto;
+}
+.jazz-ui-StyledBox-buttons a.close > img {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -42px -16px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-buttons a.close:hover > img {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -119px -102px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-buttons a.menu > img {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -22px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-buttons a.menu:hover > img {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -11px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-buttons a.expand > img {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -0px -136px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-buttons a.expand:hover > img {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -42px -67px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-buttons a.collapse > img {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -42px -50px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-buttons a.collapse:hover > img {
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -42px -33px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-StyledBox-buttons .menu-open {
+  background-color: #f7f7f7;
+}
+.jazz-ui-StyledBox-header.hover > .jazz-ui-StyledBox-buttons a,
+.jazz-ui-StyledBox-buttons a:focus {
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+}
+.dijit_a11y .jazz-ui-StyledBox-buttons a img {
+  visibility: visible;
+  line-height: 10px;
+}
+.jazz-ui-StyledBox-toggleHeader {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  z-index: 997;
+}
+.jazz-ui-StyledBox-toggleHeader > a {
+  font-size: 8pt;
+  height: 16px;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  text-decoration: none;
+}
+.jazz-ui-StyledBox-toggleHeader > a:hover {
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+  color: #676532;
+  text-decoration: underline;
+}
+.jazz-ui-StyledBox {
+  overflow: hidden;
+  position: relative;
+  /* BUST-OUT HACK STYLES */
+
+}
+.jazz-ui-StyledBox > .border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.jazz-ui-StyledBox > .border .shift {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.jazz-ui-StyledBox > .background {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  /* TRIMLESS */
+
+}
+.sbTrimless.jazz-ui-StyledBox > .background {
+  background-color: transparent;
+}
+.shadow.jazz-ui-StyledBox > .background {
+  margin: 2px 5px 5px 2px;
+}
+.shadow.jazz-ui-StyledBox > .background > .collapsible > .separator {
+  height: 1px;
+  background: #dcdcdc;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 0 -1px;
+}
+.no-separator.jazz-ui-StyledBox > .background > .collapsible > .separator {
+  display: none;
+}
+.sbFlatBlue.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background-color: #3087b3;
+  color: #ffffff;
+}
+.sbFlatBlue.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header .header-secondary {
+  color: #ecf0f2;
+}
+.sbFlatBlue.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header a {
+  color: #c8e6f7;
+}
+.sbFlatBlue.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header a:hover {
+  color: #ffc27e;
+}
+.sbBlue.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background: #e7f1f9 url("../jazz.ui/graphics/StyledBox/header-blue.png?etag=dLc73Ly") repeat-x center center;
+}
+.sbBlue.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header.hover {
+  background: #cee2f2 url("../jazz.ui/graphics/StyledBox/header-blue-hover.png?etag=dLc73Ly") repeat-x center center;
+}
+.showBackground.sbBlue.jazz-ui-StyledBox > .background {
+  background-color: #f2f8fc;
+}
+.sbGray.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background: #f6f6f6 url("../jazz.ui/graphics/StyledBox/header-gray.png?etag=dLc73Ly") repeat-x center center;
+}
+.sbGray.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header.hover {
+  background: #f0f0f0 url("../jazz.ui/graphics/StyledBox/header-gray-hover.png?etag=dLc73Ly") repeat-x center center;
+}
+.showBackground.sbGray.jazz-ui-StyledBox > .background {
+  background-color: #f6f6f6;
+}
+.sbGreen.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background: #eef8e9 url("../jazz.ui/graphics/StyledBox/header-green.png?etag=dLc73Ly") repeat-x center center;
+}
+.sbGreen.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header.hover {
+  background: #e3f3db url("../jazz.ui/graphics/StyledBox/header-green-hover.png?etag=dLc73Ly") repeat-x center center;
+}
+.showBackground.sbGreen.jazz-ui-StyledBox > .background {
+  background-color: #f1f8f1;
+}
+.sbPurple.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background: #eeedf4 url("../jazz.ui/graphics/StyledBox/header-lavender.png?etag=dLc73Ly") repeat-x center center;
+}
+.sbPurple.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header.hover {
+  background: #e3e2ed url("../jazz.ui/graphics/StyledBox/header-lavender-hover.png?etag=dLc73Ly") repeat-x center center;
+}
+.showBackground.sbPurple.jazz-ui-StyledBox > .background {
+  background-color: #f8f7ff;
+}
+.sbTeal.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background: #ebf5f4 url("../jazz.ui/graphics/StyledBox/header-teal.png?etag=dLc73Ly") repeat-x center center;
+}
+.sbTeal.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header.hover {
+  background: #dfefed url("../jazz.ui/graphics/StyledBox/header-teal-hover.png?etag=dLc73Ly") repeat-x center center;
+}
+.showBackground.sbTeal.jazz-ui-StyledBox > .background {
+  background-color: #f4fcfb;
+}
+.sbOrange.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background: #fff5e2 url("../jazz.ui/graphics/StyledBox/header-orange.png?etag=dLc73Ly") repeat-x center center;
+}
+.sbOrange.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header.hover {
+  background: #ffefd1 url("../jazz.ui/graphics/StyledBox/header-orange-hover.png?etag=dLc73Ly") repeat-x center center;
+}
+.showBackground.sbOrange.jazz-ui-StyledBox > .background {
+  background-color: #fff7f2;
+}
+.sbGold.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background: #fbf6db url("../jazz.ui/graphics/StyledBox/header-gold.png?etag=dLc73Ly") repeat-x center center;
+}
+.sbGold.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header.hover {
+  background: #f8f0c6 url("../jazz.ui/graphics/StyledBox/header-gold-hover.png?etag=dLc73Ly") repeat-x center center;
+}
+.showBackground.sbGold.jazz-ui-StyledBox > .background {
+  background-color: #fdfaf1;
+}
+.sbEditor.jazz-ui-StyledBox > .background {
+  background: #ffffff url("../jazz.ui/graphics/StyledBox/editor-top.png?etag=dLc73Ly") repeat-x;
+}
+.sbEditor.jazz-ui-StyledBox > .background > .bottom {
+  background: url("../jazz.ui/graphics/StyledBox/editor-bottom.png?etag=dLc73Ly") repeat-x bottom;
+}
+.sbYellow.sbEditor.jazz-ui-StyledBox > .background {
+  background: #ffffff url("../jazz.ui/graphics/StyledBox/yellow-box-top.png?etag=dLc73Ly") repeat-x;
+}
+.sbYellow.sbEditor.jazz-ui-StyledBox > .background > .bottom {
+  background: url("../jazz.ui/graphics/StyledBox/yellow-box-bottom.png?etag=dLc73Ly") repeat-x bottom left;
+}
+.editor-focus.jazz-ui-StyledBox > .background {
+  -moz-box-shadow: 0 0 0 2px rgba(168, 201, 229, 0.5);
+  -webkit-box-shadow: 0 0 0 2px rgba(168, 201, 229, 0.5);
+  box-shadow: 0 0 2px 2px rgba(168, 201, 229, 0.5);
+}
+.sbTrimless.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  background: transparent;
+}
+.sbTrimless.jazz-ui-StyledBox > .background > .collapsible > .content {
+  min-height: 30px;
+  padding-top: 6px;
+  border: 0;
+}
+.jazz-ui-StyledBox > .border {
+  /* BORDER BOTTOM*/
+
+  /*LEFT*/
+
+  /*RIGHT*/
+
+}
+.jazz-ui-StyledBox > .border .corner {
+  position: absolute;
+  z-index: 5;
+}
+.jazz-ui-StyledBox > .border .right {
+  right: 0%;
+}
+.jazz-ui-StyledBox > .border .bottom.corner,
+.jazz-ui-StyledBox > .border .dock-south {
+  bottom: 0%;
+}
+.jazz-ui-StyledBox > .border .vertical {
+  position: absolute;
+  height: 100%;
+}
+.jazz-ui-StyledBox > .border .horizontal {
+  position: absolute;
+  width: 100%;
+}
+.sbLight.shadow.jazz-ui-StyledBox > .border .top.left {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -6px -21px;
+width: 5px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbLight.shadow.jazz-ui-StyledBox > .border .top.right {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -16px -7px;
+width: 7px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbLight.shadow.jazz-ui-StyledBox > .border .bottom.left {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -0px -21px;
+width: 5px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbLight.shadow.jazz-ui-StyledBox > .border .bottom.right {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -16px -0px;
+width: 7px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbDark.shadow.jazz-ui-StyledBox > .border .top.left {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -24px -14px;
+width: 5px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbDark.shadow.jazz-ui-StyledBox > .border .top.right {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -8px -7px;
+width: 7px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbDark.shadow.jazz-ui-StyledBox > .border .bottom.left {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -24px -7px;
+width: 5px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbDark.shadow.jazz-ui-StyledBox > .border .bottom.right {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -0px -7px;
+width: 7px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbYellow.shadow.jazz-ui-StyledBox > .border .top.left {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -18px -21px;
+width: 5px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbYellow.shadow.jazz-ui-StyledBox > .border .top.right {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -8px -14px;
+width: 7px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbYellow.shadow.jazz-ui-StyledBox > .border .bottom.left {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -12px -21px;
+width: 5px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbYellow.shadow.jazz-ui-StyledBox > .border .bottom.right {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -0px -14px;
+width: 7px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.editor-focus.shadow.jazz-ui-StyledBox > .border .top.left {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -24px -0px;
+width: 5px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.editor-focus.shadow.jazz-ui-StyledBox > .border .top.right {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -8px -0px;
+width: 7px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.editor-focus.shadow.jazz-ui-StyledBox > .border .bottom.left {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -16px -14px;
+width: 5px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.editor-focus.shadow.jazz-ui-StyledBox > .border .bottom.right {
+background-image: url("../../sprite/jazz-ui-StyledBox?etag=EXKp3CVIGYJ");
+background-position: -0px -0px;
+width: 7px;
+height: 6px;
+transform: rotate(0.001deg);;
+}
+.sbLight.shadow.jazz-ui-StyledBox > .border {
+  color: #dcdcdc;
+}
+.sbDark.jazz-ui-StyledBox > .border {
+  color: #ababab;
+}
+.sbYellow.sbEditor.jazz-ui-StyledBox > .border {
+  color: #d6d6ad;
+}
+.editor-focus.sbEditor.jazz-ui-StyledBox > .border {
+  color: #a8c9e5;
+}
+.shadow.jazz-ui-StyledBox > .border .center {
+  margin: 0 7px 0 5px;
+}
+.shadow.jazz-ui-StyledBox > .border .top.center {
+  border-top: 1px solid;
+  border-bottom: 1px solid white;
+}
+.sbLight.shadow.jazz-ui-StyledBox > .border .bottom.center {
+  background: url("../jazz.ui/graphics/StyledBox/light-shadow-bottom.png?etag=dLc73Ly") repeat-x;
+  height: 5px;
+}
+.tweak-border.jazz-ui-StyledBox > .border .bottom.center > .line {
+  height: 1px;
+  border-bottom: 1px solid;
+}
+.sbDark.shadow.jazz-ui-StyledBox > .border .bottom.center {
+  background: url("../jazz.ui/graphics/StyledBox/dark-shadow-bottom.png?etag=dLc73Ly") repeat-x;
+  height: 5px;
+}
+.shadow.jazz-ui-StyledBox > .border .down {
+  top: 6px;
+}
+.shadow.jazz-ui-StyledBox > .border .up {
+  top: -12px;
+}
+.editor-focus.jazz-ui-StyledBox > .border .left.side,
+.shadow.jazz-ui-StyledBox > .border .left.side {
+  border-left: 1px solid;
+  border-right: 1px solid white;
+}
+.sbLight.shadow.jazz-ui-StyledBox > .border .right.side {
+  background: url("../jazz.ui/graphics/StyledBox/light-shadow-right.png?etag=dLc73Ly") repeat-y right;
+  width: 5px;
+}
+.sbDark.shadow.jazz-ui-StyledBox > .border .right.side {
+  width: 5px;
+  background: url("../jazz.ui/graphics/StyledBox/dark-shadow-right.png?etag=dLc73Ly") repeat-y right;
+}
+.tweak-border.jazz-ui-StyledBox > .border .right.side .line {
+  width: 1px;
+  border-right: 1px solid;
+}
+.jazz-ui-StyledBox.busted-out {
+  padding-bottom: 5px;
+}
+.jazz-ui-StyledBox.busted-out > .background {
+  z-index: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 2px;
+}
+.jazz-ui-StyledBox.busted-out > .border {
+  z-index: 1;
+}
+.wizard.jazz-ui-StyledBox > .top-border {
+  border-bottom: 1px solid #cfe9ef;
+}
+.wizard.jazz-ui-StyledBox > .background > .jazz-ui-StyledBox-header {
+  height: 75px;
+}
+.wizard.jazz-ui-StyledBox > .border-bottom {
+  border-top: 1px solid #f3f3f3;
+}
+.jazz-ui-StyledBox-toggleHeader.headerVisible > .showHeader {
+  display: none;
+}
+.jazz-ui-StyledBox-toggleHeader.headerVisible > .hideHeader {
+  display: inherit;
+}
+.showBackground.sbTrimless.jazz-ui-StyledBox > .background > .collapsible {
+  background-color: #f6f6f6;
+}
+.jazz-ui-Dialog {
+  position: relative;
+  grid-area: 1 / 1 / 2 / 2;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto;
+  background-color: #ffffff;
+  outline: 3px solid transparent;
+  outline-offset: -3px;
+  overflow: hidden;
+  max-height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: top center;
+  transform: translate3d(0, -24px, 0);
+  transition: opacity 0.24s cubic-bezier(0.4, 0.14, 1, 1), visibility 0ms linear 0.24s, transform 0.24s cubic-bezier(0.4, 0.14, 1, 1);
+  pointer-events: auto;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.jazz-ui-Dialog.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateZ(0);
+  transition: opacity 0.24s cubic-bezier(0, 0, 0.3, 1), visibility 0ms linear, transform 0.24s cubic-bezier(0, 0, 0.3, 1);
+}
+.jazz-ui-Dialog.modeless {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.jazz-ui-Dialog.front-modal {
+  box-shadow: unset;
+}
+.jazz-ui-Dialog.back .jazz-ui-Dialog-footer button {
+  background-color: #e0e0e0;
+  color: #6f6f6f;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-header {
+  grid-area: 1 / 1 / 2 / 2;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 48px;
+  margin-bottom: 8px;
+  min-height: 27px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-header .jazz-ui-Dialog-heading {
+  margin-bottom: 4px;
+  font-size: 1.25rem;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-header .jazz-ui-Dialog-label {
+  margin-bottom: 4px;
+  font-size: .75rem;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-header .jazz-ui-Dialog-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 48px;
+  width: 48px;
+  padding: 12px;
+  border: 2px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: initial;
+  transition: background-color 0.11s cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-header .jazz-ui-Dialog-close-button:hover {
+  background-color: #e5e5e5;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-header .jazz-ui-Dialog-close-button:focus {
+  outline: none;
+  border-color: #0f62fe;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-header .jazz-ui-Dialog-close-button .jazz-ui-Dialog-close-button-icon {
+background-image: url("data:image/svg+xml;base64,PHN2ZyBmb2N1c2FibGU9ImZhbHNlIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiBhcmlhLWxhYmVsPSJjbG9zZSB0aGUgbW9kYWwiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHJvbGU9ImltZyIgY2xhc3M9ImJ4LS1tb2RhbC1jbG9zZV9faWNvbiIgc3R5bGU9IndpbGwtY2hhbmdlOiB0cmFuc2Zvcm07Ij48cGF0aCBkPSJNMjQgOS40TDIyLjYgOCAxNiAxNC42IDkuNCA4IDggOS40IDE0LjYgMTYgOCAyMi42IDkuNCAyNCAxNiAxNy40IDIyLjYgMjQgMjQgMjIuNiAxNy40IDE2IDI0IDkuNHoiPjwvcGF0aD48L3N2Zz4=");
+width: 20px;
+height: 20px;;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-content {
+  grid-area: 2 / 1 / 3 / 2;
+  overflow: auto;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-content-padding-full {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  margin-bottom: 48px;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-content-padding-sides {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-progress {
+  background-color: initial;
+  opacity: 0;
+  display: none;
+  transition: background-color 0.72s cubic-bezier(0, 0, 0.3, 1), opacity 0.24s cubic-bezier(0, 0, 0.3, 1), visibility 0ms linear 0.24s;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-progress.is-visible {
+  color: #ffffff;
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  background-color: rgba(22, 22, 22, 0.8);
+  transition: background-color 0.72s cubic-bezier(0.4, 0.14, 1, 1), opacity 0.24s cubic-bezier(0.4, 0.14, 1, 1), visibility 0ms linear;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-progress .jazz-ui-Dialog-spinner {
+  animation: 690ms infinite linear dialog-progress-spinner;
+background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9Ijg4IiB3aWR0aD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNDQiIGN5PSI0NCIgcj0iNDAiIHN0cm9rZT0iIzBmNjJmZSIgZmlsbD0idHJhbnNwYXJlbnQiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWRhc2hhcnJheT0iMjEwIi8+PC9zdmc+");
+width: 88px;
+height: 88px;;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-progress .jazz-ui-Dialog-progressText {
+  margin-top: 6px;
+}
+.jazz-ui-Dialog .jazz-ui-Dialog-footer {
+  overflow: hidden;
+}
+.jazz-ui-Dialog-moveCursor {
+  cursor: move !important;
+}
+/*******************************/
+/* animation                   */
+/*******************************/
+@keyframes dialog-progress-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.jazz-ui-Tree .treeBranch {
+	position: relative;
+	overflow: hidden;
+	clear:left;
+}
+.jazz-ui-Tree .treeBranch .twistie {
+	cursor: pointer;
+	float: left;
+	margin:4px 6px 1px;
+	margin-left: 2px;
+	position:relative;
+	outline-style: none;
+}
+.jazz-ui-Tree .treeBranch .row {
+	margin: 1px 0 1px 0;
+}
+.jazz-ui-Tree .treeBranch .leaf .body,
+.jazz-ui-Tree .closed .body {
+	display: none;
+}
+.jazz-ui-Tree .treeBranch .leaf .twistie {
+	visibility: hidden;
+}
+.jazz-ui-Tree .open .twistie {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -148px -42px;
+width: 7px;
+height: 7px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-Tree .closed .twistie {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -148px -34px;
+width: 7px;
+height: 7px;
+transform: rotate(0.001deg);;
+}
+
+
+
+
+
+
+
+.jazz-ui-Tree .simpleItem {
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+}
+.jazz-ui-Tree .simpleItem .icon {
+	background-position:left center;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	height:16px;
+	min-height:16px;
+	width:16px;
+	padding-right: 0.5em;
+}
+.com-ibm-team-workitem-query-parameter-condition-page {
+	position: relative;
+}
+.com-ibm-team-workitem-query-parameter-condition-page .header-section {
+    border-bottom: 1px solid #D4D4D4;
+}
+.com-ibm-team-workitem-query-parameter-condition-page .info-section {
+    position: relative;
+    line-height: 15px;
+    margin-bottom: 15px;
+    min-height: 50px;
+}
+.com-ibm-team-workitem-query-parameter-condition-page .info-section .wizard-banner {
+    float: right;
+}
+.com-ibm-team-workitem-query-parameter-condition-page .info-text {
+	font-weight: bold;
+    line-height: 25px;
+}
+.com-ibm-team-workitem-query-parameter-condition-page .top-section {
+	padding: 10px 10px 0px 0px;
+}
+.com-ibm-team-workitem-query-parameter-condition-page .header {
+    position: relative;
+    padding-left: 0px;
+}
+.com-ibm-team-workitem-query-parameter-condition-page .header .header-text {
+    position: relative;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.com-ibm-team-workitem-query-parameter-condition-page .header .operator-text {
+    position: relative;
+    line-height: 15px;
+}
+.com-ibm-team-workitem-query-parameter-condition-page .middle-section {
+    position: relative;
+    background-color:#92bed3;
+    height: 65%;
+}
+
+.com-ibm-team-workitem-query-parameter-condition-page .condition-section {
+    position: relative;
+    border: 1px solid white;
+    background-color:#ffffff;
+    word-wrap: break-word;
+    height: 100%;
+}
+.com-ibm-team-workitem-query-parameter-summary-page {
+	position: relative;
+	height: 280px;
+}
+.com-ibm-team-workitem-query-parameter-summary-page .header-section {
+    border-bottom: 1px solid #D4D4D4;
+}
+.com-ibm-team-workitem-query-parameter-summary-page .info-section {
+   position: relative;
+   line-height: 15px;
+   padding: 0px 10px 0px 10px;
+   margin: 0px 10px 6px 10px;
+   min-height: 50px;
+}
+.com-ibm-team-workitem-query-parameter-summary-page  .info-section .wizard-banner {
+    float: right;
+    margin: -5px -20px 0px 5px;
+}
+.com-ibm-team-workitem-query-parameter-summary-page  .info-text {
+	font-weight: bold;
+    line-height: 25px;
+    margin-left: -10px;
+}
+.com-ibm-team-workitem-query-parameter-summary-page  .middle-section {
+    padding: 16px;
+    height: 65%;
+}
+.com-ibm-team-workitem-query-parameter-summary-page .summary-section {
+    position: relative;
+    line-height: 15px;
+    max-height: 175px;
+    width: auto;
+    overflow: auto;
+    padding: 5px;
+    border: 1px solid #D4D4D4;
+    height: 100%;
+}
+.com-ibm-team-workitem-query-parameter-summary-page  .summary-section ul {
+    margin: 0px 0px 0px -15px;
+}
+.com-ibm-team-workitem-query-parameter-summary-page  .summary-section li {
+    line-height: 1.3em;
+}.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget {
+	position: relative;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .QueryTreeArea {
+ 	height: 253px;
+	margin-top: 6px;
+	padding: 0.2em;
+	border: 1px solid #D4D4D4;
+	overflow: auto;
+	position: relative;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .param-page-wrapper,
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .content-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .loading {
+	color: #bbbbbb;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .padded {
+	padding: 5px;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .AreaPicker {
+	margin-top: 6px;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeIcon {
+	text-align: center;
+    background-position : left;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;	
+	margin-right: 5px;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .simpleFolder {
+    background-image : url("../com.ibm.team.workitem.viewlets.web/graphics/shared/icons/folder.gif?etag=dLdT7CQ");
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .teamFolder {
+    background-image : url("../com.ibm.team.workitem.viewlets.web/graphics/shared/icons/teamarea_folder.gif?etag=dLdT7CQ");
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .query {
+    background-image : url("../com.ibm.team.workitem.viewlets.web/graphics/shared/icons/wrkitmqur_obj.gif?etag=dLdT7CQ");
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeIsLast, 
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeNode {
+    background-image : none;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeExpandoOpened {
+	text-align: center;
+    background-image : url("../com.ibm.team.workitem.viewlets.web/graphics/shared/icons/tree-expand.gif?etag=dLdT7CQ");
+    background-position : left;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;	
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeExpandoLeaf {
+	text-align: center;
+    background-image : none;
+    background-position : left;
+	width: 16px;
+	height: 16px;	
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeExpandoClosed {
+	text-align: center;
+    background-image : url("../com.ibm.team.workitem.viewlets.web/graphics/shared/icons/tree-collapse.gif?etag=dLdT7CQ");
+    background-position : left;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;	
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeContent {
+    padding-top: 0px;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeContent:hover {
+    background-color: #E5EFF5;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .selectedNode {
+    background-color: #B0CEFF;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .selectedNode:hover {
+    background-color: #D5E7F2;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .dijitTreeLabelFocused {
+	outline-color: invert;
+	outline-style: none;
+	outline-width: 0px;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .query-description {
+	min-height: 32px;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-utils-WorkItemQueryChooserWidget .query-description-title {
+	margin-top: 8px;
+	color: gray;
+}.jazz-ui-ListBox {
+	width: auto;
+	height: auto;
+	border: 1px solid #7f9db9;
+	background-color: #FFFFFF;
+	overflow: auto;
+	padding: 3px 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.jazz-ui-ListBox .message-area {
+	color: #BBBBBB;
+	display: none;
+	margin: 2px 0 0 4px;
+}
+
+.jazz-ui-ListBox .content-area {
+	padding: 1px;
+}
+
+.jazz-ui-ListBox .content-area a.entry {
+	cursor: default;
+	white-space: nowrap;
+	padding: 0 5px;
+	color: black;
+	text-decoration: none;
+	min-height: 18px;
+}
+
+.jazz-ui-ListBox .content-area a.entry:hover {
+    background-color: #FFF4E2;
+}
+
+.jazz-ui-ListBox .content-area .selected {
+    background-color: #FFEACF !important;
+}
+
+.jazz-ui-ListBox .content-area a.entry:active,
+.jazz-ui-ListBox .content-area a.entry:focus {
+	outline: black dotted thin;
+}
+
+.jazz-ui-ListBox .content-area .entry-label {
+	margin: 0px 0px 0px 3px;
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+.jazz-ui-ListBox .entry-image {
+	height: 16px;
+	width: 16px;
+}
+
+.jazz-ui-internal-SwapList {
+	position: relative;
+}
+
+.jazz-ui-internal-SwapList table {
+	width: 100%;
+}
+
+.jazz-ui-internal-SwapList .special-variable {
+	color: #0000A3;
+}
+
+.jazz-ui-internal-SwapList .unselected-list-title,
+.jazz-ui-internal-SwapList .selected-list-title {
+	margin: 0 0 5px 0;
+}
+
+.jazz-ui-internal-SwapList .list-buttons-area {
+	vertical-align: top;
+	width: 130px;
+}
+
+.jazz-ui-internal-SwapList .list-buttons-area button {
+	margin: 0 5px 8px 5px;
+	min-width: 105px;
+	overflow: visible;
+	padding: 1px 6px;
+	white-space: nowrap;
+}
+
+.jazz-ui-internal-SwapList .list-buttons-area .add-buttons-area {
+	text-align: center;
+}
+
+.jazz-ui-internal-SwapList .list-buttons-area .remove-buttons-area {
+	text-align: center;
+	margin: 16px 0px 0px 0px;
+}
+
+.jazz-ui-internal-SwapList .list-buttons-area .move-buttons-area {
+	text-align: center;
+	margin: 15px 0px 0px 0px;
+	display: none;
+}
+
+.jazz-ui-internal-SwapList .count-area {
+	font-size: 8pt;
+	text-align: center;
+}
+
+.jazz-ui-internal-SwapList .count-area .count-text {
+	color: #0f62fe;
+}
+
+.jazz-ui-SwapListDialog .dialog-buttons-area {
+	text-align: right;
+	margin: 0 10px 10px 0;
+}.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable {
+	width: 100%;
+	table-layout: fixed;
+}
+
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewletTooltip .hidden {
+	display: none;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable td.iconCell {
+	width: 16px;
+	padding-bottom: 0;
+}
+
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable div.iconContainer {
+	position: relative; /* reset coords for overlay img */
+}
+
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable td.expandCell {
+	width: 16px;
+	padding-bottom: 0;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable td.expandCell a {
+	display: block;
+	height: 16px;
+	width: 16px;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable td.expandCell a.open {
+	background: url("../com.ibm.team.workitem.viewlets.web/graphics/work-items/images/twistie-open.gif?etag=dLdT7CQ") center center no-repeat;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable td.expandCell a.closed {
+	background: url("../com.ibm.team.workitem.viewlets.web/graphics/work-items/images/twistie-closed.gif?etag=dLdT7CQ") center center no-repeat;
+}
+
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable div.titleWrapper {
+	padding-left: 0.5em;
+}
+
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable div.linkWrapper div.iconContainer {
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 0.2em;
+}
+
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable div.linkWrapper div.linkRow {
+	padding-top: 3px;
+}
+
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable img.closed {
+	opacity: 0.3;
+}
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable .iframeWrapper {
+	padding-left: 2em;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.com-ibm-team-workitem-viewlets-web-ui-internal-WorkItemsViewlet .pageTable img.overlayIcon {
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	width: 7px;
+	height: 8px;
+}
+
+.com-ibm-team-dashboard-web-ui-internal-PagedTableViewlet .filter-box-wrapper {
+	max-width: 300px;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,18 @@
+
+.custom-html-example {
+   color: red;
+   font-weight: bold;
+   padding: 5px;
+   font-size: 12pt;
+}
+
+.jazz-app-Navbar a {
+   color: yellow;
+}
+
+.jazz-ui-wizard-step-header {
+   background-color: #F1F1F1;
+   border: gray 1px solid;
+   color: blue;
+   padding: 5px;
+}

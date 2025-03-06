@@ -1,0 +1,653 @@
+.com-ibm-team-dashboard-ComponentMenu .project-dashboard {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -51px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-ComponentMenu .all-projects {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -25px -25px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-ComponentMenu .team-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -92px -34px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-ComponentMenu .my-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -17px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-ComponentMenu .shared-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -92px -17px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-ComponentMenu .default-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -75px -34px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-ComponentMenu .all-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -42px -43px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-ComponentMenu .create-dash {
+	display: inline-block;
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -75px -17px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-SearchProvider-scopeAll {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -42px -43px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-SearchProvider-scopeTeams {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -50px -25px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-SearchProvider-resultTeam {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -92px -34px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-SearchProvider-resultShared {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -92px -17px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}
+.com-ibm-team-dashboard-SearchProvider-resultMy {
+background-image: url("../../sprite/com-ibm-team-dashboard?etag=sL08AdX60E");
+background-position: -17px -68px;
+width: 16px;
+height: 16px;
+transform: rotate(0.001deg);;
+}.jazz-ui-ResourceHover .root{
+	position: relative;
+	margin: 3px 2px 2px 1px;
+}
+.jazz-ui-ResourceHover .hidden {
+	display:none;
+}
+.jazz-ui-ResourceHover .titleBar {
+	position: relative;
+	margin: 2px 15px 0 0;
+	overflow: hidden;
+	zoom: 1;
+	line-height: 1.1em;
+	font-size: 13.5pt;
+	color: #0f62fe;
+}
+.jazz-ui-ResourceHover .titleBar .titleIndent {
+	margin-left: 20px;
+}
+.jazz-ui-ResourceHover .titleBar .iconLink {
+	position: absolute;
+	width: 20px;
+	height: 16px;
+	top: 2px;
+	left: 0;
+}
+.jazz-ui-ResourceHover .titleBar .iconNode {
+	width: 16px;
+	height: 16px;
+}
+.jazz-ui-ResourceHover a.closeButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+}
+.jazz-ui-ResourceHover a.closeButton > span {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -129px -119px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+	margin: 3px;
+}
+.jazz-ui-ResourceHover a.closeButton:hover > span {
+	display: inline-block;
+background-image: url("../../sprite/jazz-common?etag=Jxh2sLxtXOU");
+background-position: -118px -119px;
+width: 10px;
+height: 10px;
+transform: rotate(0.001deg);;
+}
+.jazz-ui-ResourceHover .dividerWrapper {
+	/* wrapper div is required for margins in IE */
+	margin: 7px 2px;
+	overflow: hidden;
+}
+.jazz-ui-ResourceHover .bottomDividerWrapper {
+	/* wrapper div is required for margins in IE */
+	margin: 1px 2px 5px;
+	overflow:hidden;
+}
+.jazz-ui-ResourceHover .divider {
+	padding-bottom: 1px;
+	background: url("../jazz.ui/graphics/ResourceLink/divider.png?etag=dLc73Ly") left repeat-x;
+	overflow: hidden;
+	line-height: 1px;
+	font-size: 1px;
+}
+.jazz-ui-ResourceHover .summarySection .loadingIframe {
+	visibility: hidden;
+}
+.jazz-ui-ResourceHover .summarySection {
+	display:table;
+}
+.jazz-ui-ResourceHover .summarySection .loading-wrapper {
+	position:absolute;
+	z-index:1000;
+}
+.jazz-ui-ResourceHover .summarySection .image-loading {
+	background: url("../jazz.ui/graphics/ResourceLink/spinner.gif?etag=dLc73Ly") center no-repeat;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.dj_ie .jazz-ui-ResourceHover .summarySection .loading-wrapper {
+	position:absolute !important;
+	left:50%;
+	top:50% !important;
+}
+.dj_ie .jazz-ui-ResourceHover .summarySection .image-loading {
+	left:-50%;
+	padding-left:16px;
+	position:relative !important;
+	top:-50% !important;
+}
+.jazz-ui-ResourceHover .bottomSection {
+	margin-left: 3px;
+}
+.jazz-ui-ResourceHover .toggleLink {
+	margin-top: 4px;
+}
+.jazz-ui-ResourceHover .toggleLink .chevron {
+	margin-right: 4px;
+}
+.jazz-ui-ResourceHover .showMore .chevron {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: transparent url("../jazz.ui/graphics/common/blue-chevron-down.svg?etag=dLc73Ly") center center no-repeat;
+}
+.jazz-ui-ResourceHover .showLess .chevron {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: transparent url("../jazz.ui/graphics/common/blue-chevron-up.svg?etag=dLc73Ly") center center no-repeat;
+}
+/*****************************STYLE THE LINK**********************************/
+a.jazz-ui-ResourceLink {
+	position: relative; /* keep position relative all the time to prevent excess reflows in non-IE browsers */
+	zoom: 1;
+	border-bottom: 1px solid transparent;
+}
+
+a.jazz-ui-ResourceLink:hover:after {
+	/* CSS to draw a little down triangle after the link */
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -4px;
+	content: "";
+	border: solid transparent;
+	border-width: 4px 4px 0 4px;
+	border-top-color: #0f62fe;
+}
+
+.dj_ie a.jazz-ui-ResourceLink {
+	position: static; /* no position relative when not hovering to prevent weird scrolling issues in IE (94912) */
+}
+a.jazz-ui-ResourceLink:hover {
+	position: relative !important;
+	border-bottom: 1px dotted #0f62fe;
+}
+.jazz-ui-ResourceHover .hidden {
+	display: none !important;
+}.jazz-ui-SearchBox .SearchForm {
+	position: relative; /* combat IE6 peek-a-boo bug*/
+	padding: 3px 4px 2px 5px;
+	zoom: 1;
+}
+.jazz-ui-SearchBox .MenuIcon {
+	margin: 2px 0px 0px 1px;
+}
+.dijit_a11y .jazz-ui-SearchBox .MenuIcon {
+	display: none;
+}
+.dijit_a11y .jazz-ui-SearchBox a.ScopeMenu::before{
+	content: "\2630";
+}
+.jazz-ui-SearchBox a.ScopeMenu {
+	position: relative;
+	display: block;
+	float: left;
+	min-width: 23px;
+	height: 20px;
+	margin: 0px 0px 0px;
+	margin-right: 4px;
+}
+
+.jazz-ui-SearchBox:not(.jazz-ui-BannerSearchBox) a.ScopeMenu {
+	border: 1px solid transparent;
+}
+
+
+.jazz-ui-SearchBox:not(.jazz-ui-BannerSearchBox) a.ScopeMenu:hover,
+.jazz-ui-SearchBox:not(.jazz-ui-BannerSearchBox) a.ScopeMenu-selected {
+    background-color: #FEDDA8;
+	border: 1px solid #FEB354;
+	border-radius: 3px;
+}
+
+.jazz-ui-SearchBox a.ScopeMenu .MenuTwistie {
+	position: absolute;
+	top: 1px;
+	right: 0; 
+	height: 100%;
+	width: 7px;
+	color: #000000;
+	padding: 1px;
+	font-size: 12px;
+}
+.jazz-ui-BannerSearchBox-areaInactive a.ScopeMenu:hover .MenuTwistie {
+	color:  white;
+}
+.jazz-ui-SearchBox-ScopeMenu .selectedItem {
+	background: transparent url("../jazz.ui/graphics/SearchBox/bullet.gif?etag=dLc73Ly") left center no-repeat;
+}
+.jazz-ui-SearchBox-ScopeMenu .dijitMenuItemIcon {
+	width: 10px !important;
+	margin-left: 3px;
+}
+.jazz-ui-SearchBox-ScopeMenu .itemIcon {
+	position: absolute;
+	margin-top: -1px;
+}
+.jazz-ui-SearchBox-ScopeMenu .itemLabel {
+	margin-left: 20px;
+}
+.jazz-ui-SearchBox .SearchWrapper {
+	position: relative;
+	min-height: 1.5em;
+	min-height: 22px;
+	box-sizing: border-box;
+	font-size: 9pt !important;
+	/* padding: 2px 1px 0px 0px; */
+	overflow: hidden;
+	border-left: 1px solid #a5acb2;
+	border-top: 1px solid #a5acb2;
+	border-bottom: 1px solid #a5acb2;
+	border-right: 1px solid #a5acb2;
+	background-color: white;
+	zoom: 1;
+}
+* html .jazz-ui-SearchBox .SearchWrapper {
+	height: 19px;
+}
+.jazz-ui-SearchBox .SearchInputWrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 449;
+}
+.jazz-ui-SearchBox .SearchInnerInputWrapper {
+	position: relative;
+	zoom: 1;
+	margin-right: 23px;
+	padding: 2px 2px 2px 3px;
+}
+.jazz-ui-SearchBox input {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	min-height: 16px;
+}
+.jazz-ui-SearchBox .inactive input {
+	color: #bbbbbb;
+}
+.jazz-ui-SearchBox .SearchButton {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	border: 0;
+	padding: 0 0 1px 0;
+	width: 21px;
+	height: 21px; 
+	z-index: 450;
+}
+
+.jazz-ui-SearchBox.jazz-ui-BannerSearchBox .SearchButton {
+	top: 1px;
+}
+
+.jazz-ui-SearchBox a.SearchButtonEnabled,
+.jazz-ui-SearchBox a.SearchButtonDisabled {
+background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05LjE0MjY4IDEwLjE0MjdDOC40MDA2NCAxMC42ODE5IDcuNDg3NDcgMTEgNi41IDExQzQuMDE0NzIgMTEgMiA4Ljk4NTI4IDIgNi41QzIgNC4wMTQ3MiA0LjAxNDcyIDIgNi41IDJDOC45ODUyOCAyIDExIDQuMDE0NzIgMTEgNi41QzExIDcuNDg3NDcgMTAuNjgxOSA4LjQwMDY0IDEwLjE0MjcgOS4xNDI2OEwxNCAxM0wxMyAxNEw5LjE0MjY4IDEwLjE0MjdaTTEwIDYuNUMxMCA4LjQzMyA4LjQzMyAxMCA2LjUgMTBDNC41NjcgMTAgMyA4LjQzMyAzIDYuNUMzIDQuNTY3IDQuNTY3IDMgNi41IDNDOC40MzMgMyAxMCA0LjU2NyAxMCA2LjVaIiBmaWxsPSIjNTA1NjVCIi8+Cjwvc3ZnPgo=");
+width: 16px;
+height: 16px;;
+}
+ 
+.jazz-ui-SearchBox .SearchButton .searchButtonSpan {
+        display:none;
+        position:absolute;
+}
+
+.dijit_a11y .jazz-ui-SearchBox .SearchButton .searchButtonSpan {
+       display:inline;
+       overflow: hidden;
+       position: absolute;
+       right: 0;
+}
+
+.dijit_a11y .jazz-ui-SearchBox .SearchButton {
+     width: 5em;
+}
+ 
+.net-jazz-web-ui-internal-SearchResults {
+	position: absolute;
+	border: 1px solid #a5acb2 !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 335px;
+	filter: alpha(opacity=100) !important;
+	-moz-opacity: 1.0 !important;
+	opacity: 1.0 !important;
+	zoom: 1;
+	z-index: 501;
+}
+.net-jazz-web-ui-internal-SearchResults .content {
+	background-color: white !important;
+}
+.net-jazz-web-ui-internal-SearchResults iframe {
+	/* prevent BackgroundIframe display bug in IE */
+	filter: none !important;
+}
+.net-jazz-web-ui-internal-SearchResults .dijitMenu {
+	border: none !important;
+	cursor: pointer;
+	width: 100%;
+}
+.dj_ie7 .net-jazz-web-ui-internal-SearchResults .dijitMenu {
+	width: auto;	
+}
+.net-jazz-web-ui-internal-SearchResults td {
+	display: none;
+}
+.net-jazz-web-ui-internal-SearchResults td.dijitMenuItemLabel {
+	display: block;
+	padding: 2px 3px 2px 7px !important;
+}
+.net-jazz-web-ui-internal-SearchResults .disabled {
+	color: #999999 !important;
+	background-color: white !important;
+	cursor: default;
+}
+.net-jazz-web-ui-internal-SearchResults .context {
+	color: #999999 !important;
+}
+.net-jazz-web-ui-internal-SearchResults .dijitMenuItemSelected {
+	background-color: #fedda8 !important;
+}
+/* Disable the focus outline to work around a scrollbar bug - rely on colour to convey focus */
+.net-jazz-web-ui-internal-SearchResults .dijitMenuItemSelected:focus {
+	outline: 0;
+}
+
+/********** BannerSearch styles ***************/
+.jazz-ui-BannerSearchBox {
+	width: 200px;
+	z-index: 1;
+	position: relative;
+	margin:  4px;
+}
+.jazz-ui-BannerSearchBox .SearchForm {
+	padding: 0;
+}
+.jazz-ui-BannerSearchBox .SearchInnerInputWrapper {
+	padding: 0 0 0 2px;
+	margin-right: 17px;
+}
+.jazz-ui-BannerSearchBox a.ScopeMenu {
+	position: absolute;
+	top: 0px;
+	height: 20px;
+	right: 22px;
+	height: 16px;
+	padding: 1px 3px;
+	margin: 0;
+}
+.jazz-ui-BannerSearchBox a.ScopeMenu .MenuTwistie {
+	right: 2px;
+}
+.jazz-ui-BannerSearchBox .MenuIcon {
+	margin: 0;
+}
+.jazz-ui-BannerSearchBox .SearchButton {
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	z-index: 450;
+}
+.jazz-ui-BannerSearchBox .SearchWrapper {
+	background-color: white;
+	border: 1px solid #BDC2C7 !important;
+	padding: 0;
+	box-sizing: border-box;
+
+	/* The navbar is 28px. This gives 4px above and below to add to 28.*/
+	min-height: 20px;
+}
+.jazz-ui-BannerSearchBox .SearchInputWrapper {
+	left: auto;
+	top: auto;
+	position: static;
+}
+.jazz-ui-BannerSearchBox .SearchInputWrapper,
+.jazz-ui-BannerSearchBox .SearchInnerInputWrapper,
+.jazz-ui-BannerSearchBox .SearchInputText {
+	background-color: transparent;
+	outline: 0px;
+	padding-right: 36px;
+	min-height: 18px;
+}
+
+.jazz-ui-BannerSearchBox-areaInactive a.SearchButton,
+.jazz-ui-BannerSearchBox-areaInactive a.SearchButton:hover {
+	display: inline-block;
+background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05LjE0MjY4IDEwLjE0MjdDOC40MDA2NCAxMC42ODE5IDcuNDg3NDcgMTEgNi41IDExQzQuMDE0NzIgMTEgMiA4Ljk4NTI4IDIgNi41QzIgNC4wMTQ3MiA0LjAxNDcyIDIgNi41IDJDOC45ODUyOCAyIDExIDQuMDE0NzIgMTEgNi41QzExIDcuNDg3NDcgMTAuNjgxOSA4LjQwMDY0IDEwLjE0MjcgOS4xNDI2OEwxNCAxM0wxMyAxNEw5LjE0MjY4IDEwLjE0MjdaTTEwIDYuNUMxMCA4LjQzMyA4LjQzMyAxMCA2LjUgMTBDNC41NjcgMTAgMyA4LjQzMyAzIDYuNUMzIDQuNTY3IDQuNTY3IDMgNi41IDNDOC40MzMgMyAxMCA0LjU2NyAxMCA2LjVaIiBmaWxsPSIjREZFM0U2Ii8+Cjwvc3ZnPgo=");
+width: 16px;
+height: 16px;;
+}
+.jazz-ui-BannerSearchBox-areaInactive .SearchWrapper {
+	background-color: #50565B;
+	border: 1px solid #50565B !important;
+}
+.jazz-ui-BannerSearchBox-areaInactive a.ScopeMenu .MenuTwistie {
+	color: #D3D3D3;
+}
+.jazz-ui-BannerSearchBox input {
+	font-size: 8pt;
+}
+.jazz-ui-BannerSearchBox .inactive input {
+	color: #bbbbbb;
+}
+.jazz-ui-BannerSearchBox-areaInactive input {
+	color: #dbe5ee;
+}
+.jazz-ui-BannerSearchBox-areaInactive .inactive input {
+	color: #DFE3E6;
+}
+
+/******* Banner Search Focus Area *******/
+.jazz-ui-BannerSearchArea {
+	font-family: Arial, sans-serif;
+	position: absolute;
+	right: 0px;
+	top: -6px;
+	-moz-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+}
+.jazz-ui-BannerSearchArea > .trim-outer {
+	margin: 0 2px;
+	padding-top: 1px;
+	background-color: #A8C9E5;
+}
+.jazz-ui-BannerSearchArea > .trim-middle {
+	margin: 0 1px;
+	padding-top: 1px;
+	background-color: white;
+	border-left: 1px solid #A8C9E5;
+	border-right: 1px solid #A8C9E5;
+}
+.jazz-ui-BannerSearchArea > .trim-sides {
+	border-left: 1px solid #A8C9E5;
+	border-right: 1px solid #A8C9E5;
+	background-color: white;
+	min-width: 425px;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .trim-inner {
+	padding-top: 1px;
+	background-color: #ededed;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content {
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	background-color: #ededed;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .quick-search {
+	padding: 2px 0 3px ;
+	padding-right: 30px ;
+	padding-left: 5px ;
+	margin-right: 200px;
+	font-size: 13pt;
+	color: #666666;
+	white-space: nowrap;
+	line-height: 26px;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .inner-content {
+	position: relative;
+	overflow: hidden;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .inner-content > .scope-message {
+	position: relative;
+	color: #999999;
+	padding: 0 0 2px;
+	padding-right: 2px;
+	padding-left: 5px;
+	overflow: hidden;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .inner-content > .scope-message > div {
+	float: left;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .inner-content > .scope-message > div > .scope-text {
+	color: black;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .inner-content > .more-options {
+	float: right;
+	margin-right: 2px;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .inner-content > .more-options > a {
+	display: none;
+	padding-left: 16px;
+	margin: inherit;
+	background: transparent url("../jazz.ui/graphics/common/blue-chevron-down.svg?etag=dLc73Ly") left center no-repeat;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .inner-content > .more-options > a.fewer-options {
+	padding-left: 13px;
+	background-image: url("../jazz.ui/graphics/common/blue-chevron-up.svg?etag=dLc73Ly");
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .content > .advanced-options {
+	border-top: 1px solid #BDC2C7;
+	margin: 2px 1px 0;
+	padding: 4px;
+	display: none;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper {
+	overflow: auto;
+	color: black;
+}
+
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper > .status-area {
+	position: relative;
+	overflow: hidden;	
+	margin: 1px 5px;
+	display: none;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper > .status-area > .status-info {
+	float: left;
+	color: #999999;
+	margin-top: 3px;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper > .status-area > .status-error {
+	color: red;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper > .status-area > .status-controls {
+	float: right;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper > .results-area {
+	font-size: 0;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper > .results-area > .search-result {
+	border-top: solid 1px #efefef;
+	margin: 0 3px;
+	padding: 5px 2px;
+	position: relative;
+	overflow: hidden;
+	font-size: 9pt;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper > .results-area > .search-result > .icon {
+	float: left;
+	padding-right: 5px;
+	width: 16px;
+	height: 16px;
+}
+.jazz-ui-BannerSearchArea > .trim-sides > .results-area-wrapper > .results-area > .search-result > .link {
+	margin-top: 1px;
+	overflow: hidden;
+}
