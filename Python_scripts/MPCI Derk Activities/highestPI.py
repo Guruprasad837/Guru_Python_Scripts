@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the data (Replace 'data.xlsx' with your actual file name)
-df = pd.read_excel(r"C:\Users\mgg3kor\Desktop\la.xlsx")
+df = pd.read_excel(r"C:\Users\mgg3kor\Downloads\hiupi.xlsx")
 
 # Extract the numeric part of PI (assuming format like "PI23.3")
 df["PI_Numeric"] = df["PI"].str.extract(r'(\d+\.\d+)').astype(float)
