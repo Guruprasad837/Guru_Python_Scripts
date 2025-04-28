@@ -58,14 +58,23 @@ if latest_csv_file:
 
         today = datetime.today()
 
-        # Convert "Creation Date" to "Days Ago"
+         # Enhanced date parsing
         def convert_to_days(date_str):
-            formats = ["%b %d, %Y %I:%M %p", "%m/%d/%Y %I:%M:%S %p", "%Y-%m-%d %H:%M:%S"]
+            if pd.isna(date_str):
+                return "Unknown"
+            formats = [
+                "%b %d, %Y, %I:%M %p",    # Oct 3, 2024, 1:21 PM
+                "%b %d, %Y %I:%M %p",     # Apr 22, 2024 11:30 AM
+                "%m/%d/%Y %I:%M:%S %p",   # 04/22/2024 11:30:00 AM
+                "%Y-%m-%d %H:%M:%S",      # 2024-04-22 11:30:00
+                "%d.%m.%Y %H:%M"          # 22.04.2024 11:30
+            ]
             for fmt in formats:
                 try:
-                    return (today - datetime.strptime(date_str, fmt)).days
+                    return (today - datetime.strptime(date_str.strip(), fmt)).days
                 except ValueError:
                     continue
+            print(f"Unrecognized date format: {date_str}")
             return "Unknown"
 
         df["Days Ago"] = df["Creation Date"].apply(convert_to_days)

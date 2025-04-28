@@ -10,7 +10,7 @@ from datetime import datetime
 download_path = os.path.expanduser("~\\Downloads")
 
 # Define expected filename pattern
-expected_filename_keyword = "MPCI_SW_SYS_OlderProblems_3Months_MaaS"
+expected_filename_keyword = "MPCI_SW_SYS_OlderProblems_3Months_COM"
 
 # Function to delete old CSV files
 def delete_specific_csv(download_folder, filename_keyword):
@@ -25,12 +25,12 @@ delete_specific_csv(download_path, expected_filename_keyword)
 driver = webdriver.Chrome()
 
 # RTC Query URL
-rtc_url = "https://rb-alm-14-p.de.bosch.com/ccm/web/projects/CentralComputingRack%20(CCM)#action=com.ibm.team.workitem.runSavedQuery&id=_rSRgyPFDEe-LqNoB04ZrZg"
+rtc_url = "https://rb-alm-14-p.de.bosch.com/ccm/web/projects/CentralComputingRack%20(CCM)#action=com.ibm.team.workitem.runSavedQuery&id=__6_tsvFCEe-LqNoB04ZrZg"
 
 # Open RTC and download report
 driver.get(rtc_url)
 driver.implicitly_wait(10)
-download_button = driver.find_element(By.ID, 'jazz_ui_toolbar_Button_1')  # Adjust as needed
+download_button = driver.find_element(By.ID, 'jazz_ui_toolbar_Button_1')  # Adjust if ID changes
 download_button.click()
 time.sleep(10)
 driver.quit()
@@ -47,18 +47,16 @@ if latest_csv_file:
     if file_size <= 1024:
         print(f"File {latest_csv_file} is {file_size} bytes (≤ 1KB). Email will not be sent.")
     else:
-        # Load CSV
         df = pd.read_csv(latest_csv_file, encoding="utf-16", delimiter="\t")
 
-        # Ensure required columns exist
         required_columns = ["Id", "Summary", "Creation Date", "Exclude"]
         for col in required_columns:
             if col not in df.columns:
-                df[col] = ""  # Fill missing columns with empty values
+                df[col] = ""
 
         today = datetime.today()
 
-         # Enhanced date parsing
+        # Enhanced date parsing
         def convert_to_days(date_str):
             if pd.isna(date_str):
                 return "Unknown"
@@ -79,25 +77,22 @@ if latest_csv_file:
 
         df["Days Ago"] = df["Creation Date"].apply(convert_to_days)
 
-        # Function to apply colors correctly for Outlook rendering
+        # Color logic for Outlook
         def color_days_ago(days, exclude):
             if str(exclude).strip().lower() == "yes":
-                return f"<td>{days}</td>"  # No color formatting
-
+                return f"<td>{days}</td>"
             if isinstance(days, int):
                 if days > 100:
                     return f'<td style="background-color: red; color: white; font-weight: bold;">{days}</td>'
                 elif days > 90:
                     return f'<td style="background-color: orange; color: black; font-weight: bold;">{days}</td>'
-
             return f"<td>{days}</td>"
 
-        # HTML Table Styling with Gray Header
         html_table = """
         <style>
             table { border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; }
             th, td { border: 1px solid black; padding: 8px; text-align: left; }
-            th { background-color: gray; color: white; }  /* Changed from Green to Gray */
+            th { background-color: gray; color: white; }
         </style>
         <table>
             <tr>
@@ -112,10 +107,8 @@ if latest_csv_file:
             summary = row["Summary"]
             exclude_flag = row["Exclude"]
             days_ago_html = color_days_ago(row["Days Ago"], exclude_flag)
-
             rtc_ticket_url = f"https://rb-alm-14-p.de.bosch.com/ccm/web/projects/CentralComputingRack%20(CCM)#action=com.ibm.team.workitem.viewWorkItem&id={id_val}"
             id_link = f'<td><a href="{rtc_ticket_url}" target="_blank" style="color: blue; font-weight: bold;">{id_val}</a></td>'
-
             html_table += f"<tr>{id_link}<td>{summary}</td>{days_ago_html}</tr>"
 
         html_table += "</table>"
@@ -123,20 +116,18 @@ if latest_csv_file:
         # Outlook Email Setup
         outlook = win32com.client.Dispatch("Outlook.Application")
         mail = outlook.CreateItem(0)
+        mail.To = "guruprasad.mangali@in.bosch.com"
+        #mail.To = "Shrihari.Jamadagni@in.bosch.com"
+        #mail.CC = "Haasine.Chandrasekar@in.bosch.com; Manickam.Chokkalingam@in.bosch.com; NateshKumar.Kalasetty@in.bosch.com"
+        mail.Subject = "[Automated] RTC Report: COM Problem Tickets Older Than 3 Months"
 
-        #mail.To ="Guruprasad.Mangali@in.bosch.com"
-        mail.To = "abdulbasit.salim@my.bosch.com"
-        mail.CC = "muhammadirfan.rafique@de.bosch.com; Manickam.Chokkalingam@in.bosch.com; NateshKumar.Kalasetty@in.bosch.com"
-        mail.Subject = "[Automated] RTC Report: MaaS Problem Tickets Older Than 3 Months"
-
-        # Email Body with Table
         mail.HTMLBody = f"""
-        <p>Hi Abdul,</p>
+        <p>Hi Shrihari,</p>
 
         <p>Please find attached the RTC report containing problem tickets that are older than 3 months. 
         You can also check the latest status through the live RTC query mentioned in the link below.</p>
 
-        <p>🔗 <b><a href="{rtc_url}">RTC Query - MaaS Problem Tickets Older Than 3 Months</a></b></p>
+        <p>🔗 <b><a href="{rtc_url}">RTC Query - COM Problem Tickets Older Than 3 Months</a></b></p>
 
         <p>Here is a summary of the extracted data:</p>
         {html_table}
@@ -145,7 +136,6 @@ if latest_csv_file:
         """
 
         mail.Attachments.Add(latest_csv_file)
-
         mail.Send()
         print(f"Email sent successfully with attachment: {latest_csv_file}")
 else:
