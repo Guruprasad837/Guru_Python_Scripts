@@ -1,0 +1,7 @@
+/***************************************************************************************************
+ * Licensed Materials - Property of IBM © Copyright IBM Corporation 2015, 2018. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA
+ * ADP Schedule Contract with IBM Corp.
+ **************************************************************************************************/
+define([],function(){var a="jazz.app.i18n.preferences.",b=a+"bidiOn",c=a+"baseTextDirection",d="‪",e="‬",f="‫",g={};return g.getPreferredBaseTextDir=function(){return window.localStorage&&"true"==localStorage.getItem(b)?localStorage.getItem(c)||"ltr":""},g._checkContextual=function(a){var b=/[A-Za-z\u05d0-\u065f\u066a-\u06ef\u06fa-\u07ff\ufb1d-\ufdff\ufe70-\ufefc]/.exec(a);return b?b[0]<="z"?"ltr":"rtl":"ltr"},g.setTextDir=function(a){if(""!==a){$(".bidiAware").each(function(b,c){$(c).attr("dir",a)})}},g.setTextDirForSpan=function(a,b){if(""!==a){var c=this,d=b.find("span.bidiAware");d.each(function(b,d){$(d).text(c.enforceTextDirWithUcc($(d).text(),a));var e=$(d).attr("title");"undefined"!=typeof e&&$(d).attr("title",c.enforceTextDirWithUcc(e,a))})}},g.enforceTextDirWithUcc=function(a,b){if(""==b)return a;var c="auto"==b?this._checkContextual(a):b;return("ltr"==c?d:f)+a+e},g});

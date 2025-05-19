@@ -1,0 +1,226 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2020. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+
+.titlebar, .resource-options {
+	width: 100%;
+}
+
+.titlebar h2 {
+	margin: 5px 0px;
+}
+
+.titlebar .resource-actions {
+	text-align: right;
+}
+
+.titlebar .resource-actions button, #SaveResourceGroup {
+	margin-left: 5px;
+}
+
+.titlebar tr td:first-child, .resource-options tr td:first-child {
+	width: 150px;
+	vertical-align: top;
+}
+
+.titlebar td, .resource-options td {
+	padding: 3px;
+}
+
+.resource-options .required {
+    color: #773b00;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.resource-title-group {
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.resource-title {
+		font-size: 16pt;
+	color: #000000 !important;
+}
+
+.resource-name {
+	width: 100%;
+	max-width: 400px;
+}
+
+.all-resources {
+	max-width: 500px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.all-resources-option {
+	max-width: 500px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.resource-options .resource-description {
+	max-width: 500px;
+	min-width: 300px;
+}
+
+.resource-options .resource-tags-select {
+	width: 100%;
+	min-width: 300px;
+	max-width: 500px;
+	max-height: 45px;
+	float: left;
+}
+
+.resource-options .resource-tags-actions {
+	max-width: 20px;
+	float: left;
+}
+
+.close-resource-options {
+	height: 12px;
+	margin-bottom: 5px;
+}
+
+.close-resource-options.hover {
+	background: linear-gradient(to right, #ffffff 0%,#d4e4ef 50%,#ffffff 100%);
+}
+
+.close-resource-options.hover .toggle span {
+	border: 1px solid transparent;
+}
+
+.close-resource-options .toggle {
+	text-align: center;
+	line-height: 0.3;
+}
+
+.close-resource-options .toggle span {
+	cursor: pointer;
+	font-size: 8px;
+	width: 100px;
+	border: 1px solid #CCC;
+}
+
+.close-resource-options .toggle .hover {
+	background: linear-gradient(to right, #d4e4ef 0%,#4eaded 50%,#d4e4ef 100%);
+}
+
+.resource-options-add {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/add.gif");
+}
+
+.resource-options-remove {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/remove.gif");
+}
+
+.resource-options-edit {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/edit.gif");
+}
+
+.lock-menu {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.filter-icon-unlocked-req {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-bottom: -2px;
+	background-image: url("../graphics/filter-unlocked-req.gif");
+}
+
+.filter-icon-unlocked {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-bottom: -2px;
+	background-image: url("../graphics/filter-unlocked.gif");
+}
+
+.filter-icon-locked {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-bottom: -2px;
+	background-image: url("../graphics/filter-locked.gif");
+}
+
+span.question {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../graphics/context_sensitive_help_def.gif");
+  position: relative;
+  margin-left:3px;
+}
+
+span.question:hover {
+	background-image: url("../graphics/context_sensitive_help_hov.gif");
+}
+
+span.conflict {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../graphics/warn_obj.gif");
+  position: relative;
+}
+
+span.conflict:hover {
+	background-image: url("../graphics/warn_obj.gif");
+}
+
+span.description {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../graphics/context_sensitive_help_def.gif");
+  position: relative;
+}
+
+span.description:hover {
+	background-image: url("../graphics/context_sensitive_help_hov.gif");
+}
+
+#clear-project-search, #clear-component-search, #clear-configuration-search {
+	padding-right: 12px !important;
+}
+
+#search-project-button, #search-component-button, #search-configuration-button {
+	margin-left: 16px !important;
+}

@@ -1,0 +1,143 @@
+// ***********************************************************************************************************************
+// File Name   : ShowShRDAttribute_SingleLinkMod.dxl
+// Author      : Mangali Guruprasad (MS/EVW6-XC)
+// Email ID    : Guruprasad.Mangali@in.bosch.com
+// Purpose     : This script reads the attribute value (e.g., GM_Release) from source objects that are linked to the
+//               selected object through a specified link module. It collects and displays all unique values found.
+//               Attribute type to read (Object/Module) can be controlled via constants.
+// ***********************************************************************************************************************
+
+pragma runLim, 0;
+
+const bool BOOL_GETOBJECT_IDENTIFIER = false; // TRUE: Object Identifier will be displayed / FALSE: Attribute will be displayed
+const bool BOOL_GETOBJATTR = true; // If BOOL_GETOBJECT_IDENTIFIER is FALSE: TRUE = Object attribute / FALSE = Module attribute
+const string STR_SRC_ATTR_NAME = "GM_Release"; // Attribute definition name to fetch
+
+const string STR_LNKMOD_FULLNAME = "/Ford_DAT3/99 - ReqM_WorkArea/Playground/GuruPrasad/Compare/Sys to SW links"; // Full path of Link Module
+
+/* Function: attributeExistsObjectOrModule()
+   Version: 001
+   Description: Checks if a given attribute exists as an object or module attribute in the given module.
+*/
+bool attributeExistsObjectOrModule(Module modTmpCurrent, string strTmpAttrName, bool boolForObject)
+{
+	bool boolReturnValue = false;
+	AttrDef adTmpAttrDef = find(modTmpCurrent, strTmpAttrName);
+	
+	if (!null adTmpAttrDef)
+	{
+		if ((boolForObject && adTmpAttrDef.object) || (!boolForObject && adTmpAttrDef.module))
+			boolReturnValue = true;
+	}
+	return boolReturnValue;
+}
+
+/* Function: showShRDAttribute()
+   Version: 001
+   Description: Collects and displays unique attribute values from source objects linked to the given object.
+*/
+void showShRDAttribute(Object objCurrTarget) 
+{
+    Link lnkCurrent;
+    ModName_ modnameSource = null;
+    ModuleVersion modversSourceVersion = null;
+    Item itemLinkModule = item(STR_LNKMOD_FULLNAME);
+    Object objSource = null;
+    string strResult = null;
+    bool boolDoneOne = false;
+
+    string resultsArray[1000]; // Array to store unique results
+    int resultCount = 0; // Counter for unique results
+
+    if (null itemLinkModule) 
+    {
+        display("<<Link module not found>>");
+    } 
+    else if (type(itemLinkModule) != "Link") 
+    {
+        display("<<The Item is not a link module>>");
+    } 
+    else 
+    {
+        string strLinkModName = fullName(itemLinkModule);
+
+        for modnameSource in each (objCurrTarget<-"*") do
+        {
+            read(fullName(modnameSource), false);
+
+            for lnkCurrent in all(objCurrTarget<-strLinkModName) do 
+            {
+                modversSourceVersion = sourceVersion lnkCurrent;
+                modnameSource = module(modversSourceVersion);
+
+                if (!null modnameSource && !isDeleted(modnameSource))  
+                {
+                    objSource = source(lnkCurrent);
+                    
+                    if (null objSource) 
+                        load(modversSourceVersion, false);
+                    
+                    objSource = source(lnkCurrent);
+                    
+                    if (!null objSource && !isDeleted(objSource)) 
+                    {
+                        if (BOOL_GETOBJECT_IDENTIFIER)
+                        {
+                            strResult = identifier(objSource);
+                        }
+                        else
+                        {
+                            if (!attributeExistsObjectOrModule(module(objSource), STR_SRC_ATTR_NAME, BOOL_GETOBJATTR))
+                            {
+                                strResult = "N/A";
+                            }
+                            else if (BOOL_GETOBJATTR)
+                            {
+                                strResult = richTextWithOle(objSource.STR_SRC_ATTR_NAME);
+                            }
+                            else
+                            {
+                                strResult = (module(objSource)).STR_SRC_ATTR_NAME;
+                            }
+                        }
+
+                        // Check for duplicates
+                        bool isDuplicate = false;
+                        int i = 0;
+                        while (i < resultCount) 
+                        {
+                            if (resultsArray[i] == strResult)
+                            {
+                                isDuplicate = true;
+                                break;
+                            }
+                            i = i + 1;
+                        }
+                        
+                        // Add result to array if not duplicate
+                        if (!isDuplicate && resultCount < 1000)
+                        {
+                            resultsArray[resultCount] = strResult;
+                            resultCount = resultCount + 1;
+                            boolDoneOne = true;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Display unique results
+        if (boolDoneOne)
+        {
+            int j = 0;
+            while (j < resultCount) 
+            {
+                displayRich resultsArray[j];
+                j = j + 1;
+            }
+        }
+    }
+}
+
+// Execute function for current object
+showShRDAttribute(obj);

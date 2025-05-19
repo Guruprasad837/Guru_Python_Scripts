@@ -1,0 +1,110 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2019. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+.chosenOptionsText {
+	display: block;
+	float: left;
+	margin-left: 15px;
+	font-style: italic;
+	overflow-wrap: break-word;
+	width: 100%;
+	font-size: 12px;
+	padding-bottom: 5px;
+	margin-top: -15px;
+}
+
+.padded-section {
+	width: 100%;
+	padding-top: 1px;
+	padding-left: 4px;
+}
+
+.hint-text {
+	padding-left: 5px;
+}
+
+.search-values {
+	margin-bottom: 0;
+	max-height: 100px;
+}
+
+.search-values option {
+	display:table-header-group;
+}
+
+.collapsible {
+	width: 100%;
+	display: none;
+	padding-left: 20px;
+}
+
+.select-header {
+	display: block;
+	margin-top: 4px;
+}
+
+.modal-body {
+	line-height: 2;
+}
+
+.filter-closed, .filters-closed {
+	background-image: url("../graphics/group_closed.png");
+	display: inline-block;
+	background-size: cover;
+	height: 16px;
+	width: 16px;
+}
+
+.filter-open, .filters-open {
+	background-image: url("../graphics/group_open.png");
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+
+.deselect-button {
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+	font-style: italic;
+}
+
+.notClickable {
+	opacity: .7;
+	pointer-events: none;
+}
+
+.modal-body {
+	overflow: hidden;
+}
+
+.warning {
+	color: red;
+	margin-left: 20px;
+	font-size: 10px;
+	font-style: italic;
+}
+
+.domain-label {
+	font-weight: normal;
+	width: 50%;
+}
+
+#select-configuration-iframe {
+	width: 100%;
+	border: 0px;
+}
+
+.config-padded-section {
+	padding-top: 15px;
+	padding-left: 5px;
+}
+
+.resource-attributes {
+	max-height: 2rem;
+}

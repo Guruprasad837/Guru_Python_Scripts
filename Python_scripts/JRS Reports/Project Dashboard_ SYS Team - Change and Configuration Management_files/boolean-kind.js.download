@@ -1,0 +1,9 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * © Copyright IBM Corporation 2016, 2020. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+define(["./report-parameter","common/htmlUtils"],function(a,b){return function(c){var d=new a(c);return d.start=function(){return this.$paramContent.addClass("jrs-param-outer"),this.textControl=this.templates.$inflate("_booleanKindContent"),this.textControl.change(function(a){d.showDisplayValues(a),""===this.value?(d.updateRequired(!0),d.updateWarning(!0)):(d.updateRequired(!1),d.updateWarning(!1))}),this.contents(this.textControl),this},d.getDisplayValues=function(a,c){var d=c||this.getValues(a);return d=b.encodeHtml(d)},d.getValues=function(a){if(this._rptParam.constantValue)return $.isArray(this._rptParam.constantValue)?this._rptParam.constantValue:[this._rptParam.constantValue];var b=this.textControl.val();return b?[b]:null},d.setSelectedValues=function(b){a.prototype.setSelectedValues.apply(this,[b]),this.textControl.val(b&&b.length>0?b[0]:"")},d}});

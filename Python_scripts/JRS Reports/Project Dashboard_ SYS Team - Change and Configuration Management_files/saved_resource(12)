@@ -1,0 +1,270 @@
+
+;(function(){
+dojo.provide("com.ibm.team.dashboard.viewlets.web.ui.internal.utils.JPIUtil");
+com.ibm.team.dashboard.viewlets.web.ui.internal.utils.JPIUtil={convertURIs:function(_1,_2,_3){
+if(_3){
+var _4=dojo.create("div");
+var _5=_2.length;
+for(var i=0;i<_5;++i){
+dojo.create("div",{innerHTML:_2[i]},_4);
+}
+var _6=[],_7=[];
+_8(_4,_6,_7);
+_6.push.apply(_6,_1);
+if(_6.length>0){
+var _9=_3(_6);
+_9.addCallback(function(_a){
+var _b=_7.length;
+for(var i=0;i<_b;++i){
+_7[i].nodeValue=_a[i];
+}
+var _c=_4.firstChild;
+var _d=_2.length;
+for(var i=0;i<_d;++i){
+_2[i]=_c.innerHTML;
+_c=_c.nextSibling;
+}
+var _d=_1.length;
+for(var i=0;i<_d;++i){
+_1[i]=_a[_b+i];
+}
+return _2;
+});
+return _9;
+}
+}
+var _9=new dojo.Deferred();
+_9.callback(_2);
+return _9;
+}};
+var _e={"A":{"HREF":true},"IMG":{"SRC":true}};
+var _f={"A":true};
+function _8(_10,_11,_12){
+var _13=_10.nodeName;
+var _14=_10.firstChild;
+var _15=_f[_13];
+if(_15&&_14&&_14.nodeType===3){
+_11.push(_14.nodeValue);
+_12.push(_14);
+}
+var _16=_e[_13];
+if(_16){
+var _17=_10.attributes;
+var len=_17.length;
+for(var i=0;i<len;++i){
+var _18=_17[i];
+if(_16[_18.name.toUpperCase()]){
+_11.push(_18.nodeValue);
+_12.push(_18);
+}
+}
+}
+if(!_15){
+while(_14){
+_14.nodeType===1&&_8(_14,_11,_12);
+_14=_14.nextSibling;
+}
+}
+return _12;
+};
+})();
+
+dojo.provide("com.ibm.team.dashboard.viewlets.web.ui.internal.nls.StaticMessages")._built=true;
+dojo.provide("com.ibm.team.dashboard.viewlets.web.ui.internal.nls.StaticMessages.en_us");
+com.ibm.team.dashboard.viewlets.web.ui.internal.nls.StaticMessages.en_us={"errorScript_useraction":"Remove all occurrences of code that is not allowed and try to save the HTML content again.","msgDefineContentHere":"Define HTML mark-up content here.","errorScript":"CRRDV0007E The HTML content cannot be saved because it is not secure.","loading":"Loading...","errorScript_explanation":"HTML script tags, DOM event handlers, and \'javascript:\' URLs are not allowed in the HTML content.","msgNoContentDefinedAction":"No content defined. To add content, select \x3c0\x3eEdit Contents\x3c/0\x3e from the widget menu.","msgNoContentDefined":"No content defined."};
+
+;dojo.cache("com.ibm.team.dashboard.viewlets.web", "ui/internal/templates/StaticViewlet.html", "<div class=\"com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet\">	<div class=\"loading\" dojoAttachPoint=\"_loadingDiv\">${messages.loading}</div>	<div class=\"display-area\" dojoAttachPoint=\"_displayArea\"></div>	<div class=\"editor-area j-hint\" dojoAttachPoint=\"_editorArea\">${messages.loading}</div>	</div>");
+
+;dojo.provide("com.ibm.team.dashboard.viewlets.web.ui.internal.StaticViewlet");
+
+
+
+
+
+
+
+
+
+
+
+
+dojo.requireLocalization("com.ibm.team.dashboard.viewlets.web.ui.internal","StaticMessages");
+(function(){
+var _1=com.ibm.team.dashboard.viewlets.web.ui.internal.utils.JPIUtil;
+var _2=com.ibm.team.dashboard.web.ui.Viewlet;
+var _3=jazz.util.i18n;
+var _4="sh_rte_";
+var _5="html";
+dojo.declare("com.ibm.team.dashboard.viewlets.web.ui.internal.StaticViewlet",_2,{templatePath:dojo.moduleUrl("com.ibm.team.dashboard.viewlets.web","ui/internal/templates/StaticViewlet.html"),constructor:function(_6){
+this.messages=dojo.i18n.getLocalization("com.ibm.team.dashboard.viewlets.web.ui.internal","StaticMessages");
+},init:function(){
+this.inherited(arguments);
+this._editor=null;
+this._defaultHTMLContent=this.messages.msgDefineContentHere;
+this._viewSourcePlugin=null;
+this._linkDialogPlugin=null;
+this._html=this.getViewletState().get(_5);
+if(this._html){
+this._html=jazz.util.html.removeScript(this._html);
+this._html=this._removeContentPadding(this._html);
+var _7=this;
+var _8=this.getSite();
+var _9=_1.convertURIs([],[this._html],_8.jpisToURLs);
+_9.addCallback(function(_a){
+_7._html=_a[0];
+_7._loadDisplayArea();
+});
+_9.addErrback(dojo.hitch(_8,_8.error));
+}else{
+this._loadDisplayArea();
+}
+},isEditing:function(){
+return this._isEditing||this._isSavingState;
+},setEditing:function(_b){
+this._isEditing=_b;
+this.inherited(arguments);
+},_alertErrorMessage:function(_c,_d,_e){
+var _f=this._getOperationalErrorText(_c,_d,_e);
+alert(_f);
+},_getOperationalErrorText:function(_10,_11,_12){
+var _13=_10+" "+_11+" "+_12;
+return _13;
+},preSaveState:function(){
+if(!this._editor){
+return;
+}
+if(this._viewSourcePlugin&&this._viewSourcePlugin._sourceShown){
+this._viewSourcePlugin.toggle();
+}
+this._html=this._editor.getValue();
+var _14=this;
+var _15=this.getSite();
+this._isSavingState=true;
+var dfd=_1.convertURIs([],[this._html],_15.urlsToJPIs);
+dfd.addCallback(function(_16){
+_14.getViewletState().set(_5,_16[0]);
+});
+dfd.addErrback(dojo.hitch(_15,_15.error));
+dfd.addBoth(function(arg){
+_14._isSavingState=false;
+return arg;
+});
+},update:function(){
+if(this._isEditing){
+this._loadEditorArea();
+}else{
+this._loadDisplayArea();
+}
+},_loadEditorArea:function(){
+this._createEditor().addCallback(dojo.hitch(this,function(){
+dojo.removeClass(this._editorArea,"j-hint");
+this._editor.set("value",this._html||this._defaultHTMLContent);
+}));
+this._updateVisibility(this._displayArea,false);
+this._updateVisibility(this._editorArea,true);
+},_sanitizeContent:function(_17){
+var _18=jazz.util.html.removeScript(_17);
+return _18;
+},_removeContentPadding:function(_19){
+var _1a=/^<div style="margin:\s*5px;">/;
+return _19.replace(_1a,"<div>");
+},_createEditor:function(){
+var _1b=new dojo.Deferred();
+if(this._editor){
+_1b.callback();
+}else{
+jazz.core.loader.batch_load_async(["jazz.ui.Editor","dijit._editor.plugins.TextColor","dijit._editor.plugins.LinkDialog","dijit._editor.plugins.ViewSource","dijit._editor.plugins.FullScreen","dojox.editor.plugins.PrettyPrint","dijit._editor.plugins.ToggleDir"],dojo.hitch(this,function(){
+if(!this._isEditing){
+return;
+}
+var _1c=[{name:"viewsource"}];
+if(window.frameElement==null){
+_1c.push({name:"fullscreen",zIndex:999});
+}
+_1c.push({name:"|"},{name:"bold"},{name:"italic"},{name:"underline"},{name:"|"},{name:"foreColor"},{name:"hiliteColor"},{name:"|"},{name:"justifyLeft"},{name:"justifyCenter"},{name:"justifyRight"},{name:"|"},{name:"insertOrderedList"},{name:"insertUnorderedList"},{name:"|"},{name:"indent"},{name:"outdent"},{name:"|"},{name:"createLink"},{name:"insertImage"},{name:"prettyprint"},{name:"|"},{name:"toggleDir"});
+this._editor=new jazz.ui.Editor({id:this._getRichTextEditorID(),height:"calc(100vh - 400px)",plugins:[],contentPostFilters:[this._sanitizeContent],contentPreFilters:[this._sanitizeContent],extraPlugins:_1c},this._editorArea);
+this._editor.startup();
+this._editor.onLoadDeferred.addCallback(dojo.hitch(this,function(){
+for(i=0;i<this._editor._plugins.length;i++){
+p=this._editor._plugins[i];
+if(p&&(p.declaredClass==="dijit._editor.plugins.ViewSource"||p.declaredClass===(dijit._scopeName+"._editor.plugins.ViewSource"))){
+this._viewSourcePlugin=p;
+}
+if(p&&(p.declaredClass==="dijit._editor.plugins.LinkDialog"||p.declaredClass===(dijit._scopeName+"._editor.plugins.LinkDialog"))){
+this._linkDialogPlugin=p;
+}
+}
+if(this._viewSourcePlugin){
+delete this._viewSourcePlugin._filter;
+this._viewSourcePlugin._filter=dojo.hitch(this._editor,this._editor._postFilterContent);
+}
+if(this._linkDialogPlugin){
+this._linkDialogPlugin.urlRegExp="((https?|ftps?|file)\\://|./|../|/|)(/[a-zA-Z]{1,1}:/|)(((?:(?:[\\da-zA-Z](?:[-\\da-zA-Z]{0,61}[\\da-zA-Z])?)\\.)*(?:[a-zA-Z](?:[-\\da-zA-Z]{0,80}[\\da-zA-Z])?)\\.?)|(((\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])|(0[xX]0*[\\da-fA-F]?[\\da-fA-F]\\.){3}0[xX]0*[\\da-fA-F]?[\\da-fA-F]|(0+[0-3][0-7][0-7]\\.){3}0+[0-3][0-7][0-7]|(0|[1-9]\\d{0,8}|[1-3]\\d{9}|4[01]\\d{8}|42[0-8]\\d{7}|429[0-3]\\d{6}|4294[0-8]\\d{5}|42949[0-5]\\d{4}|429496[0-6]\\d{3}|4294967[01]\\d{2}|42949672[0-8]\\d|429496729[0-5])|0[xX]0*[\\da-fA-F]{1,8}|([\\da-fA-F]{1,4}\\:){7}[\\da-fA-F]{1,4}|([\\da-fA-F]{1,4}\\:){6}((\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(\\d|[1-9]\\d|1\\d\\d|2[0-4]\\d|25[0-5])))(\\:\\d+)?(/?(?:[^?#\\s/]+/?)*(?:[^?#\\s/]{0,}(?:\\?[^?#\\s/]*)?(?:#.*)?)?)?";
+this._linkDialogPlugin._initButton=dojo.hitch(this._editor,this._editor._initButton);
+}
+}));
+this._editor.editorObject.style.minHeight="200px";
+this._editor.editingArea.style.minHeight="200px";
+_1b.callback();
+}));
+}
+return _1b;
+},_getRichTextEditorID:function(){
+return _4+this.id;
+},_updateVisibility:function(_1d,_1e){
+if(_1e){
+_1d.style.display="block";
+}else{
+_1d.style.display="none";
+}
+},_loadDisplayArea:function(){
+if(this._loadingDiv){
+this.domNode.removeChild(this._loadingDiv);
+delete this._loadingDiv;
+}
+var _1f=this._html;
+var div;
+if(!_1f){
+div=this._getActionEditContents();
+}else{
+div=dojo.create("div",{innerHTML:_1f});
+}
+this._setHTMLNode(this._displayArea,div);
+this._updateVisibility(this._editorArea,false);
+this._updateVisibility(this._displayArea,true);
+},_getActionEditContents:function(){
+var div=document.createElement("div");
+if(this.getSite().isDashboardEditing()){
+var _20=_3.addMessage(div,this.messages.msgNoContentDefinedAction);
+var _21=_20[0];
+_21.href="#";
+this.connect(_21,"onclick",this._handleEventOnClickEditContent);
+}else{
+var _22=document.createTextNode(this.messages.msgNoContentDefined);
+div.appendChild(_22);
+}
+return div;
+},_handleEventOnClickEditContent:function(_23){
+if(_23){
+dojo.stopEvent(_23);
+}
+this.getSite().editContents();
+},_setHTMLNode:function(_24,_25){
+if(_24.firstChild){
+_24.replaceChild(_25,_24.firstChild);
+}else{
+_24.appendChild(_25);
+}
+},refresh:function(){
+this.getSite().doneRefresh();
+},destroy:function(){
+if(this._editor){
+this._editor.destroy();
+this._editor=null;
+}
+this.inherited(arguments);
+}});
+})();
+
+
+jazz.core.loader._loaded = jazz.core.loader._loaded.concat(["BR"]);

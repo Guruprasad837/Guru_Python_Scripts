@@ -1,0 +1,9 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * © Copyright IBM Corporation 2014, 2016. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+define([],function(){return{load:function(a,b,c,d){var e=d.config;c($.extend(e,{locale:e.i18n.locale},e._jrs)),delete e._jrs}}});

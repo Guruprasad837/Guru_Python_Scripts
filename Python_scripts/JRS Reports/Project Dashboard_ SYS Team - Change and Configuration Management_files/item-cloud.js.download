@@ -1,0 +1,9 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2016. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+define(function(a,b,c,d,e){"use strict";var f=Backbone.Model.extend({}),g=Backbone.Collection.extend({model:f,addItem:function(a){return this.add({title:a}),this}}),h=_.template("<label><%= title %></label><a class='badge remove' style='outline: none;' data-id='<%= id %>' tabindex='0'>x</a>"),i=Marionette.ItemView.extend({tagName:"span",template:function(a){return a.id=a.id||a.title,h(a)},className:"badge tag",ui:{removeLink:"a.badge.remove"},events:{"click @ui.removeLink":"onRemove"},onRemove:function(a){var b=this.model.id||this.model.cid;this.model.collection.remove(b)}}),j="rb.item.cloud",k=Marionette.CollectionView.extend({itemView:i,collectionEvents:{add:"updateUI",remove:"updateUI",reset:"updateUI"},initialize:function(){this.options.itemView&&(this.itemView=this.options.itemView),this.$el.data(j,this)},getItems:function(){return this.collection.pluck("id")},updateUI:function(){0===this.collection.length?this.$el.addClass("hidden"):this.$el.removeClass("hidden")}});return k.Model=g,k.ItemView=i,k.inst=function(a){return a.data(j)},k});

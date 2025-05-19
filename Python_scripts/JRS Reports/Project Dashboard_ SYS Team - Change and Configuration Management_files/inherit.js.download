@@ -1,0 +1,7 @@
+/***************************************************************************************************
+ * Licensed Materials - Property of IBM (c) Copyright IBM Corporation 2014. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA
+ * ADP Schedule Contract with IBM Corp.
+ **************************************************************************************************/
+INHERIT_FROM=function(a,b,c){if(2===arguments.length)c=b,b=a,a=function(){b.apply(this,arguments)};else if(3!==arguments.length)return;if(SUBCLASS_FROM(a,b),!c)return a;for(var d in c)!function(d,e){var f=b.prototype[d],g=c[d];f?a.prototype[d]=function(){this._super=f;var a=e.apply(this,arguments);return delete this._super,a}:a.prototype[d]=g}(d,c[d]);return a};

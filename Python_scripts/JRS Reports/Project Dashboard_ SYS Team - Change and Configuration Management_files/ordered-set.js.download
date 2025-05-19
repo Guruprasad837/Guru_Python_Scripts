@@ -1,0 +1,9 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2014. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+define([],function(){function a(){this._ids=[],this._set={}}return a.prototype.add=function(a,b){return this.contains(a)||this._ids.push(a),this._set[a]=b,b},a.prototype.remove=function(a){var b=this._set[a],c=this._ids.indexOf(a);return c>-1&&this._ids.splice(c,1),delete this._set[a],b},a.prototype.contains=function(a){return a in this._set},a.prototype.get=function(a){return"string"==typeof a?this._set[a]:this._ids[a]},a.prototype.each=function(a){var b=this;this._ids.forEach(function(c,d){a(b.get(c),c,d)})},a.prototype.length=function(){return this._ids.length},a.prototype.items=function(){for(var a=[],b=this.length(),c=0;b>c;c++)a.push(this.get(c));return a},a.prototype.ids=function(){return this._ids},a});

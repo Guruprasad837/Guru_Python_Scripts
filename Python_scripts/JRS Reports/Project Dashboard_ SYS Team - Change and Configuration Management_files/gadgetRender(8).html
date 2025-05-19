@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<!-- saved from url=(0942)https://rb-alm-14-p.de.bosch.com/ccm/gadgetRender?container=default&lang=default&country=DEFAULT&view=home&url=https%3A%2F%2Frb-alm-14-p.de.bosch.com%2Frs%2Freportdefinition%2F21331%2Fgadget&nocache=true&parent=https%3A%2F%2Frb-alm-14-p.de.bosch.com&st=MGG3KOR%3Anull%3Ahttps%253A%252F%252Frb-alm-14-p.de.bosch.com%252Fjts%252Fdashboards%252F971%257C_5%3A769af6ce-d30f-4c6d-978a-f5fec1dd4118%3AFwuAUdGjkNj%2B1BPXq2ZlC4YAZqs%3D&up_selectedParameters=%7B%22version%22%3A%222.0%22%2C%22values%22%3A%7B%22ProjectIds%22%3A%5B%22176%22%5D%2C%22fb55ef36500264dc4ce8c05e4f255393%22%3A%5B%22Story%22%5D%2C%229ef23e165e8023bc783f5ff3ce179887%22%3A%5B%2251547%22%2C%2251547%22%2C%2251547%22%2C%2251547%22%2C%2251547%22%5D%2C%22b5f2ccfaa3c259ccf35bbea599a6195d%22%3A%5B%22Invalid%22%5D%2C%227d277ac643dfc67dd046b214a45f2943%22%3A%5B%22Engineering%2FSystem%20(Sys)%2FCOM_Communication%22%5D%2C%22477fc4de789d29a9402ca9aa8c862225%22%3A%5B%22SYS%22%5D%7D%7D -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.tablib_table {width: 100%;border-collapse: separate;border-spacing: 0px;empty-cells: show;font-size: 11px;text-align: center;}.tablib_emptyTab {border-bottom: 1px solid #676767;padding: 0px 1px;}.tablib_spacerTab {border-bottom: 1px solid #676767;padding: 0px 1px;width: 1px;}.tablib_selected {padding: 2px;background-color: #ffffff;border: 1px solid #676767;border-bottom-width: 0px;color: #3366cc;font-weight: bold;width: 80px;cursor: default;}.tablib_unselected {padding: 2px;background-color: #dddddd;border: 1px solid #aaaaaa;border-bottom-color: #676767;color: #000000;width: 80px;cursor: pointer;}.tablib_navContainer {width: 10px;vertical-align: middle;}.tablib_navContainer a:link, .tablib_navContainer a:visited, .tablib_navContainer a:hover {color: #3366aa;text-decoration: none;}</style>
+		<title>Untitled Document</title>
+		<style>
+			a {color:#0000cc;}
+			a:visited {color:#551a8b;}
+			a:active {color:#ff0000;}
+      		body {margin: 0px;padding: 0px;background-color:white;}
+		</style>
+		<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/request" src="./request.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/jquery-ext" src="./jquery-ext.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/config" src="./config.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/customEvents" src="./customEvents.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/htmlUtils" src="./htmlUtils.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/oauthUtils" src="./oauthUtils.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/uriUtils" src="./uriUtils.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/alert-section" src="./alert-section.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="gadget/gadget-history" src="./gadget-history.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="gadget/gadget-report-chart" src="./gadget-report-chart.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="gadget/gadget-base" src="./gadget-base.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="gadget/span-hierarchy" src="./span-hierarchy.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="queries/compact-rendering" src="./compact-rendering.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/bidiUtils" src="./bidiUtils.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/tooltipUtils" src="./tooltipUtils.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/reportdefinition-parser" src="./reportdefinition-parser.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/resizable-dialog" src="./resizable-dialog.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="queries/query-results-view-interface" src="./query-results-view-interface.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="queries/vocabularies" src="./vocabularies.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parameters/parameter-list" src="./parameter-list.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/tree-select" src="./tree-select.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="gadget/gadget-settings" src="./gadget-settings.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="colResizable/colResizable-1.6" src="./colResizable-1.6.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chart/oneUIColours" src="./oneUIColours.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/item-cloud" src="./item-cloud.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/etags" src="./etags.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chart/chartDefaults" src="./chartDefaults.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parameters/report-parameter" src="./report-parameter.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parameters/query-kind" src="./query-kind.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parameters/text-kind" src="./text-kind.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parameters/boolean-kind" src="./boolean-kind.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parameters/date-kind" src="./date-kind.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parameters/date-range-kind" src="./date-range-kind.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="parameters/configuration-kind" src="./configuration-kind.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/ordered-set" src="./ordered-set.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/templates" src="./templates.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/filter-select" src="./filter-select.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nls/messages" src="./messages.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nls/query-builder" src="./query-builder.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nls/filter-messages" src="./filter-messages.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chart/chartRegistry" src="./chartRegistry.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chart/2d/hybridchart" src="./hybridchart.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chart/2d/barchartbase" src="./barchartbase.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/filter-date-utils" src="./filter-date-utils.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment-with-langs.min" src="./moment-with-langs.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chart/chartBase" src="./chartBase.js.download"></script><!--<base href="https://rb-alm-14-p.de.bosch.com/rs/widget/content?reportID=21331&amp;debug=false&amp;maxRows=">--><base href=".">
+		<script src="./setprefs_tabs_configurationContext_dynamic-height_views_oauthpopup_settitle"></script>
+		<script type="text/javascript">
+			gadgets.Prefs.setMessages_(
+				{"WebUI_Gadget_GadgetHeightTitle":"Gadget Height"}
+			);
+			
+			gadgets.Prefs.setDefaultPrefs_(
+				{
+  "autoLoad": "false",
+  "firstLoad": "true",
+  "gadgetHeight": "0",
+  "maxRows": "",
+  "selectedParameters": "[]",
+  "selectedViz": "",
+  "title": "COM_SYS_StoryStatusReport"
+}
+			);
+			
+			gadgets.io.preloaded_ = [];
+		</script>
+	<style type="text/css"></style><style type="text/css">  .JColResizer{table-layout:fixed;} .JColResizer > tbody > tr > td, .JColResizer > tbody > tr > th{overflow:auto;}  .JCLRgrips{ height:0px; position:relative;} .JCLRgrip{margin-left:-5px; position:absolute; z-index:5; } .JCLRgrip .JColResizer{position:absolute;background-color:red;filter:alpha(opacity=1);opacity:0;width:10px;height:100%;cursor: e-resize;top:0px} .JCLRLastGrip{position:absolute; width:1px; } .JCLRgripDrag{ border-left:1px dotted black;	} .JCLRFlex{} .JCLRgrip.JCLRdisabledGrip .JColResizer{cursor:default; display:none;}</style></head>
+	<body><p class="sr-only" tabindex="999">Report name: COM_SYS_StoryStatusReport</p>
+		
+
+
+
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="./base.css">
+	<link rel="stylesheet" href="./query.css">
+	<link rel="stylesheet" href="./common.css">
+	<link rel="stylesheet" href="./gadget.css">
+	<link rel="stylesheet" href="./reportdefinition-page.css">
+	<link rel="stylesheet" href="./datepicker3.css">
+	<link rel="stylesheet" href="./paging.css">
+	<link rel="stylesheet" href="./query-chart-render.css">
+	<link rel="stylesheet" href="./filter-select.css">
+	<link rel="stylesheet" href="./tree-select.css">
+	<link rel="stylesheet" href="./rrdg-docgen-ui.css">
+	<link rel="stylesheet" href="./resource-options.css">
+	<link rel="stylesheet" href="./select-configuration.css">
+	<link rel="stylesheet" href="./carbon-components.css">
+	<link rel="stylesheet" href="./carbon-components-ext.css">
+
+
+<div id="_login" class="gadget-section hide" style="padding: 55px; text-align: center">
+	<span id="_linkDescription"></span><br> <img src="./new_window.svg"> <a href="javascript: void(0)" id="_loginLink">Log in</a>
+</div>
+<div id="_ReportAlert" class="hide" role="alert" style="padding: 10px; margin: 5px; display: none;">
+	<button type="button" class="close">&nbsp;×</button>
+	<span class="alert-icon">
+		<label class="sr-only sr-only-focusable"></label>
+	</span>
+	<span class="alert-message" style="padding-left: 5px"></span>
+</div>
+<div id="skipping-resource-alert-section" class="alert alert-warning" role="alert" style="padding:10px; margin:5px; display:none;">		
+		<div>
+			<span class="alert-icon alert-icon-warning" style="padding-left:5px">
+				<label class="sr-only sr-only-focusable"></label>
+			</span>
+			<span id="skipping-resource-alert-header" style="padding-left:5px"></span>
+			<a id="skipping-alert-close" class="close">&nbsp;×</a>
+			<a id="skipping-resource-detail-expand" href="javascript:void(0)" class="bx--link" style="padding-left: 10px; cursor:pointer;">show more</a>
+		</div>
+		<div id="skipping-resource-detail" style="display:none"></div>
+</div>
+<div id="_main" class="gadget-section" style="min-width: 240px;position: relative;background: white;width: 100%;padding-bottom: 8px;">
+
+	<div id="_prompts" class="panel-body jrs-gadget-spacing">
+		<div id="gadgetsLeftSection">
+			<!-- Filters button -->
+			<button type="button" id="show-parameters" class="btn btn-xs btn-default gadget-show-filter">
+				Filters &nbsp;<img src="./edit.gif" height="12px" width="12px" style="margin-bottom: -2px">
+			</button>
+			
+			<span id="viz-select-title">View as: </span><select id="viz-select"><option value="https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportvisualization-table">Table</option><option value="https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportvisualization-stackedbarchart">Graph</option></select>
+			&nbsp;
+			<div class="limitTooltip">
+				<img src="./warn_obj.gif" style="display: none">
+				<span class="limitTooltipTitle"></span>
+			</div>
+			<div id="text-configlabel" style="display: none"><span><label style="width:max-content;">Configuration :</label></span><span><a class="bx--link" target="_blank"></a></span></div>			
+			<!-- Banner/Breadcrumb Area -->
+			<span id="_banner" style="display: none;"><nav class="bx--breadcrumb bx--breadcrumb--no-trailing-slash gadget-breadcrumb" style="font-size:12px;"></nav></span>
+		</div>
+		
+		<div id="gadgetsRightSection">
+			<!--  Export to excel - available only in page view --><!--  View Report Link -->
+				<a id="gotoReport" rel="noopener noreferrer" target="_blank" href="https://rb-alm-14-p.de.bosch.com/rs/reports#view=21331&amp;filterValues=%7B%22version%22%3A%222.0%22%2C%22values%22%3A%7B%22ProjectIds%22%3A%5B%22176%22%5D%2C%22fb55ef36500264dc4ce8c05e4f255393%22%3A%5B%22Story%22%5D%2C%229ef23e165e8023bc783f5ff3ce179887%22%3A%5B%2251547%22%2C%2251547%22%2C%2251547%22%2C%2251547%22%2C%2251547%22%5D%2C%22b5f2ccfaa3c259ccf35bbea599a6195d%22%3A%5B%22Invalid%22%5D%2C%227d277ac643dfc67dd046b214a45f2943%22%3A%5B%22Engineering%2FSystem%20(Sys)%2FCOM_Communication%22%5D%2C%22477fc4de789d29a9402ca9aa8c862225%22%3A%5B%22SYS%22%5D%7D%7D" class="bx--link gadget-view-action">
+					<img src="./new_window.svg" title="Open in a new window...">
+				</a>
+			
+		</div>
+		
+	<!--span id="title" style="font-size:8pt;float:right">Report Builder</span-->
+
+	<!-- Collapsible Section --><!-- Parameter Edit/Readony Views -->
+		<div class="modal" id="param-modal">
+			<div class="modal-dialog filters">
+				<div class="modal-content filters resizable" data-resizeinitlistheight="100" style="resize:both" data-resizestate="firstTime" data-resizeusecoords="client" data-resizeminlistheight="100" data-resizemaxlistheight="100">
+					<div class="modal-header">
+						<div class="row">
+							<div class="col-xs-12">
+								<a id="filters-toggle" data-toggle="collapse" href="https://rb-alm-14-p.de.bosch.com/rs/widget/content?reportID=21331&amp;debug=false&amp;maxRows=#filters-body" style="text-decoration:none;" aria-expanded="true">
+									<span id="filters-toggle-twistie" class="pull-left filters-open" style="margin-top:7px;"></span>
+									<span class="pull-left" style="margin-top:8px;"><strong>Filters</strong></span>
+									<span class="modified"></span>
+								</a>
+								<button type="button" class="params-toolbar right" data-dismiss="modal" style="margin:0; outline:none">
+									<img src="./close.svg" style="height:100%; width:100%;">
+								</button>
+								
+								<span id="_paramsToolbar" class="btn-toolbar pull-left">
+									<div style="display:inline;">
+										<button type="button" class="bx--btn bx--btn--secondary bx--btn--sm filter-action-button" id="_paramsRunButton" style="margin-right:12px;">
+											Preview
+										</button>
+										<button type="button" class="bx--btn bx--btn--secondary bx--btn--sm filter-action-button" id="_paramsSaveButton">
+											Save
+										</button>
+									</div>
+									<span style="padding: 6px 12px 6px 24px;display:inline-block;" id="show-parameters-spinner"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="modal-body filters collapse in" id="filters-body">
+						<div id="gadget-settings-content" class="jrs-gadget-settings" style="display: none;">
+							<button type="button" class="close" style="margin-right: 4px">×</button>
+							<div id="gadget-settings-body"></div>
+						</div>
+						<div id="_FilterAlert" class="hide" role="alert" style="display: none;">
+							<button type="button" class="close">&nbsp;×</button>
+							<span class="alert-icon">
+								<label class="sr-only sr-only-focusable"></label>
+							</span>
+							<span class="alert-message"></span>
+						</div>
+						<div id="parameters-content" class="panel-group" style=";margin-bottom:0px;"><div class="panel filters resizable" style="margin-bottom:5px;">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-1">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Limit the scope</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Limit the scope</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-1">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;"></div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom:5px;">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-2">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Type (SYS Story [Type: Work Item])</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Type (SYS Story [Type: Work Item])</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-2">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;"></div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom:5px;">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-3">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Planned For</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Planned For</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-3">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;"></div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom:5px;">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-4">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Status</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Status</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-4">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;"></div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom:5px;">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-5">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Filed Against (custom)</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Filed Against (custom)</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-5">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;"></div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom:5px;">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-7">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Summary (custom)</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Summary (custom)</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-7">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;" class="jrs-param-outer"><input type="text" class="form-control gadget-input-xs jrs-param-inner input-xs" placeholder="Enter value here...">
+	<div class="jrs-param-selection-desc-section">
+		<div id="_textKindContent_desc" class="jrs-param-selection-desc">Enter text or use wildcards: * for any characters, or "" for phrases.</div>
+	</div></div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom: 5px; width: calc(100% - 5px);">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-6">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Story Points (Custom)</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Story Points (Custom)</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-6">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;"></div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom: 5px; width: calc(100% - 5px);">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-8">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Work Item ID</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Work Item ID</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-8">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;" class="jrs-param-outer"><input type="text" class="form-control gadget-input-xs jrs-param-inner input-xs" placeholder="Enter value here...">
+	</div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom: 5px; width: calc(100% - 5px);">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-9">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Work Item</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Work Item</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-9">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;" class="jrs-param-outer"><input type="text" class="form-control gadget-input-xs jrs-param-inner input-xs" placeholder="Enter value here...">
+	</div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div><div class="panel filters resizable" style="margin-bottom: 5px; width: calc(100% - 5px);">
+		<div class="panel-heading jrs-param-heading jrs-tighter" data-attachpt="heading">
+			<div class="row">
+				<div class="col-xs-12">
+					<button type="button" data-attachpt="filterToggleLink" style="padding: 5px; outline: none; text-decoration: none;" data-toggle="collapse" data-parent="#parameters-content" class="btn btn-link jrs-param-collapse-link" href="#filter-10">
+						<p class="sr-only" data-attachpt="paramTitleSR" tabindex="0">Tags</p>
+						<table><tbody><tr style="display:inline-flex;">
+							<td class="filter-closed"></td><td class="required">  </td><td data-attachpt="paramTitle" class="jrs-param-title">Tags</td>
+							<td class="modified"></td>
+						</tr></tbody></table>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 hide-column">
+					<div style="margin-left:31px;margin-right:5px;">
+						<span data-attachpt="paramValues" class="jrs-param-values" style="white-space: pre;">values</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-collapse collapse" data-attachpt="filterToggle" id="filter-10">
+			<div data-attachpt="paramContent" style="margin: 5px; margin-left:30px;" class="jrs-param-outer"><input type="text" class="form-control gadget-input-xs jrs-param-inner" placeholder="Enter value here...">
+	</div>
+			<!-- selection group -->
+			<div data-attachpt="_selectionGroup" class="jrs-param-selection-section hide hide-column">
+				<button type="button" id="_selectAllButton" data-attachpt="_selectAllButton" style="padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">All</button>
+				<button type="button" id="_clearAllButton" data-attachpt="_clearAllButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">None</button>
+				<button type="button" id="_refreshButton" data-attachpt="_refreshButton" style="margin-left:12px;padding:5px;" class="btn btn-link bx--link jrs-param-selection-link">Refresh</button>
+			</div>
+		</div>
+	    <div class="resizable-handle resizable-e" unselectable="on"></div>
+	    <div class="resizable-handle resizable-s" unselectable="on"></div>
+	    <div class="resizable-handle resizable-se" unselectable="on"></div>
+	</div></div>
+						<div class="col-xs-12" id="chart-parameters-message" style="display: none;"><em>To filter other data, first view the report as a table. Click the pencil icon to edit the filters. Then return to the graph view.  </em></div>
+						<button type="button" id="_paramsClearButton" style="margin-left:10px" class="btn btn-link bx--link">Revert to the default choices from the report</button>
+					</div>
+					<div class="resizable-handle resizable-e" unselectable="on"></div>
+					<div class="resizable-handle resizable-s" unselectable="on"></div>
+					<div class="resizable-handle resizable-se" unselectable="on"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="abandon-modal">
+			<div class="modal-dialog">
+		        <div class="modal-content" style="color: rgb(0, 0, 0);">
+		            <div class="modal-header">
+						<h4 class="modal-title">
+							Warning
+						</h4>
+		            </div>
+		            <div class="modal-body">
+		               <h3 class="modal-title">
+							Leaving the filters will discard all your changes. Do you wish to continue?  
+						</h3>
+		            </div>
+		            <div class="modal-footer">
+						<button id="abandon-ok-button" type="button" class="btn btn-primary" data-dismiss="modal">
+							OK
+						</button>
+						<button id="abandon-cancel-button" type="button" class="btn btn-default" data-dismiss="modal">
+							Cancel
+						</button>
+					</div>
+		        </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="initState"></div>
+<br><br>
+<div id="loadingProgress" style="padding:20px;" class="hide">
+		<h3>
+			Loading, please wait...
+			<span id="widget-content-spinner" style="position:relative; left:25px;"></span>
+		</h3>		
+</div>
+<div id="_visualization" class="" style="min-width: 240px;height:100%;">	
+	<div id="jp-page-content" class="query" style="padding-left: 20px; margin-top: -28px; display: flex; height: 400px;">
+
+<link rel="stylesheet" href="./query-chart-render.css">
+
+<div id="chart-page-content">
+	
+	<div id="chart-container" class="chart-site-print" width="620" height="485.70000076293945" style="" alt="COM_SYS_StoryStatusReport"><svg preserveAspectRatio="xMidYMid meet" width="520" height="385.70000076293945" style="overflow: visible" alt="COM_SYS_StoryStatusReport"><g class="legend" transform="translate(52.44999980926514,325)"><rect class="legend-background" height="60.70000076293945" width="109.33279418945312"></rect><g class="legend-entry"><rect class="legend-swatch" x="10" y="10" height="10" width="10" style="fill: rgb(147, 196, 125); stroke: rgb(102, 137, 87); stroke-width: 1;"></rect><text class="legend-text" x="26" y="10" dy=".85em" style="font-size: 10px;">Closed</text></g><g class="legend-entry"><rect class="legend-swatch" x="10" y="26" height="10" width="10" style="fill: rgb(255, 255, 0); stroke: rgb(178, 178, 0); stroke-width: 1;"></rect><text class="legend-text" x="26" y="26" dy=".85em" style="font-size: 10px;">In Progress</text></g><g class="legend-entry"><rect class="legend-swatch" x="10" y="42" height="10" width="10" style="fill: rgb(255, 0, 0); stroke: rgb(178, 0, 0); stroke-width: 1;"></rect><text class="legend-text" x="26" y="42" dy=".85em" style="font-size: 10px;">New</text><text class="legend-text" x="-10" y="58" style="fill: rgb(255, 255, 255);">.</text></g></g><text transform="translate(52.44999980926514 ,15)" class="chart-text-title" style="text-anchor: start; font-size: 10px;">COM PI Story Status</text><g transform="translate(52.44999980926514,40)"><g class="x axis" transform="translate(0,225)"><g class="tick major" transform="translate(84.76071432658604,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" class="text-no-link" style="text-anchor: middle;">PI25.2</text></g><g class="tick major" transform="translate(197.77500009536743,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" class="text-no-link" style="text-anchor: middle;">PI25.2_Sprint6</text></g><g class="tick major" transform="translate(310.7892858641488,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" class="text-no-link" style="text-anchor: middle;">PI25.2_Sprint5</text></g><path class="domain" d="M0,6V0H395.55000019073486V6"></path></g><text transform="translate(197.77500009536743 ,280)" class="text-no-link" style="text-anchor: middle; font-size: 12px;">Planned for</text><g class="y axis" transform="translate(0 ,0)"><g class="tick major" transform="translate(0,225)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">0</text></g><g class="tick major" transform="translate(0,194)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">5</text></g><g class="tick major" transform="translate(0,163)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">10</text></g><g class="tick major" transform="translate(0,132)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">15</text></g><g class="tick major" transform="translate(0,101)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">20</text></g><g class="tick major" transform="translate(0,70)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">25</text></g><g class="tick major" transform="translate(0,39)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">30</text></g><g class="tick major" transform="translate(0,8)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">35</text></g><path class="domain" d="M-6,0H0V225H-6"></path></g><text transform="rotate(-90)" y="-42.44999980926514" x="-112.5" style="text-anchor: middle; font-size: 12px;">Count</text><g class="grid"><g class="tick major" transform="translate(0,225)" style="opacity: 1;"><line x2="395.55000019073486" y2="0"></line><text x="-3" y="0" dy=".32em" style="text-anchor: end;"></text></g><g class="tick major" transform="translate(0,194)" style="opacity: 1;"><line x2="395.55000019073486" y2="0"></line><text x="-3" y="0" dy=".32em" style="text-anchor: end;"></text></g><g class="tick major" transform="translate(0,163)" style="opacity: 1;"><line x2="395.55000019073486" y2="0"></line><text x="-3" y="0" dy=".32em" style="text-anchor: end;"></text></g><g class="tick major" transform="translate(0,132)" style="opacity: 1;"><line x2="395.55000019073486" y2="0"></line><text x="-3" y="0" dy=".32em" style="text-anchor: end;"></text></g><g class="tick major" transform="translate(0,101)" style="opacity: 1;"><line x2="395.55000019073486" y2="0"></line><text x="-3" y="0" dy=".32em" style="text-anchor: end;"></text></g><g class="tick major" transform="translate(0,70)" style="opacity: 1;"><line x2="395.55000019073486" y2="0"></line><text x="-3" y="0" dy=".32em" style="text-anchor: end;"></text></g><g class="tick major" transform="translate(0,39)" style="opacity: 1;"><line x2="395.55000019073486" y2="0"></line><text x="-3" y="0" dy=".32em" style="text-anchor: end;"></text></g><g class="tick major" transform="translate(0,8)" style="opacity: 1;"><line x2="395.55000019073486" y2="0"></line><text x="-3" y="0" dy=".32em" style="text-anchor: end;"></text></g><path class="domain" d="M0,0H0V225H0"></path></g><g class="message"></g><g class="valgroup"><rect class="bar" width="56.507142884390696" height="136" x="56.507142884390696" y="89" style="fill: rgb(255, 0, 0); stroke: rgb(178, 0, 0); stroke-width: 1;"></rect><rect class="bar" width="56.507142884390696" height="0" x="169.52142865317208" y="225" style="fill: rgb(255, 0, 0); stroke: rgb(178, 0, 0); stroke-width: 1;"></rect><rect class="bar" width="56.507142884390696" height="0" x="282.53571442195346" y="225" style="fill: rgb(255, 0, 0); stroke: rgb(178, 0, 0); stroke-width: 1;"></rect><text class="chart-text-value" dy=".35em" x="84.76071432658604" y="105" style="text-anchor: middle;">22</text><text class="chart-text-value" dy=".35em" x="197.77500009536743" style="text-anchor: middle;" y="225"></text><text class="chart-text-value" dy=".35em" x="310.7892858641488" style="text-anchor: middle;" y="225"></text></g><g class="valgroup"><rect class="bar" width="56.507142884390696" height="43" x="56.507142884390696" y="45" style="fill: rgb(255, 255, 0); stroke: rgb(178, 178, 0); stroke-width: 1;"></rect><rect class="bar" width="56.507142884390696" height="19" x="169.52142865317208" y="206" style="fill: rgb(255, 255, 0); stroke: rgb(178, 178, 0); stroke-width: 1;"></rect><rect class="bar" width="56.507142884390696" height="19" x="282.53571442195346" y="206" style="fill: rgb(255, 255, 0); stroke: rgb(178, 178, 0); stroke-width: 1;"></rect><text class="chart-text-value" dy=".35em" x="84.76071432658604" y="61" style="text-anchor: middle;">7</text><text class="chart-text-value" dy=".35em" x="197.77500009536743" style="text-anchor: middle;" y="215.5">3</text><text class="chart-text-value" dy=".35em" x="310.7892858641488" style="text-anchor: middle;" y="215.5">3</text></g><g class="valgroup"><rect class="bar" width="56.507142884390696" height="25" x="56.507142884390696" y="20" style="fill: rgb(147, 196, 125); stroke: rgb(102, 137, 87); stroke-width: 1;"></rect><rect class="bar" width="56.507142884390696" height="0" x="169.52142865317208" y="206" style="fill: rgb(147, 196, 125); stroke: rgb(102, 137, 87); stroke-width: 1;"></rect><rect class="bar" width="56.507142884390696" height="0" x="282.53571442195346" y="206" style="fill: rgb(147, 196, 125); stroke: rgb(102, 137, 87); stroke-width: 1;"></rect><text class="chart-text-value" dy=".35em" x="84.76071432658604" y="32.5" style="text-anchor: middle;">4</text><text class="chart-text-value" dy=".35em" x="197.77500009536743" style="text-anchor: middle;" y="206"></text><text class="chart-text-value" dy=".35em" x="310.7892858641488" style="text-anchor: middle;" y="206"></text></g><g class="grid" style="display: none;"><line class="x tick" y1="0" y2="225"></line></g></g></svg></div>
+</div>
+				
+<script>
+	var emptyResultText = "";
+	if (emptyResultText) {
+  		$(".chart-site-print").data("emptyResultText", "");
+  	};
+  	
+    var chartData= {"data":[{"drilldown":{"New":{"ITERATION_NAME":"PI25.2","REQUEST_STATE":"New"},"Closed":{"ITERATION_NAME":"PI25.2","REQUEST_STATE":"Closed"},"In Progress":{"ITERATION_NAME":"PI25.2","REQUEST_STATE":"In Progress"}},"label":"PI25.2","href":"","value":[4.0,7.0,22.0]},{"drilldown":{"In Progress":{"ITERATION_NAME":"PI25.2_Sprint6","REQUEST_STATE":"In Progress"}},"label":"PI25.2_Sprint6","href":"","value":[0.0,3.0,0.0]},{"drilldown":{"In Progress":{"ITERATION_NAME":"PI25.2_Sprint5","REQUEST_STATE":"In Progress"}},"label":"PI25.2_Sprint5","href":"","value":[0.0,3.0,0.0]}],"series":[{"varName":"Closed","subreport":"https:\/\/rb-alm-14-p.de.bosch.com\/rs\/reportdefinition\/21331#reportvisualization-table","graphYAxis":"Y","color":"#93c47d","label":"Closed"},{"varName":"In Progress","subreport":"https:\/\/rb-alm-14-p.de.bosch.com\/rs\/reportdefinition\/21331#reportvisualization-table","graphYAxis":"Y","color":"#ffff00","label":"In Progress"},{"varName":"New","subreport":"https:\/\/rb-alm-14-p.de.bosch.com\/rs\/reportdefinition\/21331#reportvisualization-table","graphYAxis":"Y","color":"#ff0000","label":"New"}],"reportTitle":"COM_SYS_StoryStatusReport","group":"ITERATION_NAME"};
+	var chartOptions = {locale: "en_US", type: "stackedbarchart", sort: "top", side: "false", 
+							chartData: chartData, groupTitle: "Planned for", countTitle: "Count", chartTitle: "COM PI Story Status", showValues: "true" == "true", showTotals: "false" == "true",
+							dateScale: "Days", noValZero: "false" == "true", calcs: "[sum,sum,sum]", seriesTypes: "[default,default,default]", seriesSorts: "[0,1,2]", isTimeSeries: "false" == "true",
+							chartMeasureMode : "countValues", showGrids: "true" == "true",
+							group: "ITERATION_NAME",
+							series: "REQUEST_STATE",
+							count: "__auto__"};
+	
+		chartOptions.detail = true;
+										
+	if( chartData.data.length === 0 ) {
+		chartOptions.noDataMessage = ""; 
+	}
+	if( chartData.average ) {
+		chartOptions.averageMessage = ""; 
+	}
+	
+	require(["chart/chartRegistry", "i18n!nls/query-builder"], function(ChartRegistry, messages) {
+		var chartInfo = ChartRegistry.types[chartOptions.type];
+		if (chartInfo) {
+				
+			require([chartInfo.path], function(ChartConstructor) {
+				var fullChartOptions = {unassignedMsg: messages.unassigned, totalsMsg: messages.WebUI_Totals, totalMsg: messages.WebUI_Total};
+					
+				EXTEND(fullChartOptions, CHART_OPTION_DEFAULTS); 	// general defaults first
+				EXTEND(fullChartOptions, chartInfo.options);		// specific chart defaults
+				EXTEND(fullChartOptions, chartOptions);			// specified chart options
+					
+				var chartContainer = document.getElementById("chart-container");
+				this._currentChart = new ChartConstructor(chartContainer, fullChartOptions);
+					
+				// notify the parent frame that the size has changed
+				var d3chartContainer = d3.select(chartContainer);
+				var chartHeight = Math.min(400, parseInt(d3chartContainer.attr("height")) + 25);
+				
+				var target = parent.postMessage ? parent : (parent.document.postMessage ? parent.document : undefined);
+				if (typeof target != "undefined") {
+					target.postMessage(chartHeight, "*");
+				}
+				
+				if(changeGadgetHeightBasedOnChart)
+					changeGadgetHeightBasedOnChart(chartHeight);
+			});
+		}
+	});	
+</script>
+	
+
+</div>
+</div>
+
+<div data-modal="" class="bx--modal" id="choose-configuration-modal" role="dialog" aria-modal="true" aria-labelledby="choose-config-title" aria-describedby="choose-config-title" aria-hidden="true" tabindex="-1" style="display:none;">
+	<div class="bx--modal-container" style="width:600px;">
+		
+			
+			<div class="bx--modal-header">
+				<p class="bx--modal-header__heading bx--type-beta" id="choose-config-title">Choose a configuration</p>
+				<button class="bx--modal-close close" type="button" data-dismiss="modal" data-modal-close="" aria-label="close modal">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--modal-close__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+						<path d="M12 4.7L11.3 4 8 7.3 4.7 4 4 4.7 7.3 8 4 11.3 4.7 12 8 8.7 11.3 12 12 11.3 8.7 8z"></path>
+					</svg>
+				</button>
+			</div>
+			
+			<div class="bx--modal-content" style="max-height: calc(100vh-150px); overflow-y:auto;">
+				
+
+<div class="domain-selection-area">
+	<div id="domain-selection-area" class="select-header">
+		<span class="filter-closed" id="domain-twistie" tabindex="0"></span>
+		<label for="domain-select">Choose a domain</label>
+		<span class="chosenOptionsText config-padded-section" id="chosen-domain-label">No domain is chosen</span>
+	</div>
+	<div class="collapsible" id="domain-collapsible-panel">
+		<select class="form-control resource-attributes" id="domain-select"></select>
+	</div>
+</div>
+<div class="project-selection-area" id="project-div">
+	<div id="project-selection-area" class="select-header">
+		<span class="filter-closed" id="project-twistie" tabindex="0"></span>
+		<label for="project-select">Choose a project area</label>
+		<span class="chosenOptionsText config-padded-section" id="chosen-project-label">No project area is chosen</span>
+	</div>
+	<div class="collapsible" id="project-collapsible-panel"> 
+ 			<div class="input-group">
+			<input id="search-project-input" autocomplete="off" type="text" class="form-control">
+			<span class="input-group-btn">
+				<button id="clear-project-search" class="bx--btn bx--btn--secondary bx--btn--sm">×</button>
+				<button class="bx--btn bx--btn--secondary bx--btn--sm" id="search-project-button">Search</button>
+		 	</span>
+		</div>
+		<span class="hint-text">Enter * or leave blank to list all project areas</span>
+		<form>
+			<select id="project-select" class="search-values col-xs-12" size="10" style="overflow-x:auto;"></select>
+		</form>
+	</div>	
+</div>
+<div class="component-selection-area">
+	<div id="component-selection-area" class="select-header notClickable">
+		<span class="filter-closed" id="component-twistie" tabindex="0"></span>
+		<label for="component-select">Choose a component</label>
+		<span class="chosenOptionsText config-padded-section" id="chosen-component-label">No component is chosen</span>
+	</div>
+	<div class="collapsible" id="component-collapsible-panel"> 
+		<div class="input-group">
+			<input id="search-component-input" autocomplete="off" type="text" class="form-control">
+			<span class="input-group-btn">
+				<button id="clear-component-search" class="bx--btn bx--btn--secondary bx--btn--sm">×</button>
+				<button id="search-component-button" class="bx--btn bx--btn--secondary bx--btn--sm">Search</button>
+		 	</span>
+		</div>
+		<span class="hint-text">Enter * or leave blank to list all components</span>
+		<form>
+			<select id="component-select" class="search-values col-xs-12" size="10" style="overflow-x:auto;"></select>
+		</form>
+		<a id="deselect-component-option" class="jrs-param-selection-link bx--link" href="javascript:void(0)" style="margin-left: 12px">
+			None
+		</a>
+	</div>	
+</div>
+<div class="configuration-selection-area">
+	<div id="configuration-selection-area" class="select-header notClickable">
+		<span class="filter-closed" id="configuration-twistie" tabindex="0"></span>
+		<label for="configuratiohn-select">Choose a configuration</label>
+		<label class="warning" id="config-warning">* Choose a project area first</label>
+		<span class="chosenOptionsText config-padded-section" id="chosen-configuration-label">No configuration is chosen</span>
+	</div>
+	<div class="collapsible" id="configuration-collapsible-panel"> 
+		<div class="input-group">
+			<input id="search-configuration-input" autocomplete="off" type="text" class="form-control">
+			<span class="input-group-btn">
+				<button id="clear-configuration-search" class="bx--btn bx--btn--secondary bx--btn--sm">×</button>
+				<button id="search-configuration-button" class="bx--btn bx--btn--secondary bx--btn--sm">Search</button>
+		 	</span>
+		</div>
+		<span class="hint-text">Enter * or leave blank to list all configurations</span>
+		<form>
+			<select id="configuration-select" class="search-values col-xs-12" size="10" style="overflow-x:auto; ">Choose</select>
+		</form>
+	</div>	
+</div>
+
+			</div>
+			
+			<div class="bx--modal-footer"> 
+				<button id="close-config-modal" class="bx--btn bx--btn--secondary" data-dismiss="modal" data-modal-close="">Cancel</button>
+				<button id="choose-config-btn" class="bx--btn bx--btn--primary select-config-close" data-dismiss="modal" data-modal-close="" disabled="">Accept</button>
+			</div>
+			<span tabindex="0"></span>
+		
+	</div>
+</div>
+
+<!-- parameter object -->
+<style>
+	.jrs-ui-template {
+		display:none;
+	}
+	
+</style>
+
+
+
+
+
+
+<!-- Parameter types -->
+
+
+
+
+
+
+
+
+
+
+<script src="./carbon-components.js.download"></script><!-- parameter object -->
+<style>
+	.gadget-settings-frame.template, 
+	.lqe-query-stats-frame.template {
+		display:none;
+	}
+	
+	.gadget-settings-frame{
+		padding : 10px;
+	}
+	
+	.lqe-query-stats-body > .bx--list--unordered > .bx--list__item:before{
+		content: '\002022';
+	}
+	
+	.lqe-query-stats-body {
+		font-size : 12px;
+	}
+	
+	.info-icon {
+		background: transparent;
+		color : #000000;
+		float:right;
+		margin-right : 2px;
+		opacity : .4;
+	}
+	
+	.info-icon:hover,.info-icon:focus {
+		color : #000000;
+		text-decoration : none;
+		opacity : .6;
+	}
+	
+	#query-stats-icon{
+		margin-top : 4px;
+	}
+	
+</style>
+<div class="gadget-settings-frame template" id="lqeQueryTracingContent">
+				<div class="gadget-setting-content">
+					<input type="checkbox" id="enable-lqe-query-tracing" class="filter-select-checkbox">
+					<label style="padding-left:5px">Data completeness check</label>
+				</div>
+</div>
+<div class="lqe-query-stats-frame template" id="lqeQueryExecDetailsTemplate">
+	<div class="lqe-query-stats-content">
+	  <div class="lqe-query-stats-body">
+		<span></span>
+		<ul class="bx--list--unordered">
+		</ul>
+	  </div>
+	</div>
+	<li class="bx--list__item no-count" style="font-size : 12px;"><span></span></li>
+	<li class="bx--list__item with-count" style="font-size : 12px;"><b></b><span></span></li>		
+</div>
+
+<div class="lqe-query-stats-frame template" id="lqeQueryExecInfoButtonTemplate">
+<button type="button" class="info-icon bx--tooltip__trigger" style="">	
+	<img src="./info_small.svg">										
+</button>
+</div>
+
+
+
+<div class="modal fade" id="_loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body" style="padding: 15px">
+				<h2 class="modal-title" style="padding:0px 0px 5px 0px">
+					Loading, please wait...
+				</h2>
+				<div class="progress progress-striped active" style="margin-bottom: 0px">
+					<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+				</div>
+			</div>
+		</div>		<!-- /.modal-content -->
+	</div>	<!-- /.modal-dialog -->
+</div> <!-- /.modal -->
+
+<div class="modal fade" id="_lqeauth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title" id="myModalLabel">
+					LQE Data Source Authorization
+				</h1>
+			</div>
+			<div class="modal-body" style="padding: 10px">
+				You must refresh once you have authorized the data sources.
+				<br> <img src="./circle_arrow.gif"> <a href="javascript: void(0)" id="_lqeauthLink">Refresh</a>
+				<iframe class="well" id="_lqeauthFrame" style="margin-bottom: 0px; padding: 1px; width: 100%; height: 300px;" src="./saved_resource(14).html">
+				</iframe>
+			</div>
+			<div class="modal-footer" id="_lqeFooter">
+				<button id="_lqeauthCancel" type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<script src="./spin.js.download"></script>
+<script src="./base.min.js.download"></script>
+
+
+<script src="./bootstrap-datepicker.js.download"></script>
+
+
+<script>
+	
+			var __GadgetMessages = (function() {
+		
+		var _messages = {};
+		
+					_messages["NoFriend"] = "Unable to display requested data. Please make sure there is a friend relationship between the dashboard and Report Builder.";
+				
+					_messages["General_Error"] = "Unable to display requested data.";
+				
+					_messages["ProxyLogoutFailed"] = "Error: Unable to display requested data. Please restart your browser after clearing its cache.";
+				
+					_messages["LoginDesc"] = "You must log into ${0} to view this content.";
+				
+					_messages["NoParams"] = "This report does not have any parameters.";
+				
+					_messages["NoValueSelected"] = "(No value selected)";
+				
+					_messages["ProvideRequiredValues"] = "Provide values for all required parameters or filters.";
+				
+					_messages["SelectParentFilterValues"] = "Select values for \"${0}\" to populate this list ";
+				
+					_messages["ParentFilterForcedRequired"] = "Select a value for the required filter <strong>${0}</strong>, or use the current value.";
+				
+					_messages["TooManySelections"] = "The maximum number of filter selections has been exceeded.  Please make fewer selections in order to proceed.";
+				
+					_messages["WebUI_Gadget_ReportName"] = "Report name:";
+				
+					_messages["WebUI_Gadget_TableView"] = "Table";
+				
+					_messages["WebUI_Gadget_GraphView"] = "Graph";
+				
+					_messages["WebUI_Gadget_AbandonChangesPrompt"] = "Leaving the filters will discard all your changes. Do you wish to continue?  ";
+				
+					_messages["WebUI_Run"] = "Run";
+				
+					_messages["WebUI_Gadget_DrillDown"] = "Drill down to: {0}";
+				
+					_messages["WebUI_Gadget_DrillDown_Results_Different"] = "Number of results may not match the calculated graph value when date scale is being used. Drilldown will include all artifacts that contribute to the calculated graph value within the date scale range.";
+				
+		
+		return _messages;
+	
+			})();
+		
+</script>
+
+
+
+
+<script>
+	// WARNING!!! DO NOT INSERT ANY CODE BEFORE THIS COMMENT!!
+	// THE FOLLOWING BLOCK IS USED TO DETECT IF EXTERNAL LIBRARIES ARE 
+	// LOADED -- LOAD WOULD FAIL WHEN JRS IS NOT COLOCATED WITH JTS AND 
+	// JRS HAS A UNTRUSTED CERTIFICATE. ANY CODE INSERTED BEFORE THIS
+	// COMMENT BLOCK EXECUTING DURING THAT CONDITION WOULD RESULT IN A 
+	// BROKEN GADGET
+	var appUrl = "https://rb-alm-14-p.de.bosch.com/rs/";
+	if( !window.requirejs ) {
+		// if we're unable to load requirejs, it meeans we have a untrusted certificate issue
+		var message = "Error: Cannot connect to the remote system or you do not have the permissions to connect to it.<br/><br/>If you wish to ignore this warning and continue, please do the following:<br/>1. Click the link to navigate to the Jazz Report Service application in a new window.<br/>2. Follow the on-screen instructions to ignore or add the untrusted certificate.<br/>3. Close the popup window and refresh your dashboard.<br/><br/>Please make sure your popup blocker is disabled.<br/>";
+		
+		var html = "<div style='font-size:8pt'>"+message;
+		html += "<a target='_blank' href='"+appUrl+"'>Report Builder</a></div>";
+		
+		document.body.innerHTML = html;
+	}
+	
+	requirejs.config({
+		baseUrl : "../../../rs/js/min",
+		waitSeconds: 0,
+		config : {
+			i18n : {
+				locale : "en-US"
+			}
+		}
+	});
+	
+	$(document).data("reportViewUrl", "https://rb-alm-14-p.de.bosch.com/rs/reports#view=21331");
+	$(document).data("exportExcelUrl", "/rs/query/21349/export/excel?report=21331");
+	$(document).data("exportRPEUrl",   "/rs/query/21349/export/rpe?report=21331");
+	$(document).data("exportRPEDocGenPageUrl",   "/rs/query/21349/export/rpe/docgenPage?report=21331");
+	$(document).data("exportWAUrl",    "/rs/query/21349/export/wa?report=21331");
+	$(document).data("createScheduleURL",   "/rs/schedule?action=add&report=21331");
+
+	var __jsonldReportDef = {"@graph":[{"reportVersion":"7.0.3 iFix013","totalRunCount":162,"lastRunBy":"https://rb-alm-14-p.de.bosch.com/jts/users/LKA1PG1","@type":"ReportDefinition","reportParameter":["https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-7","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-5","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-2","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-8","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-6","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-3","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-0","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-9","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-4","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-1"],"defaultReportVisualization":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportvisualization-stackedbarchart","title":"COM_SYS_StoryStatusReport","contributor":["https://rb-alm-14-p.de.bosch.com/jts/users/KOV7KOR","https://rb-alm-14-p.de.bosch.com/jts/users/CMO2KOR","https://rb-alm-14-p.de.bosch.com/jts/users/BUF3KOR","https://rb-alm-14-p.de.bosch.com/jts/users/MRG1KOR","https://rb-alm-14-p.de.bosch.com/jts/users/NKL2KOR"],"modified":"2025-05-12T11:05:50.313+02:00","modifiedBy":"https://rb-alm-14-p.de.bosch.com/jts/users/MGG3KOR","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331","parentfolder":"https://rb-alm-14-p.de.bosch.com/rs/folder/80","identifier":"21331","creator":"https://rb-alm-14-p.de.bosch.com/jts/users/MGG3KOR","lastRun":{"@value":"2025-05-14T08:04:47.502+02:00","@type":"dateTime"},"visibility":"public","defaultReportViewType":"stackedbarchart","reportVisualizationKind":["http://jazz.net/ns/reporting/sparqlreporting#BarChart-Visualization","http://jazz.net/ns/reporting/sparqlreporting#Table-Visualization"],"created":{"@value":"2025-04-29T11:15:34.465+02:00","@type":"dateTime"},"reportVisualization":["https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportvisualization-table","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportvisualization-stackedbarchart"],"reportQueryDataItem":["https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-9","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-6","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-8","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-10","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-11","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-3","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-7","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-5","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-4"],"reportDefaults":"{\"values\":{\"477fc4de789d29a9402ca9aa8c862225\":[\"SYS\"],\"b5f2ccfaa3c259ccf35bbea599a6195d\":[\"Invalid\"],\"6c6670557282ae79eec89927a4386490\":[],\"221317bf8ec91fce5f17bb13ff2a28c7\":[],\"ProjectIds\":[\"176\"],\"bd2c249f18b5b498747c1b66fabc8ecf\":[],\"7d277ac643dfc67dd046b214a45f2943\":[\"Engineering\\/System (Sys)\\/COM_Communication\"],\"9ef23e165e8023bc783f5ff3ce179887\":[\"51547\"],\"fb55ef36500264dc4ce8c05e4f255393\":[\"Story\"],\"0109c5a3488cc0183b0b7c4ba04f4846\":[]},\"version\":\"2.0\"}","totalRuntimeInSeconds":153,"published":false,"etag":"c7d3ea09-9fbd-465b-86b5-f23169534c12","reportQuery":"https://rb-alm-14-p.de.bosch.com/rs/query/21349"},{"dataItemValues":["https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1-1","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1-3","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1-2"],"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1","reportQueryDisplayValueVariable":"ITERATION_NAME","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Planned For","dataItemSemanticColor":"#00b2ef"},{"dataItemGraphYAxis":"Y","dataItemGraphType":"default","@type":"ReportQueryDataItemValue","dataItemSortOrder":"0","dataItemValue":"Closed","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1-1","dataItemSemanticColor":"#93c47d"},{"dataItemGraphYAxis":"Y","dataItemGraphType":"default","@type":"ReportQueryDataItemValue","dataItemSortOrder":"1","dataItemValue":"In Progress","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1-2","dataItemSemanticColor":"#ffff00"},{"dataItemGraphYAxis":"Y","dataItemGraphType":"default","@type":"ReportQueryDataItemValue","dataItemSortOrder":"2","dataItemValue":"New","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1-3","dataItemSemanticColor":"#ff0000"},{"dataItemPosition":8,"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-10","reportQueryDisplayValueVariable":"SUMMARY","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Summary (custom)"},{"dataItemPosition":9,"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-11","reportQueryDisplayValueVariable":"REQUEST_CATEGORY_NAME","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Filed Against (custom)"},{"dataItemValues":["https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2-3","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2-2","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2-1"],"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2","reportQueryDisplayValueVariable":"REQUEST_STATE","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Status"},{"dataItemGraphYAxis":"Y","dataItemGraphType":"default","@type":"ReportQueryDataItemValue","dataItemSortOrder":"0","dataItemValue":"Closed","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2-1","dataItemSemanticColor":"#93c47d"},{"dataItemGraphYAxis":"Y","dataItemGraphType":"default","@type":"ReportQueryDataItemValue","dataItemSortOrder":"1","dataItemValue":"In Progress","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2-2","dataItemSemanticColor":"#ffff00"},{"dataItemGraphYAxis":"Y","dataItemGraphType":"default","@type":"ReportQueryDataItemValue","dataItemSortOrder":"2","dataItemValue":"New","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2-3","dataItemSemanticColor":"#ff0000"},{"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-3","aggregateFunction":"count","dataItemType":"http://www.w3.org/2001/XMLSchema#integer","title":"Count # of rows","dataSortDirection":"DESC"},{"reportQuerySubjectVariable":"URL1","dataItemPosition":1,"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-4","reportQueryDisplayValueVariable":"REFERENCE_ID","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Work Item ID"},{"dataItemPosition":3,"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-5","reportQueryDisplayValueVariable":"URL1_title","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Work Item"},{"dataItemPosition":4,"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-6","reportQueryDisplayValueVariable":"ITERATION_NAME","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Planned For"},{"dataItemPosition":5,"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-7","reportQueryDisplayValueVariable":"REQUEST_STATE","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Status"},{"dataItemPosition":6,"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-8","reportQueryDisplayValueVariable":"LITERAL_NAME","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Story Points (Custom)"},{"dataItemPosition":7,"@type":"ReportQueryDataItem","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-9","reportQueryDisplayValueVariable":"TAGS","dataItemType":"http://www.w3.org/2001/XMLSchema#string","title":"Tags"},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#MetamodelKind","@type":"ReportParameter","parameterQueryDisplayNameVariable":"@","parameterQuery":"https://rb-alm-14-p.de.bosch.com/rs/metamodelInfoFetch?opType=userProjects&endpoint=((endpointUrl))&resource=CM%3ARIDW.VW_REQUEST","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-0","title":"Limit the scope","parameterQuerySubjectVariable":"Project:@id","reportQueryVariable":"ProjectIds","multiSelect":true},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#MetamodelKind","@type":"ReportParameter","parameterQueryDisplayNameVariable":"@","parameterQuery":"https://rb-alm-14-p.de.bosch.com/rs/metamodelInfoFetch?opType=possibleValues&endpoint=((endpointUrl))&type=CM%3ARIDW.VW_REQUEST&property=CM%3ARIDW.VW_REQUEST.REQUEST_TYPE","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-1","title":"Type (SYS Story [Type: Work Item])","dependsOnParameterQueryVariable":"@projects","parameterQuerySubjectVariable":"@id","dependsOnParameter":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-0","reportQueryVariable":"fb55ef36500264dc4ce8c05e4f255393","multiSelect":true},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#TextKind","@type":"ReportParameter","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-2","title":"Summary (custom)","reportQueryVariable":"477fc4de789d29a9402ca9aa8c862225"},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#MetamodelKind","@type":"ReportParameter","parameterQueryDisplayNameVariable":"@","parameterQuery":"https://rb-alm-14-p.de.bosch.com/rs/metamodelInfoFetch?opType=possibleValues&endpoint=((endpointUrl))&type=CM%3ARIDW.VW_REQUEST&property=CM%3ARIDW.VW_REQUEST.ITERATION_NAME","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-3","title":"Planned For","dependsOnParameterQueryVariable":"@projects","parameterQuerySubjectVariable":"@id","dependsOnParameter":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-0","reportQueryVariable":"9ef23e165e8023bc783f5ff3ce179887","multiSelect":true},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#MetamodelKind","@type":"ReportParameter","parameterQueryDisplayNameVariable":"@","parameterQuery":"https://rb-alm-14-p.de.bosch.com/rs/metamodelInfoFetch?opType=possibleValues&endpoint=((endpointUrl))&type=CM%3ARIDW.VW_REQUEST&property=CM%3ARIDW.VW_REQUEST.REQUEST_STATE","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-4","title":"Status","dependsOnParameterQueryVariable":"@projects","parameterQuerySubjectVariable":"@id","dependsOnParameter":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-0","reportQueryVariable":"b5f2ccfaa3c259ccf35bbea599a6195d","multiSelect":true},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#MetamodelKind","@type":"ReportParameter","parameterQueryDisplayNameVariable":"@","parameterQuery":"https://rb-alm-14-p.de.bosch.com/rs/metamodelInfoFetch?opType=possibleValues&endpoint=((endpointUrl))&type=CM%3ARIDW.VW_REQUEST&property=CM%3ARIDW.VW_REQUEST.REQUEST_CATEGORY_NAME","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-5","title":"Filed Against (custom)","dependsOnParameterQueryVariable":"@projects","parameterQuerySubjectVariable":"@id","dependsOnParameter":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-0","reportQueryVariable":"7d277ac643dfc67dd046b214a45f2943","multiSelect":true},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#TextKind","@type":"ReportParameter","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-6","title":"Work Item ID","reportQueryVariable":"6c6670557282ae79eec89927a4386490"},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#TextKind","@type":"ReportParameter","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-7","title":"Work Item","reportQueryVariable":"0109c5a3488cc0183b0b7c4ba04f4846"},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#MetamodelKind","@type":"ReportParameter","parameterQueryDisplayNameVariable":"@","parameterQuery":"https://rb-alm-14-p.de.bosch.com/rs/metamodelInfoFetch?opType=possibleValues&endpoint=((endpointUrl))&type=CM%3ARIDW.VW_REQUEST&property=CM%3ARIDW.VW_REQUEST.ext_com.ibm.team.apt.attribute.complexity","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-8","title":"Story Points (Custom)","dependsOnParameterQueryVariable":"@projects","parameterQuerySubjectVariable":"@id","dependsOnParameter":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-0","reportQueryVariable":"221317bf8ec91fce5f17bb13ff2a28c7","multiSelect":true},{"reportQueryVariableKind":"http://jazz.net/ns/reporting/sparqlreporting#StringTemplateKind","parameterKind":"http://jazz.net/ns/reporting/sparqlreporting#TextKind","@type":"ReportParameter","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportparameter-9","title":"Tags","reportQueryVariable":"bd2c249f18b5b498747c1b66fabc8ecf"},{"chartSeries":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-2","showValues":true,"chartDateScale":"Days","@type":"ReportBarChartVisualization","reportSortedDataItem":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-3","barChartGroupingKind":"http://jazz.net/ns/reporting/sparqlreporting#Stacked","showGrids":true,"customCountTitle":"Count","title":"COM PI Story Status","showTotals":false,"customGroupTitle":"Planned for","chartAggregateFunction":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-3","chartCategories":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-1","chartMeasureMode":"countValues","@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportvisualization-stackedbarchart","chartDateNoValueZero":false,"barChartHorizontalOrientation":false},{"tablePageSize":20,"@type":"ReportTableVisualization","reportQueryDataItem":["https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-4","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-9","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-11","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-7","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-5","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-8","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-10","https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportdataitem-6"],"@id":"https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331#reportvisualization-table","tablePagination":true}],"@context":{"reportVersion":"http://jazz.net/ns/reporting/sparqlreporting#reportVersion","parameterKind":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#parameterKind"},"totalRunCount":"http://jazz.net/ns/reporting/sparqlgateway#totalRunCount","ReportParameter":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#ReportParameter"},"lastRunBy":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlgateway#lastRunBy"},"parameterQueryDisplayNameVariable":"http://jazz.net/ns/reporting/sparqlreporting#parameterQueryDisplayNameVariable","showTotals":"http://jazz.net/ns/reporting/sparqlreporting#showTotals","modified":"http://purl.org/dc/terms/modified","ReportQueryDataItem":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#ReportQueryDataItem"},"parentfolder":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlgateway#parentfolder"},"identifier":"http://purl.org/dc/terms/identifier","lastRun":"http://jazz.net/ns/reporting/sparqlgateway#lastRun","visibility":"http://jazz.net/ns/reporting/sparqlgateway#visibility","chartDateScale":"http://jazz.net/ns/reporting/sparqlreporting#chartDateScale","defaultReportViewType":"http://jazz.net/ns/reporting/sparqlreporting#defaultReportViewType","reportVisualizationKind":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#reportVisualizationKind"},"dataItemGraphType":"http://jazz.net/ns/reporting/sparqlreporting#dataItemGraphType","created":"http://purl.org/dc/terms/created","ReportBarChartVisualization":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#ReportBarChartVisualization"},"reportVisualization":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#reportVisualization"},"dataItemValue":"http://jazz.net/ns/reporting/sparqlreporting#dataItemValue","published":"http://jazz.net/ns/reporting/sparqlgateway#published","reportQueryDisplayValueVariable":"http://jazz.net/ns/reporting/sparqlreporting#reportQueryDisplayValueVariable","chartAggregateFunction":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#chartAggregateFunction"},"dataItemPosition":"http://jazz.net/ns/reporting/sparqlreporting#dataItemPosition","dataItemSortOrder":"http://jazz.net/ns/reporting/sparqlreporting#dataItemSortOrder","etag":"http://jazz.net/ns/reporting/sparqlgateway#etag","parameterQuerySubjectVariable":"http://jazz.net/ns/reporting/sparqlreporting#parameterQuerySubjectVariable","dependsOnParameter":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#dependsOnParameter"},"dataSortDirection":"http://jazz.net/ns/reporting/sparqlreporting#dataSortDirection","multiSelect":"http://jazz.net/ns/reporting/sparqlreporting#multiSelect","dateTime":{"@type":"@id","@id":"http://www.w3.org/2001/XMLSchema#dateTime"},"chartSeries":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#chartSeries"},"showValues":"http://jazz.net/ns/reporting/sparqlreporting#showValues","dataItemGraphYAxis":"http://jazz.net/ns/reporting/sparqlreporting#dataItemGraphYAxis","ReportQueryDataItemValue":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#ReportQueryDataItemValue"},"reportSortedDataItem":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#reportSortedDataItem"},"reportParameter":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#reportParameter"},"barChartGroupingKind":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#barChartGroupingKind"},"showGrids":"http://jazz.net/ns/reporting/sparqlreporting#showGrids","defaultReportVisualization":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#defaultReportVisualization"},"title":"http://purl.org/dc/terms/title","customCountTitle":"http://jazz.net/ns/reporting/sparqlreporting#customCountTitle","dependsOnParameterQueryVariable":"http://jazz.net/ns/reporting/sparqlreporting#dependsOnParameterQueryVariable","customGroupTitle":"http://jazz.net/ns/reporting/sparqlreporting#customGroupTitle","contributor":{"@type":"@id","@id":"http://purl.org/dc/terms/contributor"},"tablePageSize":"http://jazz.net/ns/reporting/sparqlreporting#tablePageSize","dataItemValues":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#dataItemValues"},"parameterQuery":"http://jazz.net/ns/reporting/sparqlreporting#parameterQuery","chartMeasureMode":"http://jazz.net/ns/reporting/sparqlreporting#chartMeasureMode","modifiedBy":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#modifiedBy"},"chartDateNoValueZero":"http://jazz.net/ns/reporting/sparqlreporting#chartDateNoValueZero","reportQuerySubjectVariable":"http://jazz.net/ns/reporting/sparqlreporting#reportQuerySubjectVariable","reportQueryVariableKind":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#reportQueryVariableKind"},"creator":{"@type":"@id","@id":"http://purl.org/dc/terms/creator"},"reportQueryDataItem":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#reportQueryDataItem"},"reportDefaults":"http://jazz.net/ns/reporting/sparqlreporting#reportDefaults","totalRuntimeInSeconds":"http://jazz.net/ns/reporting/sparqlgateway#totalRuntimeInSeconds","aggregateFunction":"http://jazz.net/ns/reporting/sparqlreporting#aggregateFunction","dataItemSemanticColor":"http://jazz.net/ns/reporting/sparqlreporting#dataItemSemanticColor","reportQueryVariable":"http://jazz.net/ns/reporting/sparqlreporting#reportQueryVariable","chartCategories":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#chartCategories"},"reportQuery":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#reportQuery"},"dataItemType":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#dataItemType"},"barChartHorizontalOrientation":"http://jazz.net/ns/reporting/sparqlreporting#barChartHorizontalOrientation","tablePagination":"http://jazz.net/ns/reporting/sparqlreporting#tablePagination","ReportDefinition":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#ReportDefinition"},"ReportTableVisualization":{"@type":"@id","@id":"http://jazz.net/ns/reporting/sparqlreporting#ReportTableVisualization"}}};
+	var __uiAppConfigJSON = {
+    "lqeQueryTracing": true
+};
+	var __reportDefinitionUrl = "https://rb-alm-14-p.de.bosch.com/rs/reportdefinition/21331";
+	var __queryEndpoint = "https://rb-alm-14-p.de.bosch.com/rs/endpoint/2";
+	var __reportQBO = {"QueryBuilder":{"topPathGroup":{"group":{"operation":"OR","pathsAndGroups":[{"path":{"conditions":[{"condition":{"baseType":"selectChangeandConfigurationmanagement","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story"}}]}}]}},"topFilterGroup":{"group":{"operation":"AND","filtersAndGroups":[{"filter":{"domain":"CM:RIDW.VW_REQUEST","id":"CM:RIDW.VW_REQUEST.REQUEST_TYPE","label":"Type (SYS Story [Type: Work Item])","type":"ENUMERATION","operator":"is","value":["Story"],"labels":["Story"],"locked":"false","required":"false","runtimeVar":"fb55ef36500264dc4ce8c05e4f255393"}},{"filter":{"domain":"CM:RIDW.VW_REQUEST","id":"CM:RIDW.VW_REQUEST.SUMMARY","label":"Summary (SYS Story [Type: Work Item])","type":"STRING","operator":"contains","value":["SYS"],"locked":"false","required":"false","runtimeVar":"477fc4de789d29a9402ca9aa8c862225"}},{"filter":{"domain":"CM:RIDW.VW_REQUEST","id":"CM:RIDW.VW_REQUEST.ITERATION_NAME","label":"Planned For (SYS Story [Type: Work Item])","type":"ENUMERATION","operator":"is any of selected or immediate children","value":["51547"],"labels":["PI25.2"],"locked":"false","required":"false","runtimeVar":"9ef23e165e8023bc783f5ff3ce179887"}},{"filter":{"domain":"CM:RIDW.VW_REQUEST","id":"CM:RIDW.VW_REQUEST.REQUEST_STATE","label":"Status (SYS Story [Type: Work Item])","type":"ENUMERATION","operator":"is not","value":["Invalid"],"labels":["Invalid"],"locked":"false","required":"false","runtimeVar":"b5f2ccfaa3c259ccf35bbea599a6195d"}},{"filter":{"domain":"CM:RIDW.VW_REQUEST","id":"CM:RIDW.VW_REQUEST.REQUEST_CATEGORY_NAME","label":"Filed Against (SYS Story [Type: Work Item])","type":"ENUMERATION","parentInfoMap":{"CentralComputingRack (CCM)":["Engineering/System (Sys)/COM_Communication"]},"operator":"is in subtree","value":["Engineering/System (Sys)/COM_Communication"],"labels":["COM_Communication"],"altValue":["176"],"locked":"false","required":"false","runtimeVar":"7d277ac643dfc67dd046b214a45f2943"}}]},"columnFilters":[{"filter":{"id":"CM:RIDW.VW_REQUEST.REFERENCE_ID","label":"ID","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"REFERENCE_ID","variableType":"xsd:string","customLabel":"Work Item ID","locked":false,"operator":"is any of","value":[""],"filterSort":6,"runtimeVar":"6c6670557282ae79eec89927a4386490"}},{"filter":{"id":"CM:RIDW.VW_REQUEST.URL","label":"URL","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"URL1","variableType":"xsd:anyURI","customLabel":"URL","locked":false,"operator":"is any of","value":[""],"filterSort":7,"runtimeVar":"869ec5eadeebbca519753035d2cde25f"}},{"filter":{"id":"CM:RIDW.VW_REQUEST.NAME","label":"Name","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"URL1_title","variableType":"xsd:string","customLabel":"Work Item","locked":false,"operator":"is any of","value":[""],"filterSort":8,"runtimeVar":"0109c5a3488cc0183b0b7c4ba04f4846"}},{"filter":{"id":"CM:RIDW.VW_REQUEST.ext_com.ibm.team.apt.attribute.complexity","label":"Story Points (Custom)","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"LITERAL_NAME","variableType":"xsd:string","customLabel":"Story Points (Custom)","locked":false,"operator":"is any of","value":[""],"filterSort":9,"runtimeVar":"221317bf8ec91fce5f17bb13ff2a28c7"}},{"filter":{"id":"CM:RIDW.VW_REQUEST.TAGS","label":"Tags","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"TAGS","variableType":"xsd:string","customLabel":"Tags","locked":false,"operator":"is any of","value":[""],"filterSort":10,"runtimeVar":"bd2c249f18b5b498747c1b66fabc8ecf"}}]},"resultColumns":[{"resultColumn":{"id":"CM:RIDW.VW_REQUEST.REFERENCE_ID","label":"ID","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"REFERENCE_ID","variableType":"xsd:string","customLabel":"Work Item ID"}},{"resultColumn":{"id":"CM:RIDW.VW_REQUEST.URL","label":"URL","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"URL1","variableType":"xsd:anyURI","customLabel":"URL"}},{"resultColumn":{"id":"CM:RIDW.VW_REQUEST.NAME","label":"Name","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"URL1_title","variableType":"xsd:string","customLabel":"Work Item"}},{"resultColumn":{"id":"CM:RIDW.VW_REQUEST.ITERATION_NAME","label":"Planned For","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"ITERATION_NAME","variableType":"xsd:string","customLabel":"Planned For"}},{"resultColumn":{"id":"CM:RIDW.VW_REQUEST.REQUEST_STATE","label":"Status","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"REQUEST_STATE","variableType":"UTILITIES_CM/RIDW.VW_REQUEST_STATE","customLabel":"Status"}},{"resultColumn":{"id":"CM:RIDW.VW_REQUEST.ext_com.ibm.team.apt.attribute.complexity","label":"Story Points (Custom)","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"LITERAL_NAME","variableType":"xsd:string","customLabel":"Story Points (Custom)"}},{"resultColumn":{"id":"CM:RIDW.VW_REQUEST.TAGS","label":"Tags","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","variableName":"TAGS","variableType":"xsd:string","customLabel":"Tags"}},{"resultColumn":{"variableName":"SUMMARY","variableType":"xsd:string","customLabel":"Summary (custom)","id":"CM:RIDW.VW_REQUEST.SUMMARY","label":"Summary","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","isCustom":true,"expression":"CASE\n  -- SYS1 group\n  WHEN $VAR1$ LIKE '%SYS1%' OR \n       $VAR1$ LIKE '%SYS 1%' OR \n       $VAR1$ LIKE '%SYS.1%' OR \n       $VAR1$ LIKE '%Sys.1%' OR \n       $VAR1$ LIKE '%Sys1%' THEN 'SYS1'\n\n  -- SYS2 group\n  WHEN $VAR1$ LIKE '%SYS2%' OR \n       $VAR1$ LIKE '%SYS 2%' OR \n       $VAR1$ LIKE '%SYS.2%' OR \n       $VAR1$ LIKE '%Sys.2%' THEN 'SYS2'\n\n  -- SYS3 group\n  WHEN $VAR1$ LIKE '%SYS3%' OR \n       $VAR1$ LIKE '%SYS 3%' OR \n       $VAR1$ LIKE '%SYS.3%' OR \n       $VAR1$ LIKE '%Sys.3%' OR \n       $VAR1$ LIKE '%Sys2%' OR \n       $VAR1$ LIKE '%Sys3%' THEN 'SYS3'\n\n  -- SYS4 group\n  WHEN $VAR1$ LIKE '%SYS4%' OR \n       $VAR1$ LIKE '%SYS 4%' OR \n       $VAR1$ LIKE '%SYS.4%' OR \n       $VAR1$ LIKE '%Sys.4%' OR \n       $VAR1$ LIKE '%Sys4%' THEN 'SYS4'\n\n  -- SYS5 group\n  WHEN $VAR1$ LIKE '%SYS5%' OR \n       $VAR1$ LIKE '%SYS 5%' OR \n       $VAR1$ LIKE '%SYS.5%' OR \n       $VAR1$ LIKE '%Sys.5%' OR \n       $VAR1$ LIKE '%Sys5%' THEN 'SYS5'\n\n  -- SYS6 group\n  WHEN $VAR1$ LIKE '%SYS6%' OR \n       $VAR1$ LIKE '%SYS 6%' OR \n       $VAR1$ LIKE '%SYS.6%' THEN 'SYS6'\n\n  ELSE 'Others'\nEND\n","variables":[{"varName":"$VAR1$","id":"CM:RIDW.VW_REQUEST.SUMMARY","label":"Summary","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story"}]}},{"resultColumn":{"variableName":"REQUEST_CATEGORY_NAME","variableType":"xsd:string","customLabel":"Filed Against (custom)","id":"CM:RIDW.VW_REQUEST.REQUEST_CATEGORY_NAME","label":"Filed Against","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story","isCustom":true,"expression":"CASE\n  -- Communication mappings\n  WHEN $VAR1$ LIKE '%Communication%' THEN 'COM'\n\n  -- MaaS Features mappings\n  WHEN $VAR1$ LIKE '%MaaSFeatures%' THEN 'MaaS'\n  WHEN $VAR1$ LIKE '%DOS_Display_Output%' THEN 'MaaS'\n  WHEN $VAR1$ LIKE '%CIS_Camera_Input%' THEN 'MaaS'\n  WHEN $VAR1$ LIKE '%AUS_Audio%' THEN 'MaaS'\n  WHEN $VAR1$ LIKE '%MMG_Memory management%' THEN 'MaaS'\n  WHEN $VAR1$ LIKE '%SoC_System_on_Chip%' THEN 'MaaS'\n\n  -- Data Recording mappings\n  WHEN $VAR1$ LIKE '%DataRecording%' THEN 'DRB'\n\n  -- Diagnostics mappings\n  WHEN $VAR1$ LIKE '%Diagnostics%' THEN 'Diag'\n  WHEN $VAR1$ LIKE '%DIA_Diagnose%' THEN 'Diag'\n\n  -- Safety mappings\n  WHEN $VAR1$ LIKE '%Safety%' THEN 'Safety'\n  WHEN $VAR1$ LIKE '%MaaS_Safety%' THEN 'Safety'\n\n  -- Security mappings\n  WHEN $VAR1$ LIKE '%Security%' THEN 'Security'\n\n  -- Operating Mode mappings\n  WHEN $VAR1$ LIKE '%Operatingmode%' THEN 'OPMM'\n  WHEN $VAR1$ LIKE '%MaaS_OperatingState%' THEN 'OPMM'\n  WHEN $VAR1$ LIKE '%OPM_OperationMode%' THEN 'OPMM'\n\n  -- Degradation mappings\n  WHEN $VAR1$ LIKE '%DEG_Degradation%' THEN 'Safety'\n\n  -- System-on-Chip mappings\n  WHEN $VAR1$ LIKE '%SoC_System_on_Chip%' THEN 'NN'\n  WHEN $VAR1$ LIKE '%MCU_Microcontroller%' THEN 'NN'\n\n  -- Validation & Verification (V&V) Environments mappings\n  WHEN $VAR1$ LIKE 'Engineering/V&V/EnvABC%' THEN 'V&V Blade'\n  WHEN $VAR1$ LIKE 'Engineering/V&V/EnvD%' THEN 'V&V Blade'\n  WHEN $VAR1$ LIKE 'Engineering/V&V/EnvE%' THEN 'V&V Blade'\n  WHEN $VAR1$ LIKE 'Engineering/V&V/Rack/V&V%' THEN 'V&V Rack'\n  WHEN $VAR1$ LIKE 'Engineering/V&V/EnvABC/V&V%' THEN 'V&V Blade'\n  WHEN $VAR1$ LIKE 'V&V_Safety%' THEN 'V&V Blade'\n  WHEN $VAR1$ LIKE 'Engineering/V&V' THEN 'V&V Blade'\n  WHEN $VAR1$ LIKE 'Engineering/V&V/Rack%' THEN 'V&V Rack'\n\n  -- System mappings\n  WHEN $VAR1$ = 'Engineering/System (Sys)' THEN 'Sys'\n  WHEN $VAR1$ LIKE 'Engineering/System (Sys)%' THEN 'Sys'\n  WHEN $VAR1$ = 'RM' THEN 'Sys'\n\n  -- Everything else\n  ELSE 'Others'\nEND\n","variables":[{"varName":"$VAR1$","id":"CM:RIDW.VW_REQUEST.REQUEST_CATEGORY_NAME","label":"Filed Against","domain":"CM:RIDW.VW_REQUEST","domainLabel":"SYS Story"}]}}],"projects":["176"],"reportVersion":"7.0.3 iFix013","queryGenFlags":0,"useRelationalStore":false,"workItemLinkFiltering":false,"queryHint":null}};
+	
+	var __JTS_ROOT_URL = "https://rb-alm-14-p.de.bosch.com/jts/";
+	var __renderType = "";
+	var __width = "";
+	var __height = "";	
+	var __constantValues = "";	
+	var __isEmbedded = "false" === "true";
+	var __detail = "true" === "true";
+		
+	function changeGadgetHeightBasedOnChart(chartHeight) {
+		if (__isEmbedded) {
+			return;
+		}
+
+		try {
+			// only check if we're in a OpenSocial gadget environment
+			var prefs = new gadgets.Prefs();
+			
+			// don't auto set the gadget height for a chart if the height has been set by the user
+			var gadgetHeight = prefs.getString("gadgetHeight");
+			if( gadgetHeight != 0 && gadgetHeight != "" )
+				return;
+		} catch(e) {
+			// no-op when not a gadget
+		}
+		document.getElementById("jp-page-content").style.height = chartHeight + "px";
+		
+		// add a little padding
+		chartHeight += 35;
+		try {
+			// open social
+			gadgets.window.adjustHeight(chartHeight);
+		} catch(e) {
+			// UI view page
+			//parent.resizeViewContent(chartHeight);
+		}
+	}
+	
+</script>
+<script src="./chartDefaults(1).js.download"></script>
+<script src="./inherit.js.download"></script>
+	
+<script src="./d3.v3.min.js.download"></script>
+<script src="./chartDefaults(1).js.download"></script>
+<script src="./gadget.js.download"></script>
+<script src="./select-configuration-modal.js.download"></script>
+
+
+
+
+
+
+		<script type="text/javascript">
+			gadgets.util.runOnLoadHandlers();
+		</script>
+	
+
+</body></html>

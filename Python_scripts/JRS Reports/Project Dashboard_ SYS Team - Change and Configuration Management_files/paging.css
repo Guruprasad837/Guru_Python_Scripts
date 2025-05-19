@@ -1,0 +1,172 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2013, 2020. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+
+.query-results-table {
+	margin-bottom: 0px;
+	float:left;
+}
+
+.query-results-table thead tr:nth-child(1) th {
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 100;
+}
+
+.query-results-table .pagination-section {
+	max-width: 700px;
+}
+
+.query-results-table > tbody > tr > td {
+	-ms-word-break: normal;
+     word-break: break-word;
+     overflow-wrap: break-word;
+
+     /* Non standard for webkit */
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+    hyphens: auto
+}
+
+.query-results-table .query-results-url {
+	-ms-word-break: break-word;
+     word-break: break-word;
+     font-weight: 400;
+  	 line-height: 1.125rem;
+  	 letter-spacing: 0.16px;
+ 	 color: #0f62fe;
+  	 text-decoration: none;
+  	 outline: none;
+  	 transition: 70ms cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+  
+.query-results-table .query-results-url:hover {
+    color: #054ada;
+    text-decoration: underline; 
+}
+
+.query-results-table .query-results-url:active, .query-results-table .query-results-url:active:visited, .query-results-table .query-results-url:active:visited:hover {
+    color: #161616;
+    text-decoration: underline;
+}
+
+.query-results-table .query-results-url:not([href]):not(button) {
+    color: #c6c6c6;
+    cursor: not-allowed;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.query-results-table > thead > tr > th {
+	border: 1px solid #DDDDDD;
+}
+
+.query-results-table .query-results-link {
+	cursor: pointer;
+	color: #428bca;
+	text-decoration: none;
+}
+
+.query-results-table .numberCell {
+	text-align: right;
+}
+
+.pagination-section {
+	margin-left: auto;
+	margin-right: 35%;
+	overflow: hidden;
+	min-width: 300px;
+	width: 400px;
+	text-align: center;
+}
+
+.pagination-section.gadget {
+	margin-right: 20%;
+}
+
+.pagination-section > * {
+	display: inline-flex;
+}
+
+.pagination-control {
+	display: inline-block;
+}
+
+.items-per-page {
+	font-size: 9pt;
+}
+
+.pagination-close,
+.pagination-page-link {
+	color: #0f62fe;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 9pt;
+	font-weight: 400;
+	margin: 0px 2px;
+}
+
+.pagination-page-link:hover,
+.pagination-page-link:focus,
+.pagination-close:hover,
+.pagination-close:focus {
+	color: #054ada;
+ 	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.pagination-page-link:active,
+.pagination-close:active {
+	color: #161616;
+}
+
+.pagination-page-link-disabled {
+	color: #808080;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 9pt;
+	margin: 0px 2px;
+	margin-top: 1px;
+}
+
+.pagination-current-page {
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 11pt;
+	margin: 0px 2px;
+}
+
+.pagination-loading-message {
+	font-size: larger;
+	font-weight: bold;
+}
+
+.pagination-item-range {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 15px;
+	font-family: Arial;
+	font-size: 9pt;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+}
+
+.pagination-page-range {
+	display: inherit;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+div.JCLRgrip {
+	z-index: 1000;
+}

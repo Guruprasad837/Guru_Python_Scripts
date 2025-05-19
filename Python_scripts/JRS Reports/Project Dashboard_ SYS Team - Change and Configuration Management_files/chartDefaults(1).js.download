@@ -1,0 +1,9 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * © Copyright IBM Corporation 2014, 2021. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+CHART_OPTION_DEFAULTS={type:"barchart",chartData:{series:[{label:""}],data:[{label:"Group1",value:[5]},{label:"Group2",value:[1]},{label:"Group4",value:[15]},{label:"Group3",value:[8]}]},preview:!1,width:450,height:300},EXTEND=function(a,b){for(var c in b)a[c]=b[c]},PROXY=function(a,b){var c=[].slice.call(arguments,2),d=function(){return a.apply(b||this,c.concat([].slice.call(arguments)))};return d},SUBCLASS_FROM=function(a,b){subClassPrototype={},EXTEND(subClassPrototype,b.prototype),a.prototype=subClassPrototype};

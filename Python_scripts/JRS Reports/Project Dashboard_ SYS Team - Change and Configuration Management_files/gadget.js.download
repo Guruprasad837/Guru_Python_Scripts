@@ -1,0 +1,9 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2014. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+$(function(){require(["gadget/gadget-history","gadget/gadget-report-chart"],function(a,b){var c=new a("#_banner");c.on("history.click",function(a,b){b.loadContent($("#initState"),b.reportUrl+"/view/gadget?state=init",function(){b.start()})}),new b(__reportDefinitionUrl,null,__width,__height,__constantValues,__isEmbedded,__detail).start(c)})});

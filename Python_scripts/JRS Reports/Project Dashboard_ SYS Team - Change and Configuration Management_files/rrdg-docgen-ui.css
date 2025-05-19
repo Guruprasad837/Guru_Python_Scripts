@@ -1,0 +1,97 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2017. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+tr.spaceUnder>td {
+	padding-bottom: 4px;
+}
+
+.paddingLeft {
+	padding-left: 10px;
+}
+
+#CSS for sub-menu on hover /* Dropdown link */  
+.dropbtn {
+	background-color: #4CAF50;
+	color: black;
+	text-decoration: none;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+a.dropbtn {
+	color: black;
+	text-decoration: none;
+}
+
+.dropbtn:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.dropbtn:link {
+	color: black;
+	text-decoration: none;
+}
+
+.dropbtn:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.dropbtn:active {
+	color: black;
+	text-decoration: none;
+}
+
+/* Display submit button as link  */
+.submit-button-as-link {
+	background-color: transparent;
+	text-decoration: underline;
+	border: none;
+	color: blue;
+	cursor: pointer;
+}
+
+.submit-button-as-link:focus {
+	outline: none;
+}
+
+.docgen-progress-spinner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+/*progress panel div with scrollbar*/
+.add-scroll-to-div {
+	width: 275px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+.progress-panel-scroll {
+	height: 300px;
+	overflow: auto;
+}
+
+.progress-panel-header {
+	text-align: center;
+	/* padding-left:20px */
+}
+
+.form-element-middle {
+	vertical-align : middle !important;
+	
+}

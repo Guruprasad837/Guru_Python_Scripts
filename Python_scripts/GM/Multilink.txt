@@ -1,0 +1,118 @@
+// ******************************************************************************************
+// File Name   : ShowShRDAttribute.dxl
+// Author      : Mangali Guruprasad (MS/EVW6-XC)
+// Email ID    : Guruprasad.Mangali@in.bosch.com
+// Purpose     : This script reads attributes from source objects linked to a target object
+//               through multiple link modules. It extracts and displays unique attribute
+//               values (e.g., GM_Release) from the source objects for the selected object.
+// ******************************************************************************************
+
+pragma runLim, 0
+
+const bool BOOL_GETOBJECT_IDENTIFIER = false
+const bool BOOL_GETOBJATTR = true
+const string STR_SRC_ATTR_NAME = "GM_Release"
+
+// Define full paths of link modules
+const int NUM_LINK_MODS = 2
+const string STR_LNKMODS[NUM_LINK_MODS] = {
+    "/Ford_DAT3/99 - ReqM_WorkArea/Playground/GuruPrasad/Compare/Sys to SW links",
+    "/Ford_DAT3/99 - ReqM_WorkArea/Playground/GuruPrasad/Compare/HW_LINKS"
+}
+
+// Function to check if attribute exists
+bool attributeExistsObjectOrModule(Module modTmpCurrent, string strTmpAttrName, bool boolForObject)
+{
+    AttrDef adTmpAttrDef = find(modTmpCurrent, strTmpAttrName)
+    if (!null adTmpAttrDef) {
+        if ((boolForObject && adTmpAttrDef.object) || (!boolForObject && adTmpAttrDef.module)) {
+            return true
+        }
+    }
+    return false
+}
+
+// Function to show attribute values from multiple link modules
+void showShRDAttribute(Object objCurrTarget)
+{
+    string resultsArray[1000]
+    int resultCount = 0
+    int m = 0
+    bool boolDoneOne = false
+
+    for (m = 0; m < NUM_LINK_MODS; m++) {
+        string strCurrentLinkMod = STR_LNKMODS[m]
+        Item itemLinkModule = item(strCurrentLinkMod)
+
+        if (null itemLinkModule) {
+            continue
+        }
+
+        if (type(itemLinkModule) != "Link") {
+            continue
+        }
+
+        string strLinkModName = fullName(itemLinkModule)
+
+        ModName_ modnameSource
+        for modnameSource in each (objCurrTarget<-"*") do {
+            read(fullName(modnameSource), false)
+
+            Link lnkCurrent
+            for lnkCurrent in all(objCurrTarget<-strLinkModName) do {
+                ModuleVersion modversSourceVersion = sourceVersion lnkCurrent
+                modnameSource = module(modversSourceVersion)
+
+                if (!null modnameSource && !isDeleted(modnameSource)) {
+                    Object objSource = source(lnkCurrent)
+
+                    if (null objSource) {
+                        load(modversSourceVersion, false)
+                        objSource = source(lnkCurrent)
+                    }
+
+                    if (!null objSource && !isDeleted(objSource)) {
+                        string strResult = ""
+
+                        if (BOOL_GETOBJECT_IDENTIFIER) {
+                            strResult = identifier(objSource)
+                        } else {
+                            if (!attributeExistsObjectOrModule(module(objSource), STR_SRC_ATTR_NAME, BOOL_GETOBJATTR)) {
+                                strResult = "N/A"
+                            } else if (BOOL_GETOBJATTR) {
+                                strResult = richTextWithOle(objSource.STR_SRC_ATTR_NAME)
+                            } else {
+                                strResult = (module(objSource)).STR_SRC_ATTR_NAME
+                            }
+                        }
+
+                        // Check for duplicates
+                        bool isDuplicate = false
+                        int i = 0
+                        for (i = 0; i < resultCount; i++) {
+                            if (resultsArray[i] == strResult) {
+                                isDuplicate = true
+                                break
+                            }
+                        }
+
+                        if (!isDuplicate && resultCount < 1000) {
+                            resultsArray[resultCount] = strResult
+                            resultCount++
+                            boolDoneOne = true
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Display results
+    int j = 0
+    for (j = 0; j < resultCount; j++) {
+        displayRich resultsArray[j]
+    }
+}
+
+// Call the function for the currently selected object
+showShRDAttribute(obj)

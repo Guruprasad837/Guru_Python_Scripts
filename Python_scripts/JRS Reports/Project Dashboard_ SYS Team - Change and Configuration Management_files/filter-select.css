@@ -1,0 +1,64 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2014, 2024. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+.filter-select-container {
+}
+
+.filter-select-filter-container {
+}
+
+.filter-select-filter-input {
+	font-size: 10px;
+	width: calc(50% + 25px);
+	margin-bottom: 5px;
+}
+
+.filter-select-item-list {
+	margin: 0px;
+	font-size: 10px;
+	overflow: auto;
+	padding: 0px 0px 0px 5px;
+	white-space: nowrap;
+	list-style: none;
+	border: 1px solid lightgray;
+	height:110px;
+}
+
+.filter-select-all-list, .filter-subtypes-list {
+	border: 0px solid lightgray;
+}
+
+.filter-select-checkbox {
+	width: 10px;
+	height: 10px;
+	position: relative;
+	vertical-align: middle;
+	top: -2px;
+}
+
+.filter-select-last-checked-item {
+	border-bottom: 1px dashed lightgray;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.filter-select-input-clear {
+	position: relative;
+	top: 2px;
+	font-size: 16px;
+	display: inline-block;
+	left: -20px
+}
+
+.filter-highlight-text {
+	background-color: yellow;
+}
+
+.list-unstyled,.list-unstyled label {
+	margin:0;
+}

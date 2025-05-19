@@ -1,0 +1,138 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2014, 2016. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+
+.jrs-tight {
+	padding: 4px;
+	margin: 4px;
+}
+
+.jrs-tighter {
+	padding: 2px;
+	margin: 2px;
+}
+
+.jrs-tightest {
+	padding: 0px;
+	margin: 0px;
+}
+
+.jrs-no-border {
+	border: 0px;
+}
+
+.jrs-ui-template {
+	display: none;
+}
+
+.jrs-prompt-multiselect {
+	height: 110px;
+	white-space: nowrap;
+	list-style: none;
+	overflow: auto;
+	padding-left: 5px;
+	border-bottom: 1px solid #d9edf7;
+}
+
+.jrs-date-spacing {
+	width: 100%;
+	padding: 2px;
+	padding-top: 0px;
+}
+
+.jrs-param-outer {
+	padding-right: 4px;
+}
+
+.jrs-param-inner {
+	margin: 2px;
+	margin-right: 0px;
+}
+
+.jrs-param-title {
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.jrs-param-heading {
+	padding: 2px;
+	margin: 2px;
+}
+
+.jrs-param-row {
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.jrs-param-col {
+	padding-left:3px;
+	padding-right:3px;
+}
+
+.jrs-param-selection-section {
+	margin: 7px;
+}
+
+.jrs-param-values-defaults {
+	background-color: #ffffcc;
+}
+
+.jrs-btn-refresh {
+	background-color: transparent;
+	border: 0px transparent;
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+	margin-right: 2px;
+	background-image: url("../graphics/action_refresh_dim.gif");
+}
+
+.jrs-btn-refresh:hover {
+	background-color: transparent;
+	background-image: url("../graphics/action_refresh.gif");
+}
+
+.dropdown:hover #help-icon {
+	src: url("../graphics/help_Hover.png");
+}
+
+.dropdown.open #help-icon {
+	src: url("../graphics/help_Selected.png");
+}
+
+.resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+}
+
+.resizable-s {
+	cursor: s-resize; 
+	height: 7px; 
+	width: 100%; 
+	bottom: -5px; 
+	left: 0px;
+}
+
+.resizable-e {
+	cursor: e-resize; 
+	width: 7px; 
+	right: -5px; 
+	top: 0px; 
+	height: 100%;
+}
+
+.resizable-se {
+	cursor: se-resize;
+	width: 12px; 
+	height: 12px; 
+	right: -3px; 
+	bottom: -12px;
+	display: inline-block;
+	z-index: 1001;
+	background-repeat: no-repeat;
+}

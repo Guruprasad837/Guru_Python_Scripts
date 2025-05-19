@@ -1,0 +1,9 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * © Copyright IBM Corporation 2014, 2019. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+define(["common/uriUtils"],function(a){function b(a,b,d){var e=c.rewriteCallback(a);$(window).one("message",function(a){0===e.callbackUrl.indexOf(a.originalEvent.origin)&&b(a.originalEvent.data.oauth_token,a.originalEvent.data.request_token_secret)});var f=window.open(e.authorizeUrl,"log into data source","height=500,width=600",!1);f||d&&d("A popup blocker has prevented the display of a login window necessary to complete your action. Please disable popup blocking for this site and try again.")}var c={};return c.authenticateAndResendRequest=function(a,c,d){b(a,c,d)},c.rewriteCallback=function(b){var c=document.createElement("a");c.href=b;var d=a.paramStringToObject(c.search.substr(1)),e=c.protocol+"//"+c.host;"/"!==c.pathname.charAt(0)&&(e+="/"),e+=c.pathname,d.length>0&&(e+="?");for(var f=0;f<d.length;f++){var g=d[f];if(f>0&&(e+="&"),e+=g.n+"=","oauth_callback"===g.n){var h=document.createElement("a");h.href=decodeURIComponent(g.v);var i=a.paramStringToObject(h.search.substr(1)),j=h.protocol+"//"+h.host;"/"!==h.pathname.charAt(0)&&(j+="/"),j+=h.pathname.substring(0,h.pathname.indexOf("/",1));for(var k=j+"/js/common/oauthcallback.html",l=0;l<i.length;l++){var m=i[l];"request_token_secret"===m.n&&(k+="?"+m.n+"="+m.v)}k+="&targetOrigin="+encodeURIComponent(window.location.protocol+"//"+window.location.host),e+=encodeURIComponent(k)}else e+=g.v}return{authorizeUrl:e,callbackUrl:k}},c.addTokenAndSecretToUrl=function(a,b,c){var d=-1==a.indexOf("?")?"?":"&";return a+d+"oauth_token="+b+"&request_token_secret="+c},c});

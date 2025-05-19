@@ -1,0 +1,37 @@
+.com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet div.loading {
+	color: #bbbbbb;
+	margin: 5px 5px 5px 5px;
+}
+.com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet .display-area {
+	min-height: 10px;
+	display: none;
+	margin: 5px;
+}
+.com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet .editor-area {
+	display: none;
+}
+.com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet .editor-area.j-hint {
+	padding: 6px 6px;
+	border: 1px solid #BFBFBF;
+	height: 233px;
+}
+.com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet .j-welcomeViewlet {
+	background: url("../com.ibm.team.dashboard.viewlets.web/graphics/welcome/images/welcome_bckgd_repeat.gif?etag=d2KOQbG") repeat-x;
+}
+.com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet .j-welcomeViewlet .j-welcomeBody {
+	position: relative;
+	background: url("../com.ibm.team.dashboard.viewlets.web/graphics/welcome/images/welcome_bckgd_rght.gif?etag=d2KOQbG") no-repeat top right;
+	padding: 18px 10px 0 16px;
+	min-height: 75px;
+	zoom: 1;
+}
+.com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet .j-welcomeViewlet .j-welcomeBodyImage {
+	float: left;
+	height: 76px;
+	width: 42px;
+	background: url("../com.ibm.team.dashboard.viewlets.web/graphics/welcome/images/Welcome_graphic.png?etag=d2KOQbG") no-repeat;
+}
+.com-ibm-team-dashboard-viewlets-web-ui-internal-StaticViewlet .j-welcomeViewlet .j-welcomeBodyText {
+	overflow: hidden;
+	padding-left: 10px;
+}

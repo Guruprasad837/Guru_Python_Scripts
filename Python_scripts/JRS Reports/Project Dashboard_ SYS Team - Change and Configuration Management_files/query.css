@@ -1,0 +1,497 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (c) Copyright IBM Corporation 2013, 2020. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights:
+ * Use, duplication or disclosure restricted by GSA ADP Schedule
+ * Contract with IBM Corp.
+ *******************************************************************************/
+.query .tab-content-spaced {
+	padding-top: 5px;
+}
+
+.query .spaced-columns {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.query .icon-loading {
+	display: inline-block;
+	margin-bottom: -2px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/loading.gif");
+}
+
+.query .icon-import {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/import_en.gif");
+}
+
+.query .icon-export {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/export_en.svg");
+}
+
+.query .icon-validate {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/validate_en.svg");
+}
+
+.query .icon-noedit {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top:0px;
+	left:68px;
+	background-image: url("../graphics/noedit.png");
+}
+
+.query .selection-action:disabled .icon-export {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/export_dis.svg");
+}
+
+.query .selection-action:disabled .icon-validate {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/validate_dis.svg");
+}
+
+.query .icon-actions {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/Action-menu-dd.png");
+}
+
+.query .toolbar-icon {
+	padding-bottom: 3px;
+}
+
+.query .icon-delete {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/delete_en.svg");
+}
+
+.query .icon-cut {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: auto;
+    margin-right: auto;
+	background-image: url("../graphics/cut_en.svg");
+}
+
+.query .selection-action:disabled .icon-cut {
+	background-image: url("../graphics/cut_dis.svg");
+}
+
+.query .icon-copy {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: auto;
+    margin-right: auto;
+	background-image: url("../graphics/copy_en.svg");
+}
+
+.query .selection-action:disabled .icon-copy {
+	background-image: url("../graphics/copy_dis.svg");
+}
+
+.query .icon-addfolder {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: auto;
+    margin-right: auto;
+	background-image: url("../graphics/folder_new_co.png");
+}
+
+.query .selection-action:disabled .icon-delete {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/delete_dis.svg");
+}
+
+.query .icon-addtag {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: -2px;
+    margin-right: -7.891px;
+	background-image: url("../graphics/add_tag.svg");
+}
+
+.query .selection-action:disabled .icon-addtag {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/add_tag_dis.svg");
+}
+
+.query .icon-removetag {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: -2px;
+    margin-right: -7.891px;
+	background-image: url("../graphics/remove_tag.svg");
+}
+
+.query .selection-action:disabled .icon-removetag {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../graphics/remove_tag_dis.svg");
+}
+
+.query .icon-tag {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/tag_obj.gif");
+}
+
+.query .icon-public {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/public.gif");
+}
+
+.query .icon-private {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/private.gif");
+}
+
+.query .icon-query {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/query_obj.gif");
+}
+
+.query .icon-report {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/reports_obj.gif");
+}
+
+.query .icon-folder-closed {
+	display: inline-block;
+	width: 24px;
+	height: 16px;
+	background-image: url("../graphics/folder_closed_co.png");
+	vertical-align: text-top;
+}
+
+.query .icon-folder-open {
+	display: inline-block;
+	width: 24px;
+	height: 16px;
+	background-image: url("../graphics/folder_open_co.png");
+	vertical-align: text-top;
+}
+
+.query .icon-group-closed {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/group_closed.png");
+}
+
+.query .icon-search {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-top: 1px;
+	background-image: url("../graphics/icon-search.gif");
+}
+
+.query .drag-handle {
+	background-image: url("../graphics/drag_handle.png");
+	margin-right: 8px;
+	margin-bottom: 4px;
+	vertical-align: middle;
+	width: 8px;
+	height: 19px;
+	display: inline-block;
+	cursor: move;
+}
+
+.query .drag-handle:active {
+	cursor: move;
+}
+
+.query .drop-hover {
+	background-color: #fff2ac !important;
+}
+
+.query .icon-group-open {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../graphics/group_open.png");
+}
+
+.query .top-section {
+	position: relative;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+.query .padded-section {
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+
+.query .dropdown-separator {
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+
+.query .queryResultsTwoColumn {
+	overflow: hidden;
+	width: 100%;
+}
+
+.query .queryResultsLeftColumn {
+	overflow: hidden;
+	float: left;
+	width: 85%
+}
+
+.query .top-section-nopadding {
+	/*overflow: hidden; why is this marked hidden? it's causing dropdown menus to be clipped*/
+	position: relative;
+}
+
+.query .left-heading {
+	float: left;
+	position: relative;
+	-webkit-user-select: none; /* Safari 3.1+ */
+	user-select: none; /* Standard syntax */
+	-ms-user-select: none; /* IE 10+ */
+}
+
+.query .centre-heading {
+	float: left;
+	position: relative;
+}
+
+.query .right-heading {
+	display: inline-flex;
+	float: right;
+	position: relative;
+	-webkit-user-select: none; /* Safari 3.1+ */
+	user-select: none; /* Standard syntax */
+	-ms-user-select: none; /* IE 10+ */
+}
+
+.query .dropdown {
+	position: relative;
+}
+
+.query .dropdown-link > .caret {
+	padding-bottom: 3px;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 3px solid #000000;
+}
+
+.query .report-actions-dropdown-enabled {
+	pointer-events : auto;
+	opacity: 1;
+}
+
+.query .report-actions-dropdown-disabled {
+	pointer-events : none;
+	opacity: 0.3;
+}
+
+.schedule .schedule-actions-dropdown-enabled {
+	pointer-events : auto;
+	opacity: 1;
+}
+
+.schedule .schedule-actions-dropdown-disabled {
+	pointer-events : none;
+	opacity: 0.3;
+}
+
+.result .result-actions-dropdown-enabled {
+	pointer-events : auto;
+	opacity: 1;
+}
+
+.result .result-actions-dropdown-disabled {
+	pointer-events : none;
+	opacity: 0.3;
+}
+.query .sparqlOrionEditor {
+	height: 350px;
+	padding: 0px;
+}
+
+.query .sqlOrionEditor {
+	height: 350px;
+	padding: 0px;
+}
+
+.query .queryUA {
+    background-color: #E1F4F9;
+    border-radius: 4px 4px 4px 4px;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.query .table-condensed-widget thead > tr > th,
+.query .table-condensed-widget tbody > tr > th,
+.query .table-condensed-widget tfoot > tr > th,
+.query .table-condensed-widget thead > tr > td,
+.query .table-condensed-widget tbody > tr > td,
+.query .table-condensed-widget tfoot > tr > td {
+  padding: 0px 3px 3px 3px;
+  font-size: 9pt;
+  border-collapse: separate;
+}
+
+.query .table-condensed-widget {
+  border-collapse: separate;
+}
+
+.text-wrap-field {
+	-ms-word-break: break-all;
+     word-break: break-all;
+     overflow-wrap: break-word;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+    hyphens: auto
+}
+
+th.sortable {
+	text-align: center; 
+	white-space: nowrap;
+}
+
+th.sortable span {
+	display: inline-block;
+	vertical-align: middle;
+	height:20px;
+	padding-top : 0.4em;
+}
+
+
+th.sortable,
+.sort-direction-indicator {
+	cursor: pointer;
+}
+
+.sort-direction-indicator {
+ 	white-space:nowrap;
+    margin-left: 5px;
+    min-width: 16px;
+}
+
+.tooltip-inner {
+    text-align:left !important;
+    background-color: #fbfbec;
+    color: #000000;
+    opacity: 1.0;
+	box-shadow:	1px 1px 2px 1px #555;	
+}
+
+.table-indent {
+	margin-left: 25px;
+	margin-right: 10px;
+	min-width: 200px;
+	width: 90%;
+}
+
+.table-noindent {
+	min-width: 200px;
+	width: 100%;
+}
+
+.query .side-bar-menu {
+	max-width: 100px;
+	padding-right: 10px;
+	float: left;
+}
+
+.query .side-bar-content {
+	width: calc(100% - 100px);
+	float: right;
+}
+
+.size-for-help {
+	width: calc(90% - 25px);
+}
+
+.highlight-text {
+background-color: yellow;
+}
+
+.big-background-text {
+	margin: 100px 20px;
+	text-align: center;
+	font-size: 18pt;
+	color: #999;
+}
+
+.table-responsive.fixmenu {
+	overflow: visible;
+}
+
+.primary-label
+{
+	font-weight: bold;
+	float: left;
+	padding-right: 10px;
+}
+
+.primary-label-input
+{
+	width: 100%;
+}
+
+.chartEditorLeftColumn div.col-md-6
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.chartEditorLeftColumn div.row
+{
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.singleButtonModal {
+	border-radius: 0px;
+}
+
+#datasource_considerations_dialog_intro p {
+	font-size: 14px;
+}

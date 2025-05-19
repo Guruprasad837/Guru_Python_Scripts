@@ -1,0 +1,11 @@
+.jazz-social-Gadget {
+}
+
+.jazz-social-Gadget .iframe {
+	display: block;
+	width: 100%;
+	border: none;
+}
+.com-ibm-team-dashboard-web-ui-GadgetAdapter .gadget-content {
+	padding: 0;
+}

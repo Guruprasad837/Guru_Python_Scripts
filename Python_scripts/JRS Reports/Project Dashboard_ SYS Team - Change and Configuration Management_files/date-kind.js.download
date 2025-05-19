@@ -1,0 +1,7 @@
+/***************************************************************************************************
+ * Licensed Materials - Property of IBM © Copyright IBM Corporation 2014, 2017. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA
+ * ADP Schedule Contract with IBM Corp.
+ **************************************************************************************************/
+define(["common/config!","./report-parameter"],function(a,b){return function(c){var d=new b(c);return d.start=function(){return this.dateParam=this.templates.$inflate("_dateKindContent",null,this).datepicker({multidate:!1,language:a.locale}),this.contents(this.dateParam),this},d._dateValue=function(){return this.dateParam.datepicker("getDate")},d.getValues=function(a){var b=this._dateValue();return b?[b.valueOf()]:null},d.getFilteringValues=function(){var a=this._dateValue();return null==a?null:[a.toISODateString()]},d.getDisplayValues=function(a){var b=a||this._dateValue();return b.isValid()?b.toLocaleDateString():""},d.contents=function(a){this.$paramContent.replaceContents(a)},d.setSelectedValues=function(a){b.prototype.setSelectedValues.apply(this,[a]),this.dateParam.datepicker("update",new Date(a[0]))},d}});

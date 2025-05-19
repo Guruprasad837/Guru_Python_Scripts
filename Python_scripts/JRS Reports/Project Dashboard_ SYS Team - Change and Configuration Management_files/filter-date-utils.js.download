@@ -1,0 +1,7 @@
+/***************************************************************************************************
+ * Licensed Materials - Property of IBM (c) Copyright IBM Corporation 2016, 2024. All Rights Reserved.
+ * 
+ * Note to U.S. Government Users Restricted Rights: Use, duplication or disclosure restricted by GSA
+ * ADP Schedule Contract with IBM Corp.
+ **************************************************************************************************/
+define("common/filter-date-utils",["moment-with-langs.min"],function(a){var b={};return b.getAbsoluteDate=function(b,c){var d=null;return"today"==b?d=a():"yesterday"==b?d=a().subtract("days",1):"days ago"==b?d=a().subtract("days",c):"hours ago"==b?d=a().subtract("hours",c):"months ago"==b?d=a().subtract("months",c):"years ago"==b?d=a().subtract("years",c):"exactdate"==b?d=a(c,"YYYY-MM-DD"):"days later"==b?d=a().add("days",c):"months later"==b?d=a().add("months",c):"years later"==b&&(d=a().add("years",c)),d},b.parseEncodedDate=function(b){var c=b.indexOf("V__"),d=b.indexOf("OP__"),e=d;if(-1==e&&(e=b.length()),-1!=c){var f=b.substring(c+3,e);a(f).isValid()?value=f:value=parseFloat(f)}return-1!=d&&(relativeDateOp=b.substring(d+4,b.length).replace("_"," ")),{value:value,relativeDateOp:relativeDateOp}},b});
